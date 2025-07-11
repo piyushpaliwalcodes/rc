@@ -2,7 +2,7 @@
 
 const Achieveitem = ({imagesrc,title,description}:any) =>
 {
-    return <div className="flex flex-col gap-[15px]">
+    return <div className="flex flex-col gap-[15px] items-center">
           <img height={"60px"} width={"60px"} src={imagesrc} />
           <p className="text-[40px] font-bold">{title}</p>
          
