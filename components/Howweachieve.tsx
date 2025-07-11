@@ -2,7 +2,7 @@
 
 const Achieveitem = ({imagesrc,title,description}:any) =>
 {
-    return <div className="flex flex-col gap-[10px]">
+    return <div className="flex flex-col gap-[15px]">
           <img height={"60px"} width={"60px"} src={imagesrc} />
           <p className="text-[40px] font-bold">{title}</p>
          
@@ -55,7 +55,7 @@ return (
             </div></div>
                 
             
-            <div className="flex justify-around py-[20px]">
+            <div className="flex justify-around pt-[60px]">
                 { highlightsdata.map((item,index)=>
                 (
                     <Achieveitem {...item} key={index}/>
