@@ -5,6 +5,7 @@ import Howweachieve from "@/components/Howweachieve";
 import Explorefacility from "@/components/Explorefacility";
 import Whatwedo from "@/components/Whatwedo";
 import Ourprocess from "@/components/Ourprocess";
+import Meetourteam from "@/components/Meetourteam";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Howweachieve/>
       <Whatwedo/>
       <Ourprocess/>
+      <Meetourteam/>
     </div>
   );
 }
