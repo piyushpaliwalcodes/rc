@@ -12,13 +12,13 @@ import YellowButton from "./Yellowbutton";
 
 const Manufacturingcategory = ({title="Manufacturing Machines", description="Liquorice lemon drops powder chocolate liquorice candy dessert gummi bears. Caramels marzipan donut jujubes sweet roll. Powder croissant toffee shortbread chocolate sweet pie. ", images=["/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine4.png"]}: {title: string, description: string, images: string[]}) =>
 {
-    return (<div className="flex flex-col gap-[30px] h-[100vh] justify-center">
+    return (<div className="flex flex-col gap-[30px] py-[60px] justify-center">
         <h1 className="text-[30px]">{title}</h1>
         <div className="flex gap-[200px]">
             <p>{description}</p>
             <YellowButton text="View All" link="/" />
         </div>
-        <div className="flex justify-between mt-[20px]">
+        <div className="flex justify-between mt-[40px]">
             {
                 images.map((image) => (
                     <div className="flex flex-col gap-[10px]"><img src={image} alt={title} width={300} height={300} className=" w-[300px] h-[200px] object-cover " />
@@ -26,7 +26,13 @@ const Manufacturingcategory = ({title="Manufacturing Machines", description="Liq
                        </div>))
             }
         </div>
-
+       <div className="flex justify-center gap-[10px] mt-[20px]"> 
+        {
+            Array.from({length:4}).map((_,index) => (
+                <div className={`rounded-full bg-[#FCD900] border-[1px] border-[#FCD900] w-[15px] h-[15px]  ${index==0?"":"bg-white"}`}></div>
+            ))
+        }
+       </div>
     </div>)
 }
 
