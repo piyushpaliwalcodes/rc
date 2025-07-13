@@ -5,7 +5,7 @@ const Mailinput = () =>
     return (
         <div className="rounded-[10px] border border-[#D9D9D9] flex w-[85%] justify-between items-center pl-1">
             <input type="text" placeholder="Enter your email to subscribe our Newsletter." className="text-[15px]/[25px] placeholder:text-[#676767]  placeholder:font-bold pl-4 w-[350px] h-[20px] rounded-[10px] border-none outline-none flext items-center"  />
-            <button className="bg-[#FCD900] text-[12px]/[25px] text-black px-[20px] py-[5px] rounded-[10px] hover:cursor-pointer" onClick={() => alert("Subscribe Now")}>Subscribe Now</button>
+            <button className="bg-[#FCD900] text-[14px]/[25px] text-black px-[25px] py-[5px] rounded-[10px] hover:cursor-pointer font-bold " onClick={() => alert("Subscribe Now")}>Subscribe Now</button>
         </div>
     )
 }
@@ -41,7 +41,7 @@ const Footer = () =>
             <div className="flex flex-col gap-[30px] w-[45%]">
                 <h1 className="
                 text-[#FCD900] font-semibold">RC LOGO</h1>
-                <p className="text-[48px]/[60px]">Stay updated with the latest agricultural manufacturing and its Industry insights.</p>
+                <p className="text-[45px]/[60px]">Stay updated with the latest agricultural manufacturing and its Industry insights.</p>
                 <Mailinput/>
             </div>
             <div className="grid grid-cols-3 w-[45%]">

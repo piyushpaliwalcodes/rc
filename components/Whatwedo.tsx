@@ -56,15 +56,16 @@ const Whatwedo = () => {
     const [selectedCategory, setSelectedCategory] = useState(Categories[0]);
     return (
         <div className = "flex flex-col">
-            <div className="min-h-[680px] bg-gray-200 px-[60px] pt-[200px] relative flex flex-col items-center gap-[80px] justify-between">
-                   <div className="flex flex-col" >
+            <div className="bg-gradient-to-b from-white/0 to-white/100 "></div>
+            <div className="min-h-[680px] bg-gray-200 px-[60px] pt-[200px] relative flex flex-col items-center gap-[80px] justify-between" style={{backgroundImage: "url('/images/web.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
+                   <div className="flex flex-col gap-[20px]" >
                     <h1 className="text-[20px] opacity-30 font-bold">What We Do</h1>
                     <p className="text-[48px]/[60px] w-2/3">With our flexible production capacity and high technology, we produce customized solutions for your needs.</p>
                    </div>
-                   <div className= "w-full flex gap-[30px] ">
+                   <div className= "w-full flex gap-[15px] ">
                     {
                         Categories.map((category) => (
-                            <div onClick={() => setSelectedCategory(category)} key={category.title} className={`flex flex-col items-center w-[200px] h-[170px] justify-center  items-center gap-[10px] p-[20px] px-[30px] rounded-t-[4px] hover:cursor-pointer hover:bg-gray-300 transition-all duration-200 ${selectedCategory.title === category.title ? "hover:bg-white bg-white justify-center" : "bg-gray-200"}`}>
+                            <div onClick={() => setSelectedCategory(category)} key={category.title} className={`flex flex-col items-center w-[200px] h-[170px] justify-center  items-center gap-[10px] p-[20px] px-[30px] rounded-t-[4px] hover:cursor-pointer  hover:bg-gray-300/70 transition-all duration-200 ${selectedCategory.title === category.title ? "hover:bg-white bg-white justify-center" : ""}`}>
                                 <img src={category.icon} alt={category.title} width={60} height={60} />
                                 <p className="text-center">{category.title}</p>
                             </div>

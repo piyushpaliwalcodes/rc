@@ -25,8 +25,8 @@ const Whoweare = () => {
         <div className='w-full px-[60px] flex gap-[150px] py-[60px]'>
             <div className="flex flex-col max-w-[710px] justify-between h-[400px]">
                 <div className="flex flex-col gap-[20px]"> 
-                    <div className="flex flex-col">
-                        <p className="text-[16px] font-bold opacity-[30%]">WHO WE ARE</p>
+                    <div className="flex flex-col gap-[20px]">
+                        <p className="text-[20px] font-bold opacity-[30%]">WHO WE ARE</p>
                         <p className="text-[40px]/[50px] ">RC Dal – India’s Trusted Name in Pulse Manufacturing</p>
                     </div>
                <p className="text-[16px]">

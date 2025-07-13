@@ -18,7 +18,7 @@ const Navbar = () => {
         <Logo/>
         <ul className='flex gap-[40px]'>
             {navItems.map((item) => (
-                <li key={item.name} onClick={() => setSelected(item.name)} className={`cursor-pointer ${selected === item.name ? 'text-[#FCD900] font-bold' : 'text-black'}`}>{item.name}</li>
+                <li key={item.name} onClick={() => setSelected(item.name)} className={`cursor-pointer  hover:text-[#FCD900] transition-all duration-100 ${selected === item.name ? 'text-[#FCD900] font-bold' : 'text-black'}`}>{item.name}</li>
             ))}
         </ul>
         <YellowButton text='Contact Us' link='https://www.google.com'/>
