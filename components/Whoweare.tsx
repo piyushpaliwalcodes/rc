@@ -32,7 +32,7 @@ const Whoweare = () => {
                <p className="text-[16px]">
                 With roots in Khandwa, Madhya Pradesh, and a legacy spanning generations, RC Dal is a flagship brand under RC Group—renowned for agricultural excellence and ethical trade. We manage the entire value chain: from sourcing directly from farmers to processing, polishing, grading, and packaging pulses under one roof..
                 </p></div>
-                <div className="flex gap-[30px]"><YellowButton text="Read More" link="/" /> <div className="h-full justify-center items-center"><a href="/" className="text-[16px] flex items-center  underline h-full ">Quality Certificate</a></div>
+                <div className="flex gap-[60px]"><YellowButton text="Read More" link="/" /> <div className="h-full justify-center items-center"><a href="/" className="text-[16px] flex items-center  underline h-full ">Quality Certificate</a></div>
                 </div>
             </div>
             <div className="flex flex-col justify-around">

@@ -14,7 +14,7 @@ const Navbar = () => {
         {name: 'Sustainability', link: '/sustainability'},
     ]
   return (
-    <div className='sticky top-0 z-50 py-[10px] w-full flex justify-between items-center bg-white text-black px-[60px]'>
+    <div className='sticky top-0 z-50 py-[10px] w-full flex justify-between items-center bg-white text-black px-[60px] border-b border-[#CCCCCC]'>
         <Logo/>
         <ul className='flex gap-[40px]'>
             {navItems.map((item) => (
