@@ -11,7 +11,7 @@ const Imagecard = ({src,name,designation}:{src:string,name:string,designation:st
     )
 }
 
-const Highlight = () => {
+ const Highlight = () => {
     return (
         <div className="flex flex-col  text-[20px]">  
            <h1 className="opacity-30 font-bold">WHO MANAGE US</h1>

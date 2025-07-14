@@ -46,6 +46,10 @@ const Haveaquestion = () =>
             question: "What industries do you serve?",
             answer: "With more than 200,000 Retail outlets across 65+ branches, Ramlal Champalal (RC) is one of the largest Distribution House & Logistics services providers for various industries."
         },
+        {
+          question: "What industries do you serve?",
+          answer: "With more than 200,000 Retail outlets across 65+ branches, Ramlal Champalal (RC) is one of the largest Distribution House & Logistics services providers for various industries."
+      },
         
     ]
 

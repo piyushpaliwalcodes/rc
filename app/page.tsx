@@ -8,6 +8,7 @@ import Ourprocess from "@/components/Ourprocess";
 import Meetourteam from "@/components/Meetourteam";
 import Withtractor from "@/components/Withtractor";
 import Haveaquestion from "@/components/Haveaquestion";
+import Whatwemanufacture from "@/components/Whatwemanufacture";
 export default function Home() {
   return (
     <div className="bg-white flex flex-col font-roboto min-h-[100vh] text-black">
@@ -21,6 +22,7 @@ export default function Home() {
       <Meetourteam/>
       <Withtractor/>
       <Haveaquestion/>
+      <Whatwemanufacture/>
     </div>
   );
 }
