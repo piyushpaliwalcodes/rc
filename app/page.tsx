@@ -9,6 +9,7 @@ import Meetourteam from "@/components/Meetourteam";
 import Withtractor from "@/components/Withtractor";
 import Haveaquestion from "@/components/Haveaquestion";
 import Whatwemanufacture from "@/components/Whatwemanufacture";
+import Whychooseus from "@/components/Whychooseus";
 export default function Home() {
   return (
     <div className="bg-white flex flex-col font-roboto min-h-[100vh] text-black">
@@ -23,6 +24,7 @@ export default function Home() {
       <Withtractor/>
       <Haveaquestion/>
       <Whatwemanufacture/>
+      <Whychooseus/>
     </div>
   );
 }
