@@ -22,7 +22,7 @@ const Manufacturecardwithimage = ({src, title, description, link}: {src: string,
         <Image src={src} alt={title} width={430} height={280}/>
         <h1 className="text-[24px] font-bold">{title}</h1>
         <p className="text-[20px]">{description}</p>
-        <a href={link} className="flex items-center gap-[10px]">Read More <FaArrowRight/>    
+        <a href={link} className="flex items-center gap-[10px] hover:cursor-pointer hover:underline">Read More <FaArrowRight/>    
         </a>
     </div>
     )
