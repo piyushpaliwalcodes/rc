@@ -43,7 +43,7 @@ const Ourclientsay = () =>
         }
     ]
     return (
-        <div className="flex flex-col gap-[30px] p-[60px] py-[100px]">
+        <div className="flex flex-col gap-[30px] p-[60px] py-[100px] bg-[#F5F5F5]">
        <div className="grid grid-cols-[2fr_3fr] gap-[150px] ">
         <div><Image src="/images/testimonial.png" alt="ourclientsay" width={500} height={500} /></div>
         <div className="flex flex-col gap-[30px] justify-center"> 

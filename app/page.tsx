@@ -21,12 +21,16 @@ export default function Home() {
       <Howweachieve/>
       <Whatwedo/>
       <Ourprocess/>
-      <Meetourteam/>
-      <Withtractor/>
-      <Haveaquestion/>
-      <Whatwemanufacture/>
       <Whychooseus/>
+      <Whatwemanufacture/>
       <Ourclientsay/>
+      <Meetourteam/>
+      <Haveaquestion/>
+      <Withtractor/>
+      
+      
+      
+      
     </div>
   );
 }
