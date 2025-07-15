@@ -4,6 +4,7 @@ import Howweachieve from "@/components/Howweachieve";
 import Whychooseus from "@/components/Whychooseus";
 import Meetourteam from "@/components/Meetourteam";
 import Withtractor from "@/components/Withtractor";
+import Partners from "@/components/Partners";
 
 const Aboutus = () => {
     return (
@@ -14,6 +15,7 @@ const Aboutus = () => {
             <Meetourteam/>
             <Ourapproach />
             <Withtractor/>
+            <Partners/>
         </div>
     )
 }
