@@ -19,6 +19,10 @@
   }
 }
 
+.bg-primary-yellow {
+  background-color: #FCD900 !important;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
