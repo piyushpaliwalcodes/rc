@@ -1,7 +1,10 @@
-const Products = () =>
+import Herosecond from "@/components/Herosecond";
+    const Products = () =>
 {
     return (
-        <div className="flex flex-col"></div>
+        <div className="flex flex-col">
+            <Herosecond />
+        </div>
     )
 }
 
