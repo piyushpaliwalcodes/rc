@@ -2,7 +2,7 @@ import Image from "next/image";
 const Partners = () =>
 {
     return (
-        <div className="flex flex-col gap-[50px] p-[60px] text-black">
+        <div className="flex flex-col gap-[50px] p-[60px] text-black bg-[#F9F9F9]">
             <div className="flex flex-col">      
                 <p className="text-primary-yellow font-semibold mb-2">OUR APPROACH</p>
     <div className="grid grid-cols-2 justify-between items-center">

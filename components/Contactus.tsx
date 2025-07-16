@@ -19,7 +19,7 @@ const Contactus = () => {
     }
     return (
         <div className="flex flex-col">
-            <div className="flex p-[60px] gap-[30px] gap-[80px]">
+            <div className="flex p-[60px] py-[100px] gap-[30px] gap-[80px]">
             <div className="flex flex-col gap-[20px] w-[40%]">
                 <h1 className="font-roboto text-[#81848A] text-[24px] font-bold">Contact Us</h1>
                 <p className="text-[50px]/[60px] ">Get in touch <span className="font-bold">with us</span></p>

@@ -128,13 +128,15 @@ const Ourapproach = () =>
        <div className="w-full bg-white ">
   {/* Hero Section */}
   <div
-    className="w-full h-[540px] flex flex-col justify-center px-8 pb-[60px] px-[60px]" 
+    className="w-full h-[540px] flex flex-col justify-center px-8 pb-[60px] px-[60px] relative" 
     style={{
       backgroundImage: "url('/images/ourapproach.jpg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
     }}
   >
+    <div className="absolute top-0 left-0 w-full h-full bg-black/30"/>
+    <div className="flex flex-col z-10">
     <p className="text-yellow-500 font-semibold mb-2">OUR APPROACH</p>
     <div className="flex flex-row justify-between items-center">
       <h1 className="text-white text-[50px]/[60px]  leading-tight">
@@ -145,6 +147,8 @@ const Ourapproach = () =>
       We provide a wide range of services tailored to meet the unique needs of modern industries. From precision manufacturing and advanced automation to custom product design and efficient logistics.
       </p>
     </div>
+    </div>
+    
   </div>
 
 

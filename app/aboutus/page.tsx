@@ -5,17 +5,20 @@ import Whychooseus from "@/components/Whychooseus";
 import Meetourteam from "@/components/Meetourteam";
 import Withtractor from "@/components/Withtractor";
 import Partners from "@/components/Partners";
+import Twentyfiveplus from "@/components/Twentyfiveplus";
 
 const Aboutus = () => {
     return (
         <div className="flex flex-col bg-white">
             <Herowithnav />
             <Howweachieve/>
-            <Whychooseus/>
-            <Meetourteam/>
+            <Twentyfiveplus/>
             <Ourapproach />
-            <Withtractor/>
+            <Whychooseus/>
             <Partners/>
+            <Meetourteam/>
+            <Withtractor/>
+            
         </div>
     )
 }
