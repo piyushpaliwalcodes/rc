@@ -1,9 +1,12 @@
+"use client";
 import Herosecond from "@/components/Herosecond";
 import Ourclientsay from "@/components/Ourclientsay";
 import Whatwemanufacture from "@/components/Whatwemanufacture";
 import Image from "next/image";
 import Productdetails from "@/components/Productdetails";
-import { JSX } from "react";
+import { JSX, useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
+
 
 
 const Chooseuscard = ({src, title, description,index}: {src: string, title: string, description: string,index:number}) =>
@@ -64,6 +67,32 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
     )
   }
 
+  const Moreproducts = ({steps,selectedStep,setSelectedStep}:{steps:any[],selectedStep:number,setSelectedStep:any}) =>
+  {
+    return (<div className="flex flex-col gap-[20px] p-[60px]">
+        <h1 className="text-[48px]/[60px]">More <span className="font-bold">Products</span></h1>
+        {   
+            steps.map((step,index) => {
+                return (
+                    <div className={`flex justify-between items-center py-[25px] px-[40px] hover:cursor-pointer rounded-[8px]  ${selectedStep === index ? "bg-[#FCD900] text-black" : "hover:bg-[#ffe30029] transition-all duration-200 "}`} onClick={() => setSelectedStep(index)}>
+                        <div key={index} className="flex gap-[20px] ">
+                            <p className={`text-[#FCD900] text-[50px] font-bold ${selectedStep == index ? "text-black" : ""}`}>0{index + 1}</p>
+                            <div className="flex flex-col gap-[5px]">
+                                <p className="font-semibold text-[20px] text-black">{step.title}</p>
+                                <p className={`text-[#81848A] text-[16px] ${selectedStep == index ? "text-black" : ""}`}>{step.description}</p>
+                            </div>
+
+                        </div>
+                        <FaArrowRight className={`text-[#81848A] text-[30px] ${selectedStep == index ? "text-black" : ""}`} />
+                    </div>
+
+                );
+            })
+        }
+
+       </div>)
+  }
+
 
 
 
@@ -72,6 +101,24 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
  const Specificdal = () =>
 {
 
+    const steps = [
+        {
+            title:"Cleaning & Grading",
+            description:"We begin by thoroughly assessing your requirements and objectives to develop a tailored approach."
+        },
+        {
+            title:"Cleaning & Grading",
+            description:"We begin by thoroughly assessing your requirements and objectives to develop a tailored approach."
+        },
+        {
+            title:"Cleaning & Grading",
+            description:"We begin by thoroughly assessing your requirements and objectives to develop a tailored approach."
+        },
+        {
+            title:"Cleaning & Grading",
+            description:"We begin by thoroughly assessing your requirements and objectives to develop a tailored approach."
+        },
+    ]
 
 
     const whatisontheplatedetails = {
@@ -161,12 +208,15 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
      ]
    }
 
+    const [selectedStep, setSelectedStep] = useState(0);
+
     return (
         <div className="flex flex-col bg-white text-black">
             <Herosecond title="Arhar Chilka Dal"/>
             <Productdetails paragraphs={productdetails.paragraphs} heroimage={productdetails.heroimage} />
             <Howwepackagedetails title={howwepackagedetails.title} packagedetails={howwepackagedetails.packagedetails} description={howwepackagedetails.description} />
             <Whatisontheplate {...whatisontheplatedetails}/>
+            <Moreproducts steps={steps} selectedStep={selectedStep} setSelectedStep={setSelectedStep}/>
         </div>
     )
 }
