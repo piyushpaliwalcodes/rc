@@ -128,7 +128,7 @@ const Ourapproach = () =>
        <div className="w-full bg-white ">
   {/* Hero Section */}
   <div
-    className="w-full h-[540px] flex flex-col justify-center px-8 pb-[60px] " 
+    className="w-full h-[540px] flex flex-col justify-center px-8 pb-[60px] px-[60px]" 
     style={{
       backgroundImage: "url('/images/ourapproach.jpg')",
       backgroundSize: "cover",

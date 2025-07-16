@@ -37,19 +37,19 @@ const Whatwemanufacture = () =>
             src:"/images/machine1.png",
             title:"Urad Dal",
             description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-            link:"/urad-dal"
+            link:"/products/urad-dal"
         },
         {
             src:"/images/machine1.png",
             title:"Urad Dal",
             description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-            link:"/urad-dal"
+            link:"/products/urad-dal"
         },
         {
             src:"/images/machine1.png",
             title:"Urad Dal",
             description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-            link:"/urad-dal"
+            link:"/products/urad-dal"
         },
        
 
