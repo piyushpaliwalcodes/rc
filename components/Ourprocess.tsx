@@ -25,7 +25,7 @@ const Ourprocess = () => {
         },
     ]
     return (
-        <div className="flex flex-col   justify-center px-[60px] py-[60px] bg-[#F5F5F5] gap-[50px]">
+        <div className="flex flex-col   justify-center px-[60px] py-[60px] bg-[#F5F5F5] gap-[50px] text-black">
             <div className="flex flex-col gap-[20px]"><div className="flex gap-[5px]"> <Image src="/images/setting.png" alt="setting" width={10} height={10} className="w-[20px] h-[20px] " /> <p className="font-manrope font-medium uppercase tracking-widest
                 ">Our Processes</p></div>
             <div className="flex gap-[100px] items-end"> <p className="text-[48px]/[60px] ">Streamlined processes <span className="font-bold">for optimal efficiency</span></p>

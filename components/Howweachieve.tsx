@@ -45,7 +45,7 @@ const Howweachieve = () =>
         }
     ]
 return (
-    <div className='w-full px-[60px] flex  py-[60px] bg-[#F9F9F9]'>
+    <div className='w-full px-[60px] flex  py-[60px] bg-[#F9F9F9] text-black'>
          <div className="flex flex-col gap-[20px]">
                 <p className="text-[20px] font-bold opacity-[30%]">HOW WE ACHIEVE</p>
                 <div className="flex gap-[150px]"><p className="text-[40px]/[50px] min-w-[600px]">The Relentless Efforts And Achievements Of Our Farmers</p><div className="text-[18px] text-[#464646]">

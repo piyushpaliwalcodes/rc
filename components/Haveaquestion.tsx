@@ -55,7 +55,7 @@ const Haveaquestion = () =>
 
     const [selectedindex,setSelectedindex] = useState(-1);
     return (
-        <div className="grid grid-cols-[40fr_50fr] gap-[30px] px-[60px] py-[60px] bg-[#F9F9F9]">
+        <div className="grid grid-cols-[40fr_50fr] gap-[30px] px-[60px] py-[60px] bg-[#F9F9F9] text-black">
             <div className="flex flex-col gap-[30px]" >
                 <div className="flex flex-col ">
                 <h1 className="text-[48px]/[60px]">Have a Question? </h1>

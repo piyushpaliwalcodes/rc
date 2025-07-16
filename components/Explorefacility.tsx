@@ -2,7 +2,7 @@ import YellowButton from "./Yellowbutton";
 
 const Explorefacility = () => {
     return (
-        <div className="relative w-full h-[750px] px-[60px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/factory1.png')" }}>
+        <div className=" text-black relative w-full h-[750px] px-[60px] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/factory1.png')" }}>
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-white to-white/0"></div>
             

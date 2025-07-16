@@ -55,7 +55,7 @@ const Whatwedo = () => {
     const Categories = [{title:"Manufacturing Machines",icon:"/images/cashmachine.png"},{title:"Raw Materials",icon:"/images/fuel.png"},{title:"Packaging Machines",icon:"/images/idea.png"},{title:"Sewing Machines",icon:"/images/stack.png"},{title:"Customer Care",icon:"/images/headphone.png"}];
     const [selectedCategory, setSelectedCategory] = useState(Categories[0]);
     return (
-        <div className = "flex flex-col">
+        <div className = "flex flex-col text-black">
             <div className="bg-gradient-to-b from-white/0 to-white/100 "></div>
             <div className="min-h-[680px] bg-gray-200 px-[60px] pt-[200px] relative flex flex-col items-center gap-[80px] justify-between" style={{backgroundImage: "url('/images/web.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
                    <div className="flex flex-col gap-[20px]" >

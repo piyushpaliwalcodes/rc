@@ -22,7 +22,7 @@ const Whoweare = () => {
         
     ]
     return (
-        <div className='w-full px-[60px] flex gap-[150px] py-[60px]'>
+        <div className='w-full px-[60px] flex gap-[150px] py-[60px] text-black' >
             <div className="flex flex-col max-w-[710px] justify-between h-[400px]">
                 <div className="flex flex-col gap-[20px]"> 
                     <div className="flex flex-col gap-[20px]">

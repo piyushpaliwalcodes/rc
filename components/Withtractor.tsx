@@ -4,7 +4,7 @@ const Withtractor = ()=>
 {
 
     return (
-        <div className = "flex gap-[50px] px-[60px] py-[60px]">
+        <div className = "flex gap-[50px] px-[60px] py-[60px] text-black">
             <Image src = "/images/tractor.png" alt = "tractor" width = {500} height = {500} className = "min-w-[768px]" />
             <div className="flex flex-col gap-[80px] justify-center">
             <div className="flex flex-col gap-[30px]">

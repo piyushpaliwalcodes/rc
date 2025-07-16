@@ -34,7 +34,7 @@ const Meetourteam = () => {
      
     ]
     return (
-        <div className="flex flex-col gap-[60px] px-[60px] py-[60px]">
+        <div className="flex flex-col gap-[60px] px-[60px] py-[60px] text-black">
             <Highlight />
             <div className="flex justify-between">
                 {
