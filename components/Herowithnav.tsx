@@ -7,7 +7,8 @@ const Herowithnav = ({title="Smart and Innovative Manufacturing Process for the 
         <>
         
         <div className="h-[655px] max-h-[655px] flex items-center justify-center relative bg-top" style={{ backgroundImage: "url('/images/aboutusbg.png')", backgroundSize: "cover", backgroundPosition: "top"}}>
-        <div className="flex flex-col gap-[40px] w-[900px]">
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="flex flex-col gap-[40px] w-[900px] z-10">
                 <h1 className="text-[45px]/[60px] text-center">{title}</h1>
                 <p className="text-[16px] text-center   ">{description}</p>
              </div>
