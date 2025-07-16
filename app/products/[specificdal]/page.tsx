@@ -6,66 +6,19 @@ import Image from "next/image";
 import Productdetails from "@/components/Productdetails";
 import { JSX, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import Howwepackagedetails from "@/components/Howwepackagedetails";
+import Whatisontheplate from "@/components/Whatisontheplate";
 
 
 
-export const Chooseuscard = ({src, title, description,index}: {src: string, title: string, description: string,index:number}) =>
-    {
-        return (
-            <div className={`flex flex-col gap-[10px] border-b-[1px] border-black/20  py-[30px]   `}>
-                <Image src={src} alt={title} width={50} height={50} />
-                <h1 className="text-[20px] font-semibold">{title}</h1>
-                <p className="text-[16px] w-[75%]">{description}</p>
-            </div>
-        )
-    }
 
 
 
-    export const Howwepackagedetails = ({title,packagedetails,description}:{title:JSX.Element,packagedetails:any[],description:string}) =>
-    {
-        return (
-            <div className="flex flex-col gap-[30px] p-[60px]">
-                {title}
-                <p className="text-[16px]">{description}</p>
-                <div className="grid grid-cols-2 gap-[80px] ">
-                    {
-                        packagedetails.map((item, index) => (
-                            <Chooseuscard key={index} {...item} index={index} />
-                        ))
-                    }
-                </div>
-            </div>
-        )
-    }
 
 
-  export const Whatisontheplate = ({title,description,bulletpoints,images,formachines}:{title:JSX.Element,description:string,bulletpoints:any[],images:any[],formachines:boolean}) =>
-  {
-    return (
-      <div className="flex flex-col gap-[30px] p-[60px]">
-        {title}
-        <p>{description}</p>
-        <div className={`grid ${formachines ? "grid-cols-3" : "grid-cols-4"} gap-[30px]`}>
-            {
-                bulletpoints.map((item,index)=>(
-                    <div  className="flex items-center gap-[10px]" key={index}>
-                        <Image src={item.icon} alt={item.title} width={30} height={30} />
-                        <h1>{item.title}</h1>
-                    </div>
-                ))
-            }
-        </div>
-        <div className={`grid  ${formachines?"grid-cols-2":"grid-cols-3"} gap-[20px] mt-3`}>
-            {
-                images.map((item,index)=>(
-                    <Image src={item.src} alt={item.alt} width={407} height={394}  className="max-h-[394px] w-full rounded-[10px]"/>
-                ))
-            }
-        </div>
-      </div>
-    )
-  }
+    
+
+
 
   const Moreproducts = ({steps,selectedStep,setSelectedStep}:{steps:any[],selectedStep:number,setSelectedStep:any}) =>
   {
@@ -98,7 +51,7 @@ export const Chooseuscard = ({src, title, description,index}: {src: string, titl
 
 
 
- const Specificdal = () =>
+ const Specificdal = ({params}:{params:any}) =>
 {
 
     const steps = [
@@ -212,7 +165,7 @@ export const Chooseuscard = ({src, title, description,index}: {src: string, titl
 
     return (
         <div className="flex flex-col bg-white text-black">
-            <Herosecond title="Arhar Chilka Dal"/>
+            <Herosecond title={params.specificdal}/>
             <Productdetails paragraphs={productdetails.paragraphs} heroimage={productdetails.heroimage} />
             <Howwepackagedetails title={howwepackagedetails.title} packagedetails={howwepackagedetails.packagedetails} description={howwepackagedetails.description} />
             <Whatisontheplate formachines={false} {...whatisontheplatedetails}/>

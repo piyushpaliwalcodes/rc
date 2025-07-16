@@ -1,8 +1,8 @@
 import Herosecond from "@/components/Herosecond";
 import Image from "next/image";
 import Productdetails from "@/components/Productdetails";
-import { Howwepackagedetails } from "@/app/products/[specificdal]/page";
-import { Whatisontheplate } from "@/app/products/[specificdal]/page";
+import Howwepackagedetails from "@/components/Howwepackagedetails";
+import Whatisontheplate from "@/components/Whatisontheplate";
 import Machinedetails from "@/components/Machinedetails";
 
 import { FaArrowRight } from "react-icons/fa";
