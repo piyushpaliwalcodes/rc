@@ -1,5 +1,6 @@
+import { JSX } from "react";
 
-const Herosecond = ({title}) =>
+const Herosecond = ({title}:{title:string}) =>
 {
     return (
         <div className="flex flex-col gap-[10px] justify-center items-start p-[60px] h-[529px] relative" style={{backgroundImage: "url('/images/productsbg.jpg')", backgroundSize: "cover", backgroundPosition: "center"}}>
