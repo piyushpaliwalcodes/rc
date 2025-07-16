@@ -33,7 +33,7 @@ const Navbar = () => {
                 </li>
             ))}
         </ul>
-        <YellowButton text='Contact Us' link='https://www.google.com'/>
+        <YellowButton text='Contact Us' link='/contactus'/>
     </div>
   )
 }
