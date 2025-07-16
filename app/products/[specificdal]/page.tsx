@@ -9,7 +9,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 
 
-const Chooseuscard = ({src, title, description,index}: {src: string, title: string, description: string,index:number}) =>
+export const Chooseuscard = ({src, title, description,index}: {src: string, title: string, description: string,index:number}) =>
     {
         return (
             <div className={`flex flex-col gap-[10px] border-b-[1px] border-black/20  py-[30px]   `}>
@@ -22,7 +22,7 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
 
 
 
-    const Howwepackagedetails = ({title,packagedetails,description}:{title:JSX.Element,packagedetails:any[],description:string}) =>
+    export const Howwepackagedetails = ({title,packagedetails,description}:{title:JSX.Element,packagedetails:any[],description:string}) =>
     {
         return (
             <div className="flex flex-col gap-[30px] p-[60px]">
@@ -40,13 +40,13 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
     }
 
 
-  const Whatisontheplate = ({title,description,bulletpoints,images}:{title:JSX.Element,description:string,bulletpoints:any[],images:any[]}) =>
+  export const Whatisontheplate = ({title,description,bulletpoints,images,formachines}:{title:JSX.Element,description:string,bulletpoints:any[],images:any[],formachines:boolean}) =>
   {
     return (
       <div className="flex flex-col gap-[30px] p-[60px]">
         {title}
         <p>{description}</p>
-        <div className="grid grid-cols-4 gap-[30px]">
+        <div className={`grid ${formachines ? "grid-cols-3" : "grid-cols-4"} gap-[30px]`}>
             {
                 bulletpoints.map((item,index)=>(
                     <div  className="flex items-center gap-[10px]" key={index}>
@@ -56,10 +56,10 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
                 ))
             }
         </div>
-        <div className="flex gap-[20px] mt-3">
+        <div className={`grid  ${formachines?"grid-cols-2":"grid-cols-3"} gap-[20px] mt-3`}>
             {
                 images.map((item,index)=>(
-                    <Image src={item.src} alt={item.alt} width={407} height={394}  className="max-h-[394px] rounded-[10px]"/>
+                    <Image src={item.src} alt={item.alt} width={407} height={394}  className="max-h-[394px] w-full rounded-[10px]"/>
                 ))
             }
         </div>
@@ -215,7 +215,7 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
             <Herosecond title="Arhar Chilka Dal"/>
             <Productdetails paragraphs={productdetails.paragraphs} heroimage={productdetails.heroimage} />
             <Howwepackagedetails title={howwepackagedetails.title} packagedetails={howwepackagedetails.packagedetails} description={howwepackagedetails.description} />
-            <Whatisontheplate {...whatisontheplatedetails}/>
+            <Whatisontheplate formachines={false} {...whatisontheplatedetails}/>
             <Moreproducts steps={steps} selectedStep={selectedStep} setSelectedStep={setSelectedStep}/>
         </div>
     )
