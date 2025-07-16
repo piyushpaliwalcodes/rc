@@ -69,7 +69,7 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
 
   const Moreproducts = ({steps,selectedStep,setSelectedStep}:{steps:any[],selectedStep:number,setSelectedStep:any}) =>
   {
-    return (<div className="flex flex-col gap-[20px] p-[60px]">
+    return (<div className="flex flex-col gap-[20px] p-[60px] bg-[#F5F5F5]">
         <h1 className="text-[48px]/[60px]">More <span className="font-bold">Products</span></h1>
         {   
             steps.map((step,index) => {
