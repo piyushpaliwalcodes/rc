@@ -60,7 +60,7 @@ const Whychooseus = () =>
                         ))
                     }
                 </div>
-                <p className="mt-[20px]">Let’s make something great work together. <span className="font-bold hover:cursor-pointer hover:underline text-[#FCD900]" onClick={() => router.push("/contact")}>Contact Us</span></p>
+                <p className="mt-[20px]">Let’s make something great work together. <span className="font-bold hover:cursor-pointer hover:underline text-[#FCD900]" onClick={() => router.push("/contactus")}>Contact Us</span></p>
             </div>
             <div className=" bg-gray-200 min-w-[588px]"></div>
         </div>

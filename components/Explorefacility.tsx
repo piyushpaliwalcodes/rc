@@ -12,7 +12,7 @@ const Explorefacility = () => {
                 <p className="text-[18px]/[30px] font-medium ">
                     At RC Dal, we are setting new standards in the Indian dal sector. Backed by an ultra-modern factory equipped with laser sorters, automated packaging lines, and real-time quality control systems, we ensure that every grain of dal meets the highest benchmarks in nutrition, hygiene, and taste.
                 </p>
-                <YellowButton text="Explore Facility" link="/" />
+                <YellowButton text="Explore Facility" link="/machines" />
             </div>
         </div>
     );

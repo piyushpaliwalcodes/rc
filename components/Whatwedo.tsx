@@ -16,7 +16,7 @@ const Manufacturingcategory = ({title="Manufacturing Machines", description="Liq
         <h1 className="text-[30px]">{title}</h1>
         <div className="flex gap-[200px]">
             <p>{description}</p>
-            <YellowButton text="View All" link="/" />
+            <YellowButton text="View All" link="/machines" />
         </div>
         <div className="flex justify-between mt-[40px]">
             {
