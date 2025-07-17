@@ -3,7 +3,7 @@ import Image from "next/image";
 const Corestrength = ({sustainabilitydetails}:{sustainabilitydetails:any}) => {    
     return (
         <div className="flex flex-col p-[60px] text-black gap-[50px]">
-            <div className="flex flex-col gap-[20px]">
+            <div className="flex flex-col gap-[15px]">
             <p className="text-yellow-500 font-semibold mb-2">OUR APPROACH</p>
     <div className="flex flex-row justify-between items-center">
       <h1 className="text-black text-[50px]/[60px]  leading-tight">
