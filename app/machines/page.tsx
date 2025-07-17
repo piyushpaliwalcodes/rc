@@ -1,3 +1,5 @@
+"use client"
+
 import Herosecond from "@/components/Herosecond";
 import Image from "next/image";
 import Productdetails from "@/components/Productdetails";
@@ -7,12 +9,16 @@ import Machinedetails from "@/components/Machinedetails";
 
 import { FaArrowRight } from "react-icons/fa";
 import Haveaquestion from "@/components/Haveaquestion";
+import {useState} from "react"
 
 
 
 
 
 const Needhelp = () => {
+
+
+    
     return (
         <div className="relative flex flex-col p-[40px] rounded-[8px] overflow-hidden gap-[40px] max-w-[377px] " style={{
             backgroundImage: "url('/images/machinesmallbg.jpg')",
@@ -68,83 +74,318 @@ const Machines = () => {
     ]
 
 
-    const productdetails = {
-        paragraphs:["Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise.","Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise."],
-        heroimage:"/images/robot.jpg",
+
+const categorywisedetails = {
+    "Cleaning":{
+        productdetails:{
+            paragraphs:["Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise.","Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise."],
+            heroimage:"/images/robot.jpg",
+        },
+        howwepackagedetails:{
+            title:<h1 className="text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
+            packagedetails: [
+                {
+                    src:"/images/tower.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/plant.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/bottles.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/factory.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+            ]
+        },
+        whatisontheplatedetails:{
+            title:<h1 className="text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
+            bulletpoints:[{
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            
+        ],
+        images:[
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            
+        ]
     }
-
-   const howwepackagedetails = {
-    title:<h1 className="text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
-    description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
-    packagedetails: [
-        {
-            src:"/images/tower.png",
-            title:"Quality Assurance",
-            description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+    },
+    "Packaging":{
+        productdetails:{
+            paragraphs:["Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise.","Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise."],
+            heroimage:"/images/ourapproach.jpg",
         },
-        {
-            src:"/images/plant.png",
-            title:"Quality Assurance",
-            description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+        howwepackagedetails:{
+            title:<h1 className="text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
+            packagedetails: [
+                {
+                    src:"/images/tower.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/plant.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/bottles.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/factory.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+            ]
         },
-        {
-            src:"/images/bottles.png",
-            title:"Quality Assurance",
-            description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+        whatisontheplatedetails:{
+            title:<h1 className="text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
+            bulletpoints:[{
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            
+        ],
+        images:[
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            
+        ]
+    }
+    },
+    "Grading":{
+        productdetails:{
+            paragraphs:["Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise.","Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise."],
+            heroimage:"/images/aboutusbg.png",
         },
-        {
-            src:"/images/factory.png",
-            title:"Quality Assurance",
-            description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+        howwepackagedetails:{
+            title:<h1 className="text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
+            packagedetails: [
+                {
+                    src:"/images/tower.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/plant.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/bottles.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/factory.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+            ]
         },
-      
-     ]
-   }
-
-   const whatisontheplatedetails = {
-    title:<h1 className="text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
-    description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
-    bulletpoints:[{
-            title:"Quality Assurance",
-        icon:"/images/setting.png",
+        whatisontheplatedetails:{
+            title:<h1 className="text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
+            bulletpoints:[{
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            
+        ],
+        images:[
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            
+        ]
+    }
     },
-    {
-        title:"Quality Assurance",
-        icon:"/images/setting.png",
+    "Drying":{
+        productdetails:{
+            paragraphs:["Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise.","Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise."],
+            heroimage:"/images/factory1.png",
+        },
+        howwepackagedetails:{
+            title:<h1 className="text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
+            packagedetails: [
+                {
+                    src:"/images/tower.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/plant.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/bottles.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/factory.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+            ]
+        },
+        whatisontheplatedetails:{
+            title:<h1 className="text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
+            bulletpoints:[{
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            
+        ],
+        images:[
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            
+        ]
+    }
     },
-    {
-        title:"Quality Assurance",
-        icon:"/images/setting.png",
+        "Sieving":{
+        productdetails:{
+            paragraphs:["Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise.","Our business coaching services are designed to help entrepreneurs and professionals unlock their full potential, overcome challenges, and achieve sustainable growth. We provide tailored strategies and expert insights to improve leadership skills, enhance team performance, and streamline business operations. Whether you’re launching a startup or scaling an established business, our coaching empowers you to make informed decisions, set clear goals, and drive meaningful results. With a focus on both personal development and business success, we guide you toward building a thriving, purpose-driven enterprise."],
+            heroimage:"/images/robot.jpg",
+        },
+        howwepackagedetails:{
+            title:<h1 className="text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
+            packagedetails: [
+                {
+                    src:"/images/tower.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/plant.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/bottles.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+                {
+                    src:"/images/factory.png",
+                    title:"Quality Assurance",
+                    description:"Robotics streamline complex tasks, reducing production time and minimizing downtime, which leads to higher output and faster delivery."
+                },
+            ]
+        },
+        whatisontheplatedetails:{
+            title:<h1 className="text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
+            bulletpoints:[{
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            {
+                title:"Quality Assurance",
+                icon:"/images/setting.png",
+            },
+            
+        ],
+        images:[
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            {
+                src:"/images/dal.png",
+                alt:"Quality Assurance",
+            },
+            
+        ]
+    }
     },
-    {
-        title:"Quality Assurance",
-        icon:"/images/setting.png",
-    },
-    {
-        title:"Quality Assurance",
-        icon:"/images/setting.png",
-    },
-    {
-        title:"Quality Assurance",
-        icon:"/images/setting.png",
-    },
-  
     
-],
-images:[
-    {
-        src:"/images/dal.png",
-        alt:"Quality Assurance",
-    },
-    {
-        src:"/images/dal.png",
-        alt:"Quality Assurance",
-    },
-   
-    
-]
 }
 
+
+const [selectedcategory,setselectedcategory] = useState<string>("Cleaning");
 
 
     return (
@@ -159,7 +400,7 @@ images:[
             <div className="flex flex-col rounded-[8px] border-[1px] border-[#EBEBEB]" >
             <div className="text-[20px] text-black/80 px-5 py-6 items-center text-center font-semibold bg-[#FCD900] rounded-t-[8px]">Machine Categories</div>
         {machinecategories.map((item,index)=>(
-            <div key={index} className={`flex flex-col ${index==machinecategories.length-1?"rounded-b-[8px]":""}   border-[1px] border-[#EBEBEB]`}>
+            <div key={index} onClick={()=>setselectedcategory(item.title)} className={`hover:bg-[#ffe30029] transition-all duration-200 flex ${selectedcategory==item.title?"bg-yellow-200":""} flex-col ${index==machinecategories.length-1?"rounded-b-[8px]":""}   border-[1px] border-[#EBEBEB]`}>
                 <div className={`hover:cursor-pointer text-[20px] text-black/60 px-5 py-6 items-center   flex justify-between`}>{item.title} <FaArrowRight className="-rotate-45"/></div>
             </div>  
         ))}
@@ -170,9 +411,9 @@ images:[
 
        {/* machine details */}
        <div className="flex flex-col text-black">
-       <Machinedetails paragraphs={productdetails.paragraphs} heroimage={productdetails.heroimage} />
-            <Howwepackagedetails title={howwepackagedetails.title} packagedetails={howwepackagedetails.packagedetails} description={howwepackagedetails.description} />
-            <Whatisontheplate formachines={true} {...whatisontheplatedetails}/>
+       <Machinedetails paragraphs={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].productdetails.paragraphs} heroimage={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].productdetails.heroimage} />
+            <Howwepackagedetails title={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].howwepackagedetails.title} packagedetails={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].howwepackagedetails.packagedetails} description={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].howwepackagedetails.description} />
+            <Whatisontheplate formachines={true} {...categorywisedetails[selectedcategory as keyof typeof categorywisedetails].whatisontheplatedetails}/>
             
        </div>
             </div>
