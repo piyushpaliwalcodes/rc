@@ -1,7 +1,25 @@
+"use client"
 import Image from "next/image";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 const Contactus = () => {
 
+
+    const [name,setname] = useState<string>("");
+    const [email,setemail] = useState<string>("");
+    const [phone,setphone] = useState<string>("");
+    const [message,setmessage] = useState<string>("");
+
+        const {register,handleSubmit,formState:{errors}} = useForm({
+            defaultValues:{
+                firstName:"",
+                lastName:"",
+                email:"",
+                phone:"",
+                message:""
+            }
+        });
     const contactdetails = {
         "Contact":{
             number:"+91 9876543210",
@@ -15,6 +33,24 @@ const Contactus = () => {
             number:"37 San Juan Lane Graaf Florisstraat 22A,3021 CH",
             image:"/images/call.png",
         },
+        
+    }
+
+        const handleSubmitform = async (data:any) => {
+            console.log(data);
+        const response = await fetch("/api",{
+            method:"POST",
+            body:JSON.stringify(data),
+        })
+        const responseData = await response.json();
+        console.log(responseData);
+    if(response.ok){
+        console.log(response);
+        alert("Data submitted successfully");
+    }else{
+        console.log(response);
+        alert("Data submission failed");
+    }
         
     }
     return (
@@ -63,12 +99,39 @@ const Contactus = () => {
             <div className="flex flex-col rounded-[8px] gap-[30px] flex-grow  shadow-md p-[30px]">
                 <h1 className="text-[50px]/[30px] ">Contact <span className="font-bold">us</span></h1>
                 <form action="" className="flex flex-col gap-[20px] text-[16px]/[20px] ">
-                    <div className="flex gap-[10px]"><input type="text" placeholder="FirstName" className="w-[100%] h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[28px]"/>
-                    <input type="text" placeholder="LastName" className="w-[100%] h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[28px]"/></div>
-                    <input type="text" placeholder="Enter Your Email" className="w-[100%] h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[28px]"/>
-                    <input type="text" placeholder="Enter Your Phone Number" className="w-[100%] h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[28px]"/>
-                    <textarea placeholder="Enter Your Message" className="w-[100%] h-[100px] rounded-[8px] border border-black/10 p-[10px] py-[20px]"/>
-                    <button className="border-[1px] border-[#FCD900] text-black font-bold text-[16px]/[20px] rounded-[8px] p-[10px] py-[18px] w-[300px] hover:bg-[#FCD900] hover:cursor-pointer transition-all duration-300">Submit</button>
+                    <div className="flex gap-[10px]">
+                        <div className="flex flex-col gap-[5px]">
+                          
+                            <input type="text" placeholder="FirstName" {...register("firstName", { required: "*First name is required" })} className="w-[100%] h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[28px]"/>
+                            {errors.firstName && <p className="text-red-500">{errors.firstName.message}</p>}
+                        </div>
+                        <div className="flex flex-col gap-[5px]">
+                            
+                            <input type="text" placeholder="LastName" {...register("lastName",{required:"*Last name is required"})} className="w-[100%] h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[28px]"/>
+                            {errors.lastName && <p className="text-red-500">{errors.lastName.message}</p>}
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-[5px]">
+                       
+                        <input type="text" placeholder="Enter Your Email" {...register("email",{required:"*Email is required",pattern:{
+                            value:/^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                            message:"*Invalid email address"
+                        }})} className="w-[100%] h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[28px]"/>
+                        {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+                    </div>
+                    <div className="flex flex-col gap-[5px]">
+                        <input type="text" placeholder="Enter Your Phone Number" {...register("phone",{required:"*Phone number is required",pattern:{
+                            value:/^\d{10}$/,
+                            message:"*Invalid phone number,must be 10 digits"
+                        }})} className="w-[100%] h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[28px]"/>
+                        {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
+                    </div>
+                    
+                    <div className="flex flex-col gap-[5px]">
+                        <textarea placeholder="Enter Your Message" {...register("message",{required:"*Message is required"})} className="w-[100%] h-[100px] rounded-[8px] border border-black/10 p-[10px] py-[20px]"/>
+                        {errors.message && <p className="text-red-500">{errors.message.message}</p>}
+                    </div>
+                    <button className="border-[1px] border-[#FCD900] text-black font-bold text-[16px]/[20px] rounded-[8px] p-[10px] py-[18px] w-[300px] hover:bg-[#FCD900] hover:cursor-pointer transition-all duration-300" onClick={handleSubmit(handleSubmitform)}>Submit</button>
 
                 </form>
             </div>
