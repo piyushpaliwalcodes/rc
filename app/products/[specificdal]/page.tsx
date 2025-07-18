@@ -28,8 +28,8 @@ import Whatisontheplate from "@/components/Whatisontheplate";
         {   
             steps.map((step,index) => {
                 return (
-                    <div className={`flex flex-col md:flex-row justify-between items-center py-4 md:py-[25px] px-4 md:px-[40px] hover:cursor-pointer rounded-[8px]  ${selectedStep === index ? "bg-[#FCD900] text-black" : "hover:bg-[#ffe30029] transition-all duration-200 "}`} onClick={() => setSelectedStep(index)}>
-                        <div key={index} className="flex gap-3 md:gap-[20px] w-full md:w-auto">
+                    <div className={`flex flex-row justify-between items-center py-4 md:py-[25px] px-4 md:px-[40px] hover:cursor-pointer rounded-[8px]  ${selectedStep === index ? "bg-[#FCD900] text-black" : "hover:bg-[#ffe30029] transition-all duration-200 "}`} onClick={() => setSelectedStep(index)}>
+                        <div key={index} className="flex gap-3 md:gap-[20px] items-center w-full">
                             <p className={`text-[#FCD900] text-[28px] md:text-[50px] font-bold ${selectedStep == index ? "text-black" : ""}`}>0{index + 1}</p>
                             <div className="flex flex-col gap-1 md:gap-[5px]">
                                 <p className="font-semibold text-[16px] md:text-[20px] text-black">{step.title}</p>
