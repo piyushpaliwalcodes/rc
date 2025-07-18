@@ -28,3 +28,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .yellounderline {
+    @apply inline;
+    background: linear-gradient(180deg, transparent 70%, #FCD900 70%);
+  }
+}
