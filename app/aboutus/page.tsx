@@ -11,8 +11,8 @@ const Aboutus = () => {
     return (
         <div className="flex flex-col bg-white">
             <Herowithnav />
-            <Howweachieve/>
             <Twentyfiveplus/>
+            <Howweachieve/>
             <Ourapproach />
             <Whychooseus/>
             <Partners/>

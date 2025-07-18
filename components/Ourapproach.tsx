@@ -23,7 +23,7 @@ const Selectioncard = ({carddata,selected,setSelected}:{carddata:any,selected:st
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col md:flex-row p-4 md:p-[60px] px-4 md:px-[80px] bg-white rounded-b-[16px] border-[1px] border-black/30 gap-6 md:gap-[60px]">
+            <div className="flex flex-col md:flex-row p-4 md:p-[80px] px-4 bg-white rounded-b-[16px] border-[1px] border-black/30 gap-6 md:gap-[60px]">
                 <div className="flex flex-col gap-4 md:gap-[30px] text-black justify-center">
                     <p className="text-[15px] md:text-[16px] text-black/50 ">{carddata[selected].description}</p>
                     <ul className="flex flex-col gap-2 md:gap-[10px]">
@@ -35,7 +35,7 @@ const Selectioncard = ({carddata,selected,setSelected}:{carddata:any,selected:st
                         ))}
                     </ul>
                 </div>
-                <Image className="w-full md:w-[100%] h-auto" src={carddata[selected].heroimage} alt={selected} width={545} height={340} />
+                <Image className="w-full md:w-[100%] h-auto md:max-w-[450px] md:h-[300px]" src={carddata[selected].heroimage} alt={selected} width={545} height={340} />
             </div>
         </div>
     )
@@ -51,19 +51,20 @@ const Ourapproach = () =>
    ,heroimage:"/images/ourapproach.jpg",
    bulletpoints:[
     {titile:"Quality Control System",icon:"/images/setting.png"},
-    {titile:"Quality Control System",icon:"/images/setting.png"},
-    {titile:"Quality Control System",icon:"/images/setting.png"},
+    {titile:"Advanced Technology",icon:"/images/setting.png"},
+    {titile:"Quality Assurance",icon:"/images/setting.png"},
+    {titile:"Customer Satisfaction",icon:"/images/setting.png"},
     
    ]
    },
    "In 1922 - Journey Started":{
-    planetitle:"Journey Started",
+    planetitle:"Journey",
     boldtitle:"started",
     description:"Welcome to Industry, a leading industry innovator with a rich history of excellence. With a passion for precision and a commitment to quality, we have been empowering industries and driving progress."
    ,heroimage:"/images/ourapproach.jpg",
    bulletpoints:[
-    {titile:"Quality Control System",icon:"/images/setting.png"}, 
-    {titile:"Quality Control System",icon:"/images/setting.png"},
+    {titile:"Advanced Technology",icon:"/images/setting.png"}, 
+    {titile:"Quality Assurance",icon:"/images/setting.png"},
    ]
    },
    "In 1924 - Innovation":{
@@ -76,8 +77,8 @@ const Ourapproach = () =>
     {titile:"Quality Control System",icon:"/images/setting.png"},     
    ]},
    "In 1930 - Global Reach":{
-    planetitle:"Global Reach",
-    boldtitle:"started",
+    planetitle:"Global",
+    boldtitle:"Reach",
     description:"Welcome to Industry, a leading industry innovator with a rich history of excellence. With a passion for precision and a commitment to quality, we have been empowering industries and driving progress."
    ,heroimage:"/images/ourapproach.jpg",
    bulletpoints:[
@@ -85,8 +86,8 @@ const Ourapproach = () =>
     {titile:"Quality Control System",icon:"/images/setting.png"}, 
    ]},
    "In 1935 - Global Reach":{
-    planetitle:"Global Reach",
-    boldtitle:"started",
+    planetitle:"Global",
+    boldtitle:"Reach",
     description:"Welcome to Industry, a leading industry innovator with a rich history of excellence. With a passion for precision and a commitment to quality, we have been empowering industries and driving progress."
    ,heroimage:"/images/ourapproach.jpg",
    bulletpoints:[
@@ -101,21 +102,21 @@ const Ourapproach = () =>
         src:"/images/eye.png",
         description:"Our mission is to transform the factory and industry sectors through sustainable practices, innovation, and advanced technology, fostering growth that benefits both business and the environment.",
         heroimage:"/images/ourapproach.jpg",
-        bulletpoints:[{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"}]
+        bulletpoints:[{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Advanced Technology",icon:"/images/setting.png"},{titile:"Quality Assurance",icon:"/images/setting.png"},{titile:"Customer Satisfaction",icon:"/images/setting.png"}]
     },
     ourvision: {
         title:"Our Vision",
-        src:"/images/eye.png",
+        src:"/images/4circles.png",
         description:"Our mission is to transform the factory and industry sectors through sustainable practices, innovation, and advanced technology, fostering growth that benefits both business and the environment.",
         heroimage:"/images/ourapproach.jpg",
-        bulletpoints:[{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"}]
+        bulletpoints:[{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Advanced Technology",icon:"/images/setting.png"},{titile:"Quality Assurance",icon:"/images/setting.png"},{titile:"Customer Satisfaction",icon:"/images/setting.png"}]
     },
     ourvalues: {
         title:"Our Values",
-        src:"/images/eye.png",
+        src:"/images/diamond.png",
         description:"Our mission is to transform the factory and industry sectors through sustainable practices, innovation, and advanced technology, fostering growth that benefits both business and the environment.",
         heroimage:"/images/ourapproach.jpg",
-        bulletpoints:[{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"}]
+        bulletpoints:[{titile:"Sustainable Manufacturing Practices",icon:"/images/setting.png"},{titile:"Advanced Technology",icon:"/images/setting.png"},{titile:"Quality Assurance",icon:"/images/setting.png"},{titile:"Customer Satisfaction",icon:"/images/setting.png"}]
     },
    }
 
@@ -134,8 +135,8 @@ const Ourapproach = () =>
     }}
   >
     <div className="absolute top-0 left-0 w-full h-full bg-black/30"/>
-    <div className="flex flex-col z-10 gap-4 md:gap-0">
-    <p className="text-yellow-500 font-semibold mb-2">OUR APPROACH</p>
+    <div className="flex flex-col z-10 gap-4 md:gap-0 z-10">
+    <p className="text-white font-semibold mb-2">OUR APPROACH</p>
     <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
       <h1 className="text-white text-[28px] md:text-[50px]/[60px] leading-tight">
         Empowering sustainable <br />
@@ -154,7 +155,7 @@ const Ourapproach = () =>
   </div>
 
   <div className="flex flex-col p-4 md:p-[60px] gap-6 md:gap-0">
-    <p className="text-yellow-500 font-semibold mb-2">OUR APPROACH</p>
+    <p className="text-black/40 font-semibold mb-2">OUR HISTORY</p>
     <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
       <h1 className="text-black text-[28px] md:text-[50px]/[60px] leading-tight">
       Foundation of excellences <br />
@@ -165,7 +166,7 @@ const Ourapproach = () =>
       </p>
     </div>
     <div className="flex flex-col md:flex-row mt-6 md:mt-[60px] gap-6 md:gap-0">
-      <div className="flex flex-col rounded-[8px] bg-white border-[1px] border-[#EBEBEB] min-w-[220px] md:min-w-[365px] ">
+      <div className="flex flex-col rounded-[8px] bg-white min-w-[220px] md:min-w-[365px] ">
         {Object.keys(datecards).map((key,index)=>(
             <div key={key} className={`flex flex-col ${index==0?"rounded-t-[8px]":""} ${index==Object.keys(datecards).length-1?"rounded-b-[8px]":""} border-[1px] border-[#EBEBEB]`}>
                 <div onClick={()=>setSelecteddate(key as DateCardKey)} className={`hover:cursor-pointer text-[16px] md:text-[20px] text-black/80 px-3 md:px-5 py-4 md:py-6 items-center text-center font-semibold ${selecteddate==key?"bg-primary-yellow":""}`}>{key}</div>
@@ -173,8 +174,8 @@ const Ourapproach = () =>
         ))}
       </div>
       {/* Right Side */}
-      <div className="flex flex-col md:flex-row gap-4 md:gap-[30px] p-4 md:p-[60px] w-full">
-         <div className="flex flex-col gap-4 md:gap-[30px] w-full">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-[30px] p-4 md:px-[60px] w-full">
+         <div className="flex flex-col gap-4 md:gap-[30px] w-full justify-start">
            <div className="flex gap-2 md:gap-[10px] text-[28px] md:text-[50px]/[60px]">
               <p className="text-black/80">{datecards[selecteddate].planetitle}</p>
               <p className="text-black/80 font-bold">{datecards[selecteddate].boldtitle}</p>
@@ -189,7 +190,7 @@ const Ourapproach = () =>
               ))
           }
          </div>
-        <Image src={datecards[selecteddate].heroimage} alt={selecteddate} width={420} height={340} className="h-auto w-full md:w-[420px] max-w-[420px] object-cover rounded-[8px]" />
+        <Image src={datecards[selecteddate].heroimage} alt={selecteddate} width={420} height={340} className="h-auto md:min-h-[420px] w-full md:w-[420px] md:min-w-[420px]  max-w-[420px] object-cover rounded-[8px]" />
       </div>
     </div>
   </div>

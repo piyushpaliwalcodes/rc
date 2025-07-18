@@ -4,10 +4,10 @@ const Partners = () =>
     return (
         <div className="flex flex-col gap-8 md:gap-[50px] p-4 md:p-[60px] text-black bg-[#F9F9F9]">
             <div className="flex flex-col">      
-                <p className="text-primary-yellow font-semibold mb-2">OUR APPROACH</p>
+                <p className="text-black/40 font-semibold mb-2">PARTNERS</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0 justify-between items-center">
                     <h1 className="text-black text-[28px] md:text-[50px]/[60px] leading-tight ">
-                        Ask our happy customers about our quality
+                        Ask our <span className="yellounderline">happy customers</span> about our quality
                     </h1>
                     <div className="flex flex-col gap-2 md:gap-[10px]">
                         <p className="text-[15px] md:text-base">
