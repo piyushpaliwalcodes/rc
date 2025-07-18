@@ -41,7 +41,7 @@ const Whychooseus = () =>
     ]
 
     return (
-        <div className="flex flex-col lg:flex-row bg-black text-white max-w-full">
+        <div className="flex flex-col lg:flex-row bg-black/75 md:bg-black text-white max-w-full">
             <div className="flex flex-col gap-6 md:gap-[30px] p-4 md:p-[60px] w-full lg:w-auto">
                 <div className="flex gap-2 md:gap-[5px] items-center"> 
                     <Image src="/images/setting.png" alt="setting" width={20} height={20} className="w-[20px] h-[20px] " /> 
@@ -55,9 +55,10 @@ const Whychooseus = () =>
                         ))
                     }
                 </div>
-                <p className="mt-4 md:mt-[20px]">Let’s make something great work together. <span className="font-bold hover:cursor-pointer hover:underline text-[#FCD900]" onClick={() => router.push("/contactus")}>Contact Us</span></p>
+                <p className="mt-4 md:mt-[20px] text-sm md:text-base">Let’s make something great work together. <span className="font-bold hover:cursor-pointer hover:underline text-[#FCD900]" onClick={() => router.push("/contactus")}>Contact Us</span></p>
             </div>
-            <div className="bg-gray-200 min-h-[120px] lg:min-h-0 w-full lg:min-w-[588px] lg:w-[588px] h-[180px] lg:h-auto"></div>
+            {/*For image this is */}
+            <div className="hidden md:block bg-gray-200 min-h-[120px] lg:min-h-0 w-full lg:min-w-[588px] lg:w-[588px] h-[180px] lg:h-auto"></div>
         </div>
     )
 }
