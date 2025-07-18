@@ -57,7 +57,7 @@ const Ourclientsay = () =>
     }, [emblaApi]);
 
     return (
-        <div className="flex flex-col gap-6 md:gap-[30px] p-4 md:p-[60px] py-[60px] md:py-[100px] bg-[#F5F5F5] text-black">
+        <div className="flex flex-col gap-6 md:gap-[30px] p-4 md:p-[60px] py-[60px] md:py-[100px] bg-[#F5F5F5] text-black" style={{backgroundImage: "url('/images/dottedbg.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
             <div className="flex flex-col lg:grid lg:grid-cols-[2fr_3fr] gap-8 md:gap-[150px] w-full">
                 <div className="mb-6 lg:mb-0 flex justify-center items-center hidden md:flex">
                     <Image src="/images/testimonial.png" alt="ourclientsay" width={400} height={400} className="w-[220px] h-[220px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain" />

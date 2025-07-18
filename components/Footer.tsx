@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 const Mailinput = ({register,handleSubmit,handleSubscribe,errors}:{register:any,handleSubmit:any,handleSubscribe:any,errors:any}) =>
 {
     return (
-        <div className="rounded-[10px] border border-[#D9D9D9] flex w-full md:w-[85%] justify-between items-center pl-1">
+        <div className="rounded-[10px] border border-[#D9D9D9] flex w-full md:w-[90%] justify-between items-center pl-1">
             <input type="text" placeholder="Enter your email to subscribe our Newsletter." className="text-[13px] md:text-[15px]/[25px] placeholder:text-[#676767] placeholder:font-bold pl-2 md:pl-4 w-full md:w-[350px] h-[20px] rounded-[10px] border-none outline-none flex items-center" {...register("email",{required:"*Email is required",pattern:{
                 value:/^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                 message:"*Invalid email address"
@@ -61,7 +61,7 @@ const Footer = () =>
 
     return (
         <div className="flex flex-col bg-[#291004] p-4 md:p-[60px] gap-6 md:gap-[40px]">
-            <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-0 w-full">
+            <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-[60px] w-full">
                 <div className="flex flex-col gap-6 md:gap-[30px] w-full md:w-[45%]">
                     <h1 className="text-[#FCD900] font-semibold">RC LOGO</h1>
                     <p className="text-[22px] md:text-[45px]/[60px]">Stay updated with the latest agricultural manufacturing and its Industry insights.</p>
