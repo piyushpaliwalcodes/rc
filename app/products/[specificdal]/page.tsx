@@ -22,28 +22,27 @@ import Whatisontheplate from "@/components/Whatisontheplate";
 
   const Moreproducts = ({steps,selectedStep,setSelectedStep}:{steps:any[],selectedStep:number,setSelectedStep:any}) =>
   {
-    return (<div className="flex flex-col gap-[20px] p-[60px] bg-[#F5F5F5]">
-        <h1 className="text-[48px]/[60px]">More <span className="font-bold">Products</span></h1>
+    return (
+      <div className="flex flex-col gap-4 md:gap-[20px] p-4 md:p-[60px] bg-[#F5F5F5]">
+        <h1 className="text-[24px] md:text-[48px]/[60px]">More <span className="font-bold">Products</span></h1>
         {   
             steps.map((step,index) => {
                 return (
-                    <div className={`flex justify-between items-center py-[25px] px-[40px] hover:cursor-pointer rounded-[8px]  ${selectedStep === index ? "bg-[#FCD900] text-black" : "hover:bg-[#ffe30029] transition-all duration-200 "}`} onClick={() => setSelectedStep(index)}>
-                        <div key={index} className="flex gap-[20px] ">
-                            <p className={`text-[#FCD900] text-[50px] font-bold ${selectedStep == index ? "text-black" : ""}`}>0{index + 1}</p>
-                            <div className="flex flex-col gap-[5px]">
-                                <p className="font-semibold text-[20px] text-black">{step.title}</p>
-                                <p className={`text-[#81848A] text-[16px] ${selectedStep == index ? "text-black" : ""}`}>{step.description}</p>
+                    <div className={`flex flex-col md:flex-row justify-between items-center py-4 md:py-[25px] px-4 md:px-[40px] hover:cursor-pointer rounded-[8px]  ${selectedStep === index ? "bg-[#FCD900] text-black" : "hover:bg-[#ffe30029] transition-all duration-200 "}`} onClick={() => setSelectedStep(index)}>
+                        <div key={index} className="flex gap-3 md:gap-[20px] w-full md:w-auto">
+                            <p className={`text-[#FCD900] text-[28px] md:text-[50px] font-bold ${selectedStep == index ? "text-black" : ""}`}>0{index + 1}</p>
+                            <div className="flex flex-col gap-1 md:gap-[5px]">
+                                <p className="font-semibold text-[16px] md:text-[20px] text-black">{step.title}</p>
+                                <p className={`text-[#81848A] text-[14px] md:text-[16px] ${selectedStep == index ? "text-black" : ""}`}>{step.description}</p>
                             </div>
-
                         </div>
-                        <FaArrowRight className={`text-[#81848A] text-[30px] ${selectedStep == index ? "text-black" : ""}`} />
+                        <FaArrowRight className={`text-[#81848A] text-[22px] md:text-[30px] ${selectedStep == index ? "text-black" : ""}`} />
                     </div>
-
                 );
             })
         }
-
-       </div>)
+      </div>
+    )
   }
 
 
