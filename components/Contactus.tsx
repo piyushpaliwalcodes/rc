@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 const Contactus = () => {
     
 
-    const {register,handleSubmit,formState:{errors},reset} = useForm({
+    const {register,handleSubmit,formState:{errors},reset,formState:{isSubmitting}} = useForm({
         defaultValues:{
             firstName:"",
             lastName:"",
@@ -48,24 +48,24 @@ const Contactus = () => {
                     meet your industrial needs.</p>
                     {/*Contact details */}
                     <div className="flex flex-col gap-5 md:gap-[30px]">
-                        <div className="flex gap-4 md:gap-[20px] items-center">
-                            <Image src="/images/contactphone.png" className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
+                        <div className="flex gap-4 md:gap-[20px] items-start">
+                            <Image src="/images/contactphone.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
                             <div className="flex flex-col gap-[5px] justify-center">
                                 <h1 className="text-[18px] md:text-[20px]/[24px] ">Contact</h1>
                                 <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">+91 9876543210</p>
                             </div>
                         </div>
                         <div className="w-full h-[1px] bg-black/10"/>
-                        <div className="flex gap-4 md:gap-[20px] items-center">
-                            <Image src="/images/contactmail.png" className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
+                        <div className="flex gap-4 md:gap-[20px] items-start">
+                            <Image src="/images/contactmail.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
                             <div className="flex flex-col gap-[5px] justify-center">
                                 <h1 className="text-[18px] md:text-[20px]/[24px] ">E-mail</h1>
                                 <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">info@domainname.com</p>
                             </div>
                         </div>
                         <div className="w-full h-[1px] bg-black/10"/>
-                        <div className="flex gap-4 md:gap-[20px] items-center">
-                            <Image src="/images/contactaddress.png" className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
+                        <div className="flex gap-4 md:gap-[20px] items-start">
+                            <Image src="/images/contactaddress.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
                             <div className="flex flex-col gap-[5px] justify-center">
                                 <h1 className="text-[18px] md:text-[20px]/[24px] ">Our Address</h1>
                                 <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">37 San Juan Lane Graaf Florisstraat 22A,3021 CH</p>
@@ -105,7 +105,9 @@ const Contactus = () => {
                             <textarea placeholder="Enter Your Message" {...register("message",{required:"*Message is required"})} className="w-full h-[100px] rounded-[8px] border border-black/10 p-[10px] py-[14px] py-[18px]"/>
                             {errors.message && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.message.message}</p>}
                         </div>
-                        <button type="submit" className="border-[1px] border-[#FCD900] text-black font-bold text-[15px] md:text-[16px]/[20px] rounded-[8px] p-[10px] py-[14px] w-full md:w-[300px] hover:bg-[#FCD900] hover:cursor-pointer transition-all duration-300">Submit</button>
+                        <button type="submit" disabled={isSubmitting} className="border-[1px] border-[#FCD900] text-black font-bold text-[15px] md:text-[16px]/[20px] rounded-[8px] p-[10px] py-[14px] w-full md:w-[300px] hover:bg-[#FCD900] hover:cursor-pointer transition-all duration-300">
+                            {isSubmitting ? "Submitting..." : "Submit"}
+                        </button>
                     </form>
                 </div>
             </div>
