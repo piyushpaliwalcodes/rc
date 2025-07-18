@@ -7,7 +7,7 @@ const Machinedetails = ({paragraphs,heroimage}:{paragraphs:string[],heroimage:st
             <Image src={heroimage} alt="heroimage" width={1000} height={1000} className="w-full h-[180px] md:h-auto object-cover rounded-md"/>
             <div className="flex flex-col gap-2 md:gap-[15px]">
                 {paragraphs.map((paragraph,index)=>(
-                    <p key={index} className="text-[15px] md:text-base">{paragraph}</p>
+                    <p key={index} className="text-[13px] md:text-base">{paragraph}</p>
                 ))}
             </div>
         </div>

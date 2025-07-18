@@ -3,10 +3,10 @@ import Image from "next/image";
 const Corestrength = ({sustainabilitydetails}:{sustainabilitydetails:any}) => {    
     return (
         <div className="flex flex-col p-4 md:p-[60px] text-black gap-6 md:gap-[50px]">
-            <div className="flex flex-col gap-2 md:gap-[15px]">
-                <p className="text-yellow-500 font-semibold mb-2">OUR APPROACH</p>
-                <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-                    <h1 className="text-black text-[24px] md:text-[50px]/[60px] leading-tight">
+            <div className="flex flex-col gap-1 md:gap-[15px]">
+                <p className="text-black/40 font-semibold mb-2">OUR APPROACH</p>
+                <div className="flex flex-col md:flex-row justify-between items-center gap-1 md:gap-0">
+                    <h1 className="text-black text-[24px] md:text-[50px]/[60px] leading-tight w-full">
                         Foundation of excellences <br />
                         <span className="font-bold">in industry</span>
                     </h1>
@@ -15,22 +15,27 @@ const Corestrength = ({sustainabilitydetails}:{sustainabilitydetails:any}) => {
                     </p>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 border-[1px] border-black/20 rounded-[10px] overflow-hidden">
+            <div className="flex flex-col md:grid md:grid-cols-2 border-[1px] border-black/20 rounded-[10px] overflow-hidden">
                 {
                     sustainabilitydetails.packagedetails.map((item:any, index:number) => (
                         <div
-                            style={{backgroundImage:index==3?`url("/images/ourapproach.jpg")`:"",backgroundSize:"cover",backgroundPosition:"center"}}
-                            className={`flex flex-col gap-2 md:gap-[10px] ${index<2?"border-b-[1px] border-black/10":""} p-4 md:p-[30px] py-[30px] md:py-[50px] ${index%2==0?"border-r-[1px]":""}`}
+                            style={{
+                                backgroundImage: index == 3 ? `url("/images/ourapproach.jpg")` : "",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center"
+                            }}
+                            className={`flex flex-col gap-2 md:gap-[10px] ${index < 2 ? "border-b-[1px] border-black/10" : ""} p-4 md:p-[30px] py-[15px] md:py-[50px] ${index % 2 == 0 ? "md:border-r-[1px]" : ""} ${index == 3 ? "hidden md:flex" : ""}`}
                             key={index}
                         >
-                            {index==3?
-                                <Image className="self-end" src="/images/approachusicon.png" alt="approachusicon" width={50} height={50} />
-                                :
-                                <>
-                                    <Image src={item.src} alt={item.title} width={50} height={50} />
-                                    <h1 className="text-[16px] md:text-[20px] font-semibold">{item.title}</h1>
-                                    <p className="text-[14px] md:text-[16px] w-[90%] md:w-[75%] text-black/50">{item.description}</p>
-                                </>
+                            {index == 3
+                                ? ""
+                                : (
+                                    <>
+                                        <Image src={item.src} alt={item.title} width={50} height={50} className="" />
+                                        <h1 className="text-[16px] md:text-[20px] font-semibold">{item.title}</h1>
+                                        <p className="text-[14px] md:text-[16px] w-[90%] md:w-[75%] text-black/50">{item.description}</p>
+                                    </>
+                                )
                             }
                         </div>  
                     ))
