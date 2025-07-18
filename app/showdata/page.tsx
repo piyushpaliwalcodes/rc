@@ -109,6 +109,9 @@ const Showdata = () => {
             <div className="mt-2 text-gray-800 text-sm md:text-base">
               <span className="font-semibold">Message:</span> {item.message}
             </div>
+            <div className="flex flex-col md:flex-row md:gap-4 text-sm md:text-base text-black/80">
+                <span className="font-semibold">Date:</span> {new Date(item.createdAt).toLocaleDateString()}
+            </div>
           </div>
         ))
       )}

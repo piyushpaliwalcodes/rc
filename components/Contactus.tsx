@@ -5,12 +5,9 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const Contactus = () => {
-    const [name,setname] = useState<string>("");
-    const [email,setemail] = useState<string>("");
-    const [phone,setphone] = useState<string>("");
-    const [message,setmessage] = useState<string>("");
+    
 
-    const {register,handleSubmit,formState:{errors}} = useForm({
+    const {register,handleSubmit,formState:{errors},reset} = useForm({
         defaultValues:{
             firstName:"",
             lastName:"",
@@ -20,20 +17,7 @@ const Contactus = () => {
             createdAt:new Date().toISOString()
         }
     });
-    const contactdetails = {
-        "Contact":{
-            number:"+91 9876543210",
-            image:"/images/call.png",
-        },
-        "Email":{
-            number:"info@domainname.com",
-            image:"/images/call.png",
-        },
-        "Our Address":{
-            number:"37 San Juan Lane Graaf Florisstraat 22A,3021 CH",
-            image:"/images/call.png",
-        },
-    }
+   
 
     const handleSubmitform = async (data:any) => {
         console.log(data);
@@ -46,6 +30,8 @@ const Contactus = () => {
         if(response.ok){
             console.log(response);
             toast.success("Data submitted successfully");
+            reset();
+            
         }else{
             console.log(response);
             toast.error("Data submission failed");

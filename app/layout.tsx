@@ -4,6 +4,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+import { ToastContainer } from "react-toastify";
+
+
+
+
 import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
@@ -31,6 +36,7 @@ export default function RootLayout({
       <body
         className={`bg-white ${geistSans.variable} ${geistMono.variable} antialiased  text-black`}
       > 
+      <ToastContainer position="top-right" autoClose={3000} />
       <Navbar/>
         {children}
         <Footer/>
