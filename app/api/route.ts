@@ -32,3 +32,14 @@ export async function GET() {
     return NextResponse.json({ error: "Failed to fetch user data" }, { status: 500 });
   }
 }
+
+export async function DELETE() {
+  try {
+    await connectDB();
+    await Userdata.deleteMany();
+    return NextResponse.json({ message: "All user data deleted successfully" });
+  } catch (err) {
+    console.log("DELETE error:", err);
+    return NextResponse.json({ error: "Failed to delete user data" }, { status: 500 });
+  }
+}

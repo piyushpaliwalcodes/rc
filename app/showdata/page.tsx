@@ -42,6 +42,13 @@ const Showdata = () => {
     setUserdata(filteredData);
   };
 
+  const deleteall = () => {
+    fetch("/api", {
+      method: "DELETE"
+    });
+    setUserdata([]);
+  }
+
 
   const sortby = (e:any) => {
     const sortValue = e.target.value;
@@ -50,8 +57,11 @@ const Showdata = () => {
         return a.firstName.localeCompare(b.firstName);
       } else if (sortValue === "desc") {
         return b.firstName.localeCompare(a.firstName);
-      } else if (sortValue === "date") {
+      } else if (sortValue === "ascdate") {
         return new Date(a.createdAt || "").getTime() - new Date(b.createdAt || "").getTime();
+      }
+      else if (sortValue === "descdate") {
+        return new Date(b.createdAt || "").getTime() - new Date(a.createdAt || "").getTime();
       }
     });
     setUserdata(sortedData);
@@ -62,6 +72,7 @@ const Showdata = () => {
         Submitted Contact Data
       </h1>
 
+{/* <button onClick={deleteall} className="bg-red-500 text-white px-4 py-2 rounded-lg">Delete All</button> */}
       <input
         type="text"
         placeholder="Search"
@@ -71,7 +82,8 @@ const Showdata = () => {
      <select onChange={sortby} className="w-full p-2 border border-gray-200 rounded-lg">
       <option value="asc">Sort by Name (A-Z)</option>
       <option value="desc">Sort by Name (Z-A)</option>
-      <option value="date">Sort by Date</option>
+      <option value="ascdate">Sort by Date (Oldest)</option>
+      <option value="descdate">Sort by Date (Newest)</option>
      </select>
       {userdata.length === 0 ? (
         <p className="text-center text-gray-500">No data found.</p>
