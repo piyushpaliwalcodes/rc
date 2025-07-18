@@ -5,8 +5,8 @@ const Manufacturehighlight = () => {
     return (
         <div className="flex flex-col text-[18px] md:text-[20px] gap-2 md:gap-0">  
            <h1 className="opacity-30 font-bold text-[14px] md:text-[20px]">WHAT WE MANUFACTURE</h1>
-           <p className="text-[24px] md:text-[48px] ">Pure and Healthy RC Products.</p>
-           <p className="w-full md:w-[60%] text-[14px] md:text-[16px]">Starting from the planning of the product our customer wants; design, manufacturing, software, mounting, installation & comissioning are made by us.</p>
+           <p className="text-[24px] md:text-[48px] ">Pure and Healthy <span className="yellounderline">RC Products.</span></p>
+           <p className="w-full md:w-[60%] text-[14px] md:text-[20px]">Starting from the planning of the product our customer wants; design, manufacturing, software, mounting, installation & comissioning are made by us.</p>
         </div>
     )
 }

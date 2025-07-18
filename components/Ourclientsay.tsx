@@ -8,14 +8,14 @@ const Reviewcard = ({name,designation,review,profilesrc}:{name:string,designatio
 {
     return (
         <div className="flex flex-col gap-6 md:gap-[30px] mt-6 md:mt-[30px]">
-            <p className="text-[16px] md:text-[20px] text-black/40 w-full md:w-[80%]">" {review} "</p>
+            <p className="text-[16px] md:text-[20px] text-black/40 w-full md:w-[80%]">"{review}"</p>
             <div className="flex">
                 {/* Profile card */}
                 <div className="flex justify-between w-full">
                     <div className="flex gap-4 md:gap-[15px]">
                         <Image src={profilesrc} alt="profile" width={60} height={60} className="rounded-[10px]" />
                     <div className="flex flex-col gap-1 md:gap-[2px] justify-around">
-                        <h1 className="text-[16px] md:text-[20px] font-semibold">{name}</h1>
+                        <h1 className="text-[16px] md:text-[20px] ">{name}</h1>
                         <p className="text-[13px] md:text-[16px] text-black/30 "> {designation}</p>
                     </div></div>
                 </div>
@@ -67,7 +67,7 @@ const Ourclientsay = () =>
                         <Image src="/images/setting.png" alt="setting" width={20} height={20} className="w-[20px] h-[20px] " /> 
                         <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base">OUR CLIENT SAY</p>
                     </div>
-                    <p className="text-[24px] md:text-[48px]/[60px] font-light">What our satisfied clients <br/> <span  className="font-bold">are saying.</span></p>
+                    <p className="text-[24px] md:text-[48px]/[60px] font-light">What our satisfied clients <br/> <span  className="font-semibold">are saying.</span></p>
                     {/* Embla Carousel Start */}
                     <div className="relative w-full">
                         <div className="overflow-hidden" ref={emblaRef}>
@@ -95,7 +95,7 @@ const Ourclientsay = () =>
             <div className="flex flex-row gap-2 md:gap-[10px] justify-between items-center mt-8 md:mt-[120px] w-full">
                 {
                     Array.from({length:5}).map((item,index)=>(
-                        <div className="flex items-center flex-1 justify-center"><Image src="/images/dummylogo.png" alt="ourclientsay" width={60} height={24} className="w-[60px] h-[24px] md:w-[120px] md:h-[48px] object-contain" /></div>
+                        <div className="flex items-center flex-1 justify-center"><Image src="/images/dummylogo.png" alt="ourclientsay" width={70} height={30} className="w-[60px] h-[24px] md:w-[170px] md:h-[48px] object-contain" /></div>
                     ))
                 }
             </div>

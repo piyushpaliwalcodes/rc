@@ -55,7 +55,7 @@ const Haveaquestion = () =>
         <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-[30px] px-4 md:px-[60px] py-6 md:py-[60px] bg-[#F9F9F9] text-black">
             <div className="flex flex-col gap-4 md:gap-[30px]" >
                 <div className="flex flex-col ">
-                <h1 className="text-[24px] md:text-[48px]/[60px]">Have a Question? </h1>
+                <h1 className="text-[24px] md:text-[48px]/[60px]">Have a <span className="yellounderline">Question?</span> </h1>
                 <h1 className="text-[24px] md:text-[48px]/[60px]"> We are here to answer.</h1>
                 </div>
                 <p className="w-full md:w-[85%] text-[15px] md:text-base">With more than 200,000 Retail outlets across 65+ branches, Ramlal Champalal (RC) is one of the largest Distribution House & Logistics services providers for various industries.</p>

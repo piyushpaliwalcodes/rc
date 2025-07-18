@@ -6,7 +6,7 @@ const Imagecard = ({src,name,designation}:{src:string,name:string,designation:st
     return (
         <div className="w-full sm:w-[180px] md:w-[234px] flex flex-col gap-2 md:gap-[10px]">
             <Image src={src} alt="team" width={234} height={234} className="rounded-[10px] w-full h-[180px] md:h-[234px] object-cover" />
-            <p className="text-center text-[14px] md:text-base">{name}, {designation}</p>
+            <p className="text-center text-[14px] md:text-[20px]">{name}, {designation}</p>
         </div>
     )
 }
@@ -15,8 +15,8 @@ const Highlight = () => {
     return (
         <div className="flex flex-col text-[18px] md:text-[20px] gap-2 md:gap-0">  
            <h1 className="opacity-30 font-bold text-[14px] md:text-[20px]">WHO MANAGE US</h1>
-           <p className="text-[24px] md:text-[48px] ">Meet our team</p>
-           <p className="w-full md:w-[60%] text-[14px] md:text-[16px]">Starting from the cleaning of the grains prioritizing our customer health; grading, Hulling, Heating, De-skinning, Splitting, Sorting, Packing - all done in the supervision of our Experts.</p>
+           <p className="text-[24px] md:text-[48px] ">Meet our <span className="yellounderline">Team.</span></p>
+           <p className="w-full md:w-[60%] text-[14px] md:text-[20px]">Starting from the cleaning of the grains prioritizing our customer health; grading, Hulling, Heating, De-skinning, Splitting, Sorting, Packing - all done in the supervision of our Experts.</p>
         </div>
     )
 }

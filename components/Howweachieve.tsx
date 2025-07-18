@@ -45,7 +45,7 @@ return (
          <div className="flex flex-col gap-4 md:gap-[20px]">
                 <p className="text-[16px] md:text-[20px] font-bold opacity-[30%]">HOW WE ACHIEVE</p>
                 <div className="flex flex-col lg:flex-row gap-4 lg:gap-[150px]">
-                    <p className="text-[22px] md:text-[32px] lg:text-[40px]/[50px] min-w-0 lg:min-w-[600px]">The Relentless Efforts And Achievements Of Our Farmers</p>
+                    <p className="text-[22px] md:text-[32px] lg:text-[40px]/[50px] min-w-0 lg:min-w-[600px]">The Relentless Efforts And <span className="yellounderline">Achievements</span> Of Our Farmers</p>
                     <div className="text-[14px] md:text-[18px] text-[#464646]">
                         For almost 5 decades, the RC has dominated the integrated supply chain industry. Headquartered in Khandwa, Madhya Pradesh, India, we redefine supply chain management with precision, efficiency, and innovation. Our relentless commitment to excellence promises solutions.
                     </div>

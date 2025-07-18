@@ -32,6 +32,6 @@ body {
 @layer utilities {
   .yellounderline {
     @apply inline;
-    background: linear-gradient(180deg, transparent 70%, #FCD900 70%);
+    background: linear-gradient(180deg, transparent 75%, #FCD900 75%);
   }
 }
