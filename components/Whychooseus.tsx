@@ -42,7 +42,7 @@ const Whychooseus = () =>
 
     return (
         <div className="flex flex-col lg:flex-row bg-black/75 md:bg-black text-white max-w-full">
-            <div className="flex flex-col gap-6 md:gap-[30px] p-4 md:p-[60px] w-full lg:w-auto">
+            <div className="flex flex-col gap-6 md:gap-[30px] p-4 py-6 md:p-[60px] w-full lg:w-auto">
                 <div className="flex gap-2 md:gap-[5px] items-center"> 
                     <Image src="/images/setting.png" alt="setting" width={20} height={20} className="w-[20px] h-[20px] " /> 
                     <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base">WHY CHOOSE US</p>

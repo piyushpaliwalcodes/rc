@@ -74,7 +74,7 @@ import Whatisontheplate from "@/components/Whatisontheplate";
 
 
     const whatisontheplatedetails = {
-        title:<h1 className="text-[24px] md:text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+        title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">What is on the <span className="font-bold">Plate</span></h1>,
         description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
         bulletpoints:[{
                 title:"Quality Assurance",
@@ -133,7 +133,7 @@ import Whatisontheplate from "@/components/Whatisontheplate";
     }
 
    const howwepackagedetails = {
-    title:<h1 className="text-[24px] md:text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+    title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">How we <span className="font-bold">Package</span></h1>,
     description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
     packagedetails: [
         {
@@ -163,7 +163,7 @@ import Whatisontheplate from "@/components/Whatisontheplate";
     const [selectedStep, setSelectedStep] = useState(0);
 
     return (
-        <div className="flex flex-col bg-white text-black gap-3 md:gap-0">
+        <div className="flex flex-col bg-white text-black gap-5 md:gap-0">
             <Herosecond title={params.specificdal}/>
             <Productdetails paragraphs={productdetails.paragraphs} heroimage={productdetails.heroimage} />
             <Howwepackagedetails title={howwepackagedetails.title} packagedetails={howwepackagedetails.packagedetails} description={howwepackagedetails.description} />

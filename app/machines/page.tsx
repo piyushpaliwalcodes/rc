@@ -82,7 +82,7 @@ const categorywisedetails = {
             heroimage:"/images/robot.jpg",
         },
         howwepackagedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">How we <span className="font-bold">Package</span></h1>,
             description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
             packagedetails: [
                 {
@@ -108,7 +108,7 @@ const categorywisedetails = {
             ]
         },
         whatisontheplatedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">What is on the <span className="font-bold">Plate</span></h1>,
             description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
             bulletpoints:[{
                 title:"Quality Assurance",
@@ -143,7 +143,7 @@ const categorywisedetails = {
             heroimage:"/images/ourapproach.jpg",
         },
         howwepackagedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">How we <span className="font-bold">Package</span></h1>,
             description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
             packagedetails: [
                 {
@@ -169,7 +169,7 @@ const categorywisedetails = {
             ]
         },
         whatisontheplatedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">What is on the <span className="font-bold">Plate</span></h1>,
             description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
             bulletpoints:[{
                 title:"Quality Assurance",
@@ -204,7 +204,7 @@ const categorywisedetails = {
             heroimage:"/images/aboutusbg.png",
         },
         howwepackagedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">How we <span className="font-bold">Package</span></h1>,
             description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
             packagedetails: [
                 {
@@ -230,7 +230,7 @@ const categorywisedetails = {
             ]
         },
         whatisontheplatedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">What is on the <span className="font-bold">Plate</span></h1>,
             description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
             bulletpoints:[{
                 title:"Quality Assurance",
@@ -265,7 +265,7 @@ const categorywisedetails = {
             heroimage:"/images/factory1.png",
         },
         howwepackagedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">How we <span className="font-bold">Package</span></h1>,
             description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
             packagedetails: [
                 {
@@ -291,7 +291,7 @@ const categorywisedetails = {
             ]
         },
         whatisontheplatedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">What is on the <span className="font-bold">Plate</span></h1>,
             description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
             bulletpoints:[{
                 title:"Quality Assurance",
@@ -326,7 +326,7 @@ const categorywisedetails = {
             heroimage:"/images/robot.jpg",
         },
         howwepackagedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">How we <span className="font-bold">Package</span></h1>,
             description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
             packagedetails: [
                 {
@@ -352,7 +352,7 @@ const categorywisedetails = {
             ]
         },
         whatisontheplatedetails:{
-            title:<h1 className="text-[24px] md:text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+            title:<h1 className="text-[24px] md:text-[48px]/[60px] underline md:no-underline">What is on the <span className="font-bold">Plate</span></h1>,
             description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
             bulletpoints:[{
                 title:"Quality Assurance",

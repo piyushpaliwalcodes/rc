@@ -59,10 +59,10 @@ const Whatwedo = () => {
     return (
         <div className = "flex flex-col text-black max-w-full">
             <div className="bg-gradient-to-b from-white/0 to-white/100 "></div>
-            <div className="min-h-[480px] md:min-h-[680px] bg-gray-200 px-4 md:px-8 lg:px-[60px] pt-20 md:pt-[200px] relative flex flex-col items-center gap-8 md:gap-[80px] justify-between" style={{backgroundImage: "url('/images/web.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
+            <div className=" md:min-h-[680px] bg-gray-200 px-4 md:px-8 lg:px-[60px] pt-20 md:pt-[200px] relative flex flex-col items-center gap-8 md:gap-[80px] justify-between" style={{backgroundImage: "url('/images/web.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
                 <div className="flex flex-col gap-3 md:gap-[20px] items-center  text-center md:items-start md:text-left w-full" >
                     <h1 className="text-[16px] md:text-[20px] opacity-30 font-bold">What We Do</h1>
-                    <p className="text-[24px] md:text-[48px]/[60px] w-full md:w-2/3">With our flexible production capacity and high technology, we <span className="yellounderline">produce customized</span> solutions for your needs.</p>
+                    <p className="text-[18px] md:text-[48px]/[60px] w-full md:w-2/3">With our flexible production capacity and high technology, we <span className="yellounderline">produce customized</span> solutions for your needs.</p>
                 </div>
                 <div className="w-full flex flex-wrap sm:flex-nowrap gap-2 md:gap-[15px] ">
                     {
