@@ -28,12 +28,12 @@ import Whatisontheplate from "@/components/Whatisontheplate";
         {   
             steps.map((step,index) => {
                 return (
-                    <div className={`flex flex-row justify-between items-center py-4 md:py-[25px] px-4 md:px-[40px] hover:cursor-pointer rounded-[8px]  ${selectedStep === index ? "bg-[#FCD900] text-black" : "hover:bg-[#ffe30029] transition-all duration-200 "}`} onClick={() => setSelectedStep(index)}>
+                    <div className={`flex flex-row justify-between items-center py-3 md:py-[25px] px-4 md:px-[40px] hover:cursor-pointer rounded-[8px]  ${selectedStep === index ? "bg-[#FCD900] text-black" : "hover:bg-[#ffe30029] transition-all duration-200 "}`} onClick={() => setSelectedStep(index)}>
                         <div key={index} className="flex gap-3 md:gap-[20px] items-center w-full">
                             <p className={`text-[#FCD900] text-[28px] md:text-[50px] font-bold ${selectedStep == index ? "text-black" : ""}`}>0{index + 1}</p>
                             <div className="flex flex-col gap-1 md:gap-[5px]">
                                 <p className="font-semibold text-[16px] md:text-[20px] text-black">{step.title}</p>
-                                <p className={`text-[#81848A] text-[14px] md:text-[16px] ${selectedStep == index ? "text-black" : ""}`}>{step.description}</p>
+                                <p className={`text-[#81848A] text-[12px] md:text-[16px] ${selectedStep == index ? "text-black" : ""}`}>{step.description}</p>
                             </div>
                         </div>
                         <FaArrowRight className={`text-[#81848A] text-[22px] md:text-[30px] ${selectedStep == index ? "text-black" : ""}`} />
@@ -74,7 +74,7 @@ import Whatisontheplate from "@/components/Whatisontheplate";
 
 
     const whatisontheplatedetails = {
-        title:<h1 className="text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
+        title:<h1 className="text-[24px] md:text-[48px]/[60px]">What is on the <span className="font-bold">Plate</span></h1>,
         description:"Our Industrial Automation and Robotics planning and strategy services focus on designing tailored automation solutions that align with your business goals.",
         bulletpoints:[{
                 title:"Quality Assurance",
@@ -133,7 +133,7 @@ import Whatisontheplate from "@/components/Whatisontheplate";
     }
 
    const howwepackagedetails = {
-    title:<h1 className="text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
+    title:<h1 className="text-[24px] md:text-[48px]/[60px]">How we <span className="font-bold">Package</span></h1>,
     description:"Through expert guidance, we focus on refining your vision, enhancing operations, and unlocking new opportunities for growth. With a collaborative approach, we empower you to make confident decisions and build a sustainable, thriving business.",
     packagedetails: [
         {
@@ -163,7 +163,7 @@ import Whatisontheplate from "@/components/Whatisontheplate";
     const [selectedStep, setSelectedStep] = useState(0);
 
     return (
-        <div className="flex flex-col bg-white text-black">
+        <div className="flex flex-col bg-white text-black gap-3 md:gap-0">
             <Herosecond title={params.specificdal}/>
             <Productdetails paragraphs={productdetails.paragraphs} heroimage={productdetails.heroimage} />
             <Howwepackagedetails title={howwepackagedetails.title} packagedetails={howwepackagedetails.packagedetails} description={howwepackagedetails.description} />

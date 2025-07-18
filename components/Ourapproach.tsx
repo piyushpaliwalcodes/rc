@@ -19,7 +19,7 @@ const Selectioncard = ({carddata,selected,setSelected}:{carddata:any,selected:st
                         onClick={()=>setSelected(key)}
                     >
                         <img src={carddata[key].src} alt={key} className="w-[22px] h-[22px] md:w-[40px] md:h-[40px]" />
-                        <p className="text-black text-[15px] md:text-[16px] whitespace-nowrap">{carddata[key].title}</p>
+                        <p className="text-black text-[12px] md:text-[16px] whitespace-nowrap">{carddata[key].title}</p>
                     </div>
                 ))}
             </div>
@@ -137,8 +137,8 @@ const Ourapproach = () =>
     <div className="absolute top-0 left-0 w-full h-full bg-black/30"/>
     <div className="flex flex-col z-10 gap-4 md:gap-0 z-10">
     <p className="text-white font-semibold mb-2">OUR APPROACH</p>
-    <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-      <h1 className="text-white text-[28px] md:text-[50px]/[60px] leading-tight">
+    <div className="flex flex-col md:flex-row justify-between items-center  md:gap-0">
+      <h1 className="text-white text-[28px] md:text-[50px]/[60px] leading-tight w-full">
         Empowering sustainable <br />
         <span className="font-bold">growth in industry</span>
       </h1>
@@ -154,10 +154,10 @@ const Ourapproach = () =>
     <Selectioncard carddata={carddata} selected={selected} setSelected={setSelected} />
   </div>
 
-  <div className="flex flex-col p-4 md:p-[60px] gap-6 md:gap-0">
+  <div className="flex flex-col p-4 md:p-[60px] gap-2 md:gap-0">
     <p className="text-black/40 font-semibold mb-2">OUR HISTORY</p>
-    <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-      <h1 className="text-black text-[28px] md:text-[50px]/[60px] leading-tight">
+    <div className="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0 w-full">
+      <h1 className="text-black text-[28px] md:text-[50px]/[60px] leading-tight w-full">
       Foundation of excellences <br />
         <span className="font-bold">in industry</span>
       </h1>
