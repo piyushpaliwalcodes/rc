@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const Chooseuscard = ({src, title, description,index}: {src: string, title: string, description: string,index:number}) =>
 {
     return (
-        <div className={`flex flex-col gap-[10px] border-[1px] border-white/20 p-4 md:p-[30px] rounded-[8px] ${(index==1 || index==2)?"bg-white/20":""} `}>
+        <div className={`flex flex-col gap-[10px] border-[1px] border-white/20 p-4 md:p-[30px] rounded-[8px]  ${(index==1 || index==2)?"md:bg-white/20":""} `}>
             <Image src={src} alt={title} width={50} height={50} />
             <h1 className="text-[18px] md:text-[20px] font-semibold">{title}</h1>
             <p className="text-[15px] md:text-[16px]">{description}</p>
