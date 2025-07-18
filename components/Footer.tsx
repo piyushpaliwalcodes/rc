@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const Mailinput = ({register,handleSubmit,handleSubscribe,errors}:{register:any,handleSubmit:any,handleSubscribe:any,errors:any}) =>
 {
@@ -51,6 +52,11 @@ const Footer = () =>
         })
         const responseData = await response.json();
         console.log(responseData);
+        if(response.ok){
+            toast.success("Data submitted successfully");
+        }else{
+            toast.error("Data submission failed");
+        }
     }   
 
     return (

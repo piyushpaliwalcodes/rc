@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const Contactus = () => {
     const [name,setname] = useState<string>("");
@@ -43,10 +44,10 @@ const Contactus = () => {
         console.log(responseData);
         if(response.ok){
             console.log(response);
-            alert("Data submitted successfully");
+            toast.success("Data submitted successfully");
         }else{
             console.log(response);
-            alert("Data submission failed");
+            toast.error("Data submission failed");
         }
     }
     return (
