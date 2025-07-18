@@ -8,11 +8,11 @@ const Mailinput = ({register,handleSubmit,handleSubscribe,errors}:{register:any,
 {
     return (
         <div className="rounded-[10px] border border-[#D9D9D9] flex w-full  md:w-[90%] justify-between items-center pl-1">
-            <input type="text" placeholder="Enter your email to subscribe our Newsletter." className="text-[13px] p md:text-[15px]/[25px] placeholder:text-[#676767] placeholder:font-bold pl-2 md:pl-4 w-full md:w-[350px] py-[8px] rounded-[10px] border-none outline-none flex items-center" {...register("email",{required:"*Email is required",pattern:{
+            <input type="text" placeholder="Enter your email to subscribe." className="text-[13px] md:text-[15px]/[25px] placeholder:text-[#676767] placeholder:font-bold pl-2 md:pl-4 w-full md:w-[350px] py-[8px] rounded-[10px] border-none outline-none flex items-center" {...register("email",{required:"*Email is required",pattern:{
                 value:/^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                 message:"*Invalid email address"
             }})} />
-            <button className="bg-[#FCD900] text-[13px] md:text-[14px]/[25px] text-black px-2 md:px-[25px] py-[5px] rounded-[10px] hover:cursor-pointer font-bold whitespace-nowrap h-full" onClick={handleSubmit(handleSubscribe)}>Subscribe Now</button>
+            <button className="bg-[#FCD900] text-[13px] md:text-[14px]/[25px] text-black px-2 md:px-[25px] py-[5px] rounded-[10px] hover:cursor-pointer font-bold whitespace-nowrap min-h-full" onClick={handleSubmit(handleSubscribe)}>Subscribe Now</button>
         </div>
     )
 }

@@ -36,7 +36,7 @@ const Whoweare = () => {
                     </p>
                 </div>
                 <div className="flex  gap-4 md:gap-[30px] mt-4 md:mt-0 items-center">
-                    <YellowButton text="About Our Journey" link="/aboutus" />
+                    <YellowButton text="Our Journey" link="/aboutus" />
                     <div className="h-full flex items-center justify-center">
                         <a href="/" className="text-[15px] md:text-[16px] flex items-center underline h-full ">Quality Certificates</a>
                     </div>

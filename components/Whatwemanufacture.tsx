@@ -49,7 +49,7 @@ const Whatwemanufacture = () =>
     return (
         <div className="flex flex-col p-4 md:p-[60px] gap-6 md:gap-[60px] text-black max-w-full">
             <Manufacturehighlight />
-            <div className="flex flex-col md:flex-row gap-4 md:gap-[20px] w-full">
+            <div className="flex flex-col mt-4 md:mt-0 md:flex-row gap-6 md:gap-[20px] w-full">
                 {
                     manufacturedata.map((item, index) => (
                         <Manufacturecardwithimage key={index} {...item} />

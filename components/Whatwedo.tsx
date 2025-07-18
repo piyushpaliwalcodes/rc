@@ -67,9 +67,9 @@ const Whatwedo = () => {
                 <div className="w-full flex flex-wrap sm:flex-nowrap gap-2 md:gap-[15px] ">
                     {
                         Categories.map((category) => (
-                            <div onClick={() => setSelectedCategory(category)} key={category.title} className={`flex flex-col items-center w-[70px] h-auto sm:w-[90px] sm:h-[90px] md:w-[160px] md:h-[140px] lg:w-[200px] lg:h-[170px] justify-center gap-1 sm:gap-2 md:gap-[10px] p-1 sm:p-2 md:p-[20px] md:px-[30px] rounded-t-[4px] hover:cursor-pointer hover:bg-gray-300/70 transition-all duration-200 ${selectedCategory.title === category.title ? "hover:bg-white bg-white justify-center" : ""}`}>
+                            <div onClick={() => setSelectedCategory(category)} key={category.title} className={`flex flex-col items-center w-[60px] h-auto sm:w-[90px] sm:h-[90px] md:w-[160px] md:h-[140px] lg:w-[200px] lg:h-[170px] justify-center gap-1 sm:gap-2 md:gap-[10px] p-1 sm:p-2 md:p-[20px] md:px-[30px] rounded-t-[4px] hover:cursor-pointer hover:bg-gray-300/70 transition-all duration-200 ${selectedCategory.title === category.title ? "hover:bg-white bg-white justify-center" : ""}`}>
                                 <img src={category.icon} alt={category.title} width={28} height={28} className="w-[28px] h-[28px] sm:w-[40px] sm:h-[40px] md:w-[60px] md:h-[60px]" />
-                                <p className="text-center text-[11px] sm:text-[13px] md:text-[16px]">{category.title}</p>
+                                <p className="text-center text-[9px] sm:text-[13px] md:text-[16px]">{category.title}</p>
                             </div>
                         ))
                     }
