@@ -89,33 +89,33 @@ const Contactus = () => {
                 <div className="flex flex-col rounded-[8px] gap-5 md:gap-[30px] w-full shadow-md p-4 md:p-[30px]">
                     <h1 className="text-[28px] md:text-[50px]/[30px] ">Contact <span className="font-bold">us</span></h1>
                     <form action="" className="flex flex-col gap-4 md:gap-[20px] text-[15px] md:text-[16px]/[20px] " onSubmit={handleSubmit(handleSubmitform)}>
-                        <div className="flex flex-col md:flex-row gap-4 md:gap-[10px]">
-                            <div className="flex flex-col gap-[5px] w-full">
-                                <input type="text" placeholder="FirstName" {...register("firstName", { required: "*First name is required" })} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px]"/>
-                                {errors.firstName && <p className="text-red-500">{errors.firstName.message}</p>}
+                        <div className="flex flex-col md:flex-row gap-4 md:gap-[30px]">
+                            <div className="flex flex-col gap-[px] w-full">
+                                <input type="text" placeholder="FirstName" {...register("firstName", { required: "*First name is required" })} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
+                                {errors.firstName && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.firstName.message}</p>}
                             </div>
                             <div className="flex flex-col gap-[5px] w-full">
-                                <input type="text" placeholder="LastName" {...register("lastName",{required:"*Last name is required"})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px]"/>
-                                {errors.lastName && <p className="text-red-500">{errors.lastName.message}</p>}
+                                <input type="text" placeholder="LastName" {...register("lastName",{required:"*Last name is required"})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
+                                {errors.lastName && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.lastName.message}</p>}
                             </div>
                         </div>
                         <div className="flex flex-col gap-[5px]">
                             <input type="text" placeholder="Enter Your Email" {...register("email",{required:"*Email is required",pattern:{
                                 value:/^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                                 message:"*Invalid email address"
-                            }})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px]"/>
-                            {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+                            }})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
+                            {errors.email && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.email.message}</p>}
                         </div>
                         <div className="flex flex-col gap-[5px]">
                             <input type="text" placeholder="Enter Your Phone Number" {...register("phone",{required:"*Phone number is required",pattern:{
                                 value:/^\d{10}$/,
                                 message:"*Invalid phone number,must be 10 digits"
-                            }})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px]"/>
-                            {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
+                            }})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
+                            {errors.phone && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.phone.message}</p>}
                         </div>
                         <div className="flex flex-col gap-[5px]">
-                            <textarea placeholder="Enter Your Message" {...register("message",{required:"*Message is required"})} className="w-full h-[100px] rounded-[8px] border border-black/10 p-[10px] py-[14px]"/>
-                            {errors.message && <p className="text-red-500">{errors.message.message}</p>}
+                            <textarea placeholder="Enter Your Message" {...register("message",{required:"*Message is required"})} className="w-full h-[100px] rounded-[8px] border border-black/10 p-[10px] py-[14px] py-[18px]"/>
+                            {errors.message && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.message.message}</p>}
                         </div>
                         <button type="submit" className="border-[1px] border-[#FCD900] text-black font-bold text-[15px] md:text-[16px]/[20px] rounded-[8px] p-[10px] py-[14px] w-full md:w-[300px] hover:bg-[#FCD900] hover:cursor-pointer transition-all duration-300">Submit</button>
                     </form>
