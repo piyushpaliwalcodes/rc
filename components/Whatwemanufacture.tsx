@@ -55,7 +55,7 @@ const Whatwemanufacture = () =>
 
     ]
     return (
-        <div className="flex flex-col p-[60px] gap-[60px] text-black">
+        <div className="flex flex-col p-[60px] gap-[60px] text-black max-w-full">
             <Manufacturehighlight />
             <div className="flex gap-[20px]">
                 {

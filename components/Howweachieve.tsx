@@ -41,7 +41,7 @@ const Howweachieve = () =>
         }
     ]
 return (
-    <div className='w-full px-4 md:px-8 lg:px-[60px] py-8 md:py-[60px] bg-[#F9F9F9] text-black'>
+    <div className='w-full max-w-full px-4 md:px-8 lg:px-[60px] py-8 md:py-[60px] bg-[#F9F9F9] text-black'>
          <div className="flex flex-col gap-4 md:gap-[20px]">
                 <p className="text-[16px] md:text-[20px] font-bold opacity-[30%]">HOW WE ACHIEVE</p>
                 <div className="flex flex-col lg:flex-row gap-4 lg:gap-[150px]">
