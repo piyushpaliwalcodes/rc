@@ -12,8 +12,8 @@ const connectDB = async () => {
 export async function POST(req: NextRequest) {
   try {
     await connectDB();
-    const { firstName, lastName, email, phone, message } = await req.json();
-    const userdata = new Userdata({ firstName, lastName, email, phone, message });
+    const { firstName, lastName, email, phone, message, createdAt } = await req.json();
+    const userdata = new Userdata({ firstName, lastName, email, phone, message, createdAt });
     await userdata.save();
     return NextResponse.json({ message: "User data saved successfully" });
   } catch (err) {

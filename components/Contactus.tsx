@@ -16,7 +16,8 @@ const Contactus = () => {
             lastName:"",
             email:"",
             phone:"",
-            message:""
+            message:"",
+            createdAt:new Date().toISOString()
         }
     });
     const contactdetails = {
