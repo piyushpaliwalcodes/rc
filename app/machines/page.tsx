@@ -391,9 +391,9 @@ const [selectedcategory,setselectedcategory] = useState<string>("Cleaning");
     return (
         <div className="flex flex-col bg-white">
             <Herosecond title="Manufacturing Solutions"/>
-            <div className="flex flex-col lg:flex-row gap-6 md:gap-0 p-4 md:p-[60px] w-full">
+            <div className="flex flex-col lg:flex-row gap-6 md:gap-0 md:p-[60px] w-full">
                 {/*select category*/}
-                <div className="flex flex-col w-full lg:w-auto bg-white min-w-0 md:min-w-[365px] gap-4 md:gap-[30px] mb-6 lg:mb-0">
+                <div className="flex flex-col w-full lg:w-auto bg-white min-w-0 md:min-w-[365px] gap-4 md:gap-[30px] mb-6 lg:mb-0 p-4 md:p-0">
                     <div className="flex flex-col rounded-[8px] border-[1px] border-[#EBEBEB]">
                         <div className="text-[16px] md:text-[20px] text-black/80 px-3 md:px-5 py-4 md:py-6 items-center text-center font-semibold bg-[#FCD900] rounded-t-[8px]">Machine Categories</div>
                         {machinecategories.map((item,index)=>(
