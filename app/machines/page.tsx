@@ -407,7 +407,7 @@ const [selectedcategory,setselectedcategory] = useState<string>("Cleaning");
                     </div>
                 </div>
                 {/* machine details */}
-                <div className="flex flex-col text-black w-full">
+                <div className="flex flex-col text-black w-full gap-4 md:gap-0">
                     <Machinedetails paragraphs={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].productdetails.paragraphs} heroimage={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].productdetails.heroimage} />
                     <Howwepackagedetails title={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].howwepackagedetails.title} packagedetails={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].howwepackagedetails.packagedetails} description={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].howwepackagedetails.description} />
                     <Whatisontheplate formachines={true} {...categorywisedetails[selectedcategory as keyof typeof categorywisedetails].whatisontheplatedetails}/>

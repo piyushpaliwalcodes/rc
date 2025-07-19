@@ -4,7 +4,7 @@ import YellowButton from "./Yellowbutton";
 const Highlight = () => {
     return (
         <div className="flex flex-col text-[18px] md:text-[20px] gap-2 md:gap-[20px]">  
-           <h1 className="opacity-30 font-bold text-[14px] md:text-[20px]">ABOUT US</h1>
+           <h1 className="opacity-30 font-bold text-[18px] md:text-[20px]">ABOUT US</h1>
            <p className="text-[24px] md:text-[48px]/[60px] ">Proven quality through <br/>
            <span className="font-semibold">Industrial Innovation</span>
            </p>
@@ -21,7 +21,7 @@ const Twentyfiveplus = () => {
         {title:"Customer Satisfaction",image:"/images/setting.png"},
     ]
     return (
-        <div className="flex flex-col-reverse lg:flex-row w-full justify-between p-4 md:p-[60px] text-black gap-6 md:gap-0">
+        <div className="flex flex-col-reverse lg:flex-row w-full justify-between p-4 py-6 md:p-[60px] text-black gap-6 md:gap-0">
             <div className="flex justify-center w-full lg:w-auto ">
                 <Image src="/images/25+.png" alt="25plus" width={427} height={650} className="w-full h-full max-w-full] md:max-w-[350px] lg:max-w-[600px] h-[180px] md:h-[220px] lg:h-[650px] object-contain flex-shrink-0 mx-auto mt-6 lg:mt-0"/>
             </div>

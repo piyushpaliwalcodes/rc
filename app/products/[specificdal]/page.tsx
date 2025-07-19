@@ -163,7 +163,7 @@ import Whatisontheplate from "@/components/Whatisontheplate";
     const [selectedStep, setSelectedStep] = useState(0);
 
     return (
-        <div className="flex flex-col bg-white text-black gap-5 md:gap-0">
+        <div className="flex flex-col bg-white text-black gap-4 md:gap-0">
             <Herosecond title={params.specificdal} sublevel="Products" location={params.specificdal}/>
             <Productdetails paragraphs={productdetails.paragraphs} heroimage={productdetails.heroimage} />
             <Howwepackagedetails title={howwepackagedetails.title} packagedetails={howwepackagedetails.packagedetails} description={howwepackagedetails.description} />
