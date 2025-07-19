@@ -27,16 +27,16 @@ const Footer = () =>
 
     const links = {
         "Quick Links": [
-            "About Us",
-            "Products",
-            "Infrastructure",
-            "Our Process",
-            "Certificates",
-            "Sustainability"
+            {title:"About Us",link:"/aboutus"},
+            {title:"Products",link:"/products"},
+            {title:"Infrastructure",link:"/infrastructure"},
+            {title:"Our Process",link:"/ourprocess"},
+            {title:"Certificates",link:"/certificates"},
+            {title:"Sustainability",link:"/sustainability"}
         ],
         "Legal": [
-            "Privacy Policy",
-            "Terms & Conditions"
+            {title:"Privacy Policy",link:"/privacy-policy"},
+            {title:"Terms & Conditions",link:"/terms-and-conditions"}
         ],
     }
 
@@ -76,7 +76,7 @@ const Footer = () =>
                             <h1 className="text-[#969393] text-[18px] md:text-[24px]/[30px]">{key}</h1>
                             <ul className="flex flex-col text-[14px] md:text-[16px]/[30px]">
                                 {links[key as keyof typeof links].map((link,index) => (
-                                    <li key={index} className="hover:cursor-pointer hover:text-[#FCD900]">{link}</li>
+                                    <li key={index} className="hover:cursor-pointer hover:text-[#FCD900]"><a href={link.link}>{link.title}</a></li>
                                 ))} 
                             </ul>
                         </div>
