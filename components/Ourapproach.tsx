@@ -174,7 +174,7 @@ const Ourapproach = () =>
         ))}
       </div>
       {/* Right Side */}
-      <div className="flex flex-col md:flex-row gap-4 md:gap-[30px] p-4 md:px-[60px] w-full">
+      <div className="h-full flex flex-col md:flex-row gap-4 md:gap-[30px] p-4 md:px-[60px] md:py-0  w-full">
          <div className="flex flex-col gap-4 md:gap-[30px] w-full justify-start">
            <div className="flex gap-2 md:gap-[10px] text-[28px] md:text-[50px]/[60px]">
               <p className="text-black/80">{datecards[selecteddate].planetitle}</p>

@@ -164,7 +164,7 @@ import Whatisontheplate from "@/components/Whatisontheplate";
 
     return (
         <div className="flex flex-col bg-white text-black gap-5 md:gap-0">
-            <Herosecond title={params.specificdal}/>
+            <Herosecond title={params.specificdal} sublevel="Products" location={params.specificdal}/>
             <Productdetails paragraphs={productdetails.paragraphs} heroimage={productdetails.heroimage} />
             <Howwepackagedetails title={howwepackagedetails.title} packagedetails={howwepackagedetails.packagedetails} description={howwepackagedetails.description} />
             <Whatisontheplate formachines={false} {...whatisontheplatedetails}/>

@@ -390,7 +390,7 @@ const [selectedcategory,setselectedcategory] = useState<string>("Cleaning");
 
     return (
         <div className="flex flex-col bg-white">
-            <Herosecond title="Manufacturing Solutions"/>
+            <Herosecond title="Manufacturing Solutions" location="Our Machines"/>
             <div className="flex flex-col lg:flex-row  md:gap-0 md:p-[60px] w-full">
                 {/*select category*/}
                 <div className="flex flex-col w-full lg:w-auto bg-white min-w-0 md:min-w-[365px] gap-4 md:gap-[30px]  md:mb-6 lg:mb-0 p-4 md:p-0">

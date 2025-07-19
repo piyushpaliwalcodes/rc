@@ -32,14 +32,14 @@ const Ourprocess = () => {
                     <Image src="/images/setting.png" alt="setting" width={20} height={20} className="w-[20px] h-[20px] " /> 
                     <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base">Our Processes</p>
                 </div>
-                <div className="flex flex-col lg:flex-row gap-4 md:gap-[100px] items-start lg:items-end">
-                    <p className="text-[24px] md:text-[48px]/[60px] font-light">Streamlined processes <br/><span className="font-bold">for optimal efficiency</span></p>
-                    <p className="w-full lg:w-2/3 text-[15px] md:text-base">Our process is designed to maximize efficiency and quality at every stage of production. By integrating advanced technologies and best practices, we ensure seamless workflows.</p>
+                <div className="flex flex-col lg:flex-row gap-4 md:gap-[100px] items-start lg:items-end w-full">
+                    <p className="text-[24px] md:text-[48px]/[60px] font-light md:w-[80%]">Streamlined processes <br/><span className="font-bold">for optimal efficiency</span></p>
+                    <p className="w-full lg:w-2/3 text-[15px] md:text-base w-full">Our process is designed to maximize efficiency and quality at every stage of production. By integrating advanced technologies and best practices, we ensure seamless workflows.</p>
                 </div>
             </div>
-            <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-[150px] w-full items-center">
+            <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-[80px] w-full items-center">
                 <div className="w-full max-w-[400px] md:max-w-[600px] lg:w-[600px] flex-shrink-0 mx-auto lg:mx-0">
-                    <Image src={steps[selectedStep].image} alt="process" width={800} height={1000} className="w-full h-auto hidden md:block" />
+                    <Image src={steps[selectedStep].image} alt="process" width={606} height={1000} className="w-full h-auto hidden md:block" />
                 </div>
                 <div className="flex flex-col gap-4 md:gap-[20px] w-full">
                     {

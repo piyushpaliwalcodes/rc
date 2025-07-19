@@ -14,11 +14,11 @@ const Manufacturehighlight = () => {
 const Manufacturecardwithimage = ({src, title, description, link}: {src: string, title: string, description: string, link: string}) =>
 {
     return (
-    <div className="flex flex-col w-full md:w-[430px] gap-2 md:gap-[15px] ">
+    <div className="flex flex-col w-full md:w-[430px] gap-1 md:gap-[15px] ">
         <Image src={src} alt={title} width={430} height={280} className="w-full h-[180px] md:h-[280px] object-cover rounded-md"/>
         <h1 className="text-[18px] md:text-[24px] font-bold">{title}</h1>
-        <p className="text-[14px] md:text-[20px]">{description}</p>
-        <a href={link} className="flex items-center gap-[6px] md:gap-[10px] text-[14px] md:text-base hover:cursor-pointer hover:underline">Read More <FaArrowRight/>    
+        <p className="text-[14px] md:text-[20px] text-black/50">{description}</p>
+        <a href={link} className="underline flex items-center gap-[6px] md:gap-[10px] text-[14px] md:text-base hover:cursor-pointer hover:underline">Read More <FaArrowRight/>    
         </a>
     </div>
     )
@@ -47,9 +47,9 @@ const Whatwemanufacture = () =>
         },
     ]
     return (
-        <div className="flex flex-col p-4 md:p-[60px] gap-6 md:gap-[60px] text-black max-w-full">
+        <div className="flex flex-col p-4 py-6 md:p-[60px] gap-6 md:gap-[60px] text-black max-w-full">
             <Manufacturehighlight />
-            <div className="flex flex-col mt-4 md:mt-0 md:flex-row gap-6 md:gap-[20px] w-full">
+            <div className="flex flex-col mt-4 md:mt-0 md:flex-row gap-10 md:gap-[20px] w-full">
                 {
                     manufacturedata.map((item, index) => (
                         <Manufacturecardwithimage key={index} {...item} />

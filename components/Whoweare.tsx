@@ -24,12 +24,12 @@ const Whoweare = () => {
   
 
     return (
-        <div className='w-full max-w-full flex flex-col lg:flex-row gap-8 lg:gap-[150px] px-4 md:px-8 lg:px-[60px] py-8 md:py-[60px] text-black'>
+        <div className='w-full max-w-full flex flex-col lg:flex-row gap-8 lg:gap-[150px] py-6 px-4 md:px-8 lg:px-[60px]  md:py-[60px] text-black'>
             <div className="flex flex-col max-w-full lg:max-w-[710px] justify-between h-auto lg:h-[400px]">
                 <div className="flex flex-col gap-4 md:gap-[20px]"> 
                     <div className="flex flex-col gap-2 md:gap-[20px]">
                         <p className="text-[16px] md:text-[20px] font-bold  text-black/30" >WHO WE ARE</p>
-                        <p className="text-[28px] md:text-[32px] lg:text-[40px]/[50px]  ">RC Dal – <span className="yellounderline">India’s Trusted</span> <br/>Name in Pulse Manufacturing</p>
+                        <p className="text-[24px] md:text-[32px] lg:text-[40px]/[50px]  ">RC Dal – <span className="yellounderline">India’s Trusted</span> <br/>Name in Pulse Manufacturing</p>
                     </div>
                     <p className="text-[15px] md:text-[16px]">
                         With roots in Khandwa, Madhya Pradesh, and a legacy spanning generations, RC Dal is a flagship brand under RC Group—renowned for agricultural excellence and ethical trade. We manage the entire value chain: from sourcing directly from farmers to processing, polishing, grading, and packaging pulses under one roof..

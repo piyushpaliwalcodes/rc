@@ -2,7 +2,7 @@ import YellowButton from "./Yellowbutton";
 
 const Greenery = () => {        
     return (
-        <div className="relative flex flex-col p-4 md:p-[60px] h-[400px] md:h-[800px] items-end justify-center" style={{backgroundImage: "url('/images/greenery.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
+        <div className="relative flex flex-col p-4 py-6 md:p-[60px]  md:h-[800px] items-end justify-center" style={{backgroundImage: "url('/images/greenery.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
             <div className="absolute top-0 left-0 w-full h-full bg-black/30"/>
             <div className="flex flex-col gap-4 md:gap-[40px] w-full md:w-[40%] text-white z-10 ">
                 <h1 className="text-[24px] md:text-[50px]/[60px] ">Smart and Innovative Agricultural Process for the Sustainability and Green Future.</h1>

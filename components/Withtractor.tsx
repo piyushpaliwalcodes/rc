@@ -9,7 +9,7 @@ const Withtractor = () => {
                     <h1 className="text-[24px] md:text-[48px]/[60px]">Revolutionizing the <span className="yellounderline">Manufacturing</span> Process.</h1>
                     <p className="text-[15px] md:text-base">With more than 200,000 Retail outlets across 65+ branches, Ramlal Champalal (RC) is one of the largest Distribution House & Logistics services providers for various industries. With more than 200,000 Retail outlets across 65+ branches, Ramlal Champalal (RC) is one of the largest Distribution House & Logistics.</p>
                 </div>
-                <Yellowbutton text="View All" link="/" />
+                <Yellowbutton text="View All" link="/machines" />
             </div>
         </div>
     )

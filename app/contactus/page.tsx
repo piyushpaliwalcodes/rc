@@ -21,7 +21,7 @@ const Contact = () => {
     }
     return (
         <div className="flex flex-col bg-white text-black">
-        <Herosecond title="Contact Us"/>
+        <Herosecond title="Contact Us" location="Contact Us" />
         <Contactus/>
         <Image src="/images/contactusmap.png" alt="contactus" width={1000} height={600} className="w-full h-auto object-cover"/>
         </div>

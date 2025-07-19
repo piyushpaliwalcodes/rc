@@ -60,7 +60,7 @@ const Footer = () =>
     }   
 
     return (
-        <div className="flex flex-col bg-[#291004] p-4 md:p-[60px] gap-6 md:gap-[40px]">
+        <div className="flex flex-col bg-[#291004] p-4 py-6 md:p-[60px] gap-6 md:gap-[40px]">
             <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-[60px] w-full">
                 <div className="flex flex-col gap-6 md:gap-[30px] w-full md:w-[45%]">
                     <h1 className="text-[#FCD900] font-semibold">RC LOGO</h1>
