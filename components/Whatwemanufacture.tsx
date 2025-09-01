@@ -92,7 +92,7 @@ const Whatwemanufacture = () =>
             title:"Tiger Urad Dal",
             quantity: "30 kg",
             rating:4.6,
-            peoplerated:15,
+            peoplerated:"15",
             qualities:["High-yield","No black spots","Fully Sortexed"],
             description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
             link:"/products/urad-dal"
@@ -102,7 +102,7 @@ const Whatwemanufacture = () =>
             title:"Urad Dal",
             quantity: "30 kg",
             rating:5,
-            peoplerated:15,
+            peoplerated:"15",
             qualities:["High-yield","No black spots","Fully Sortexed"],
             description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
             link:"/products/urad-dal"
@@ -112,7 +112,7 @@ const Whatwemanufacture = () =>
             title:"Urad Dal",
             quantity: "30 kg",
             rating:4.6,
-            peoplerated:15,
+            peoplerated:"15",
             qualities:["High-yield","No black spots","Fully Sortexed"],
             description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
             link:"/products/urad-dal"
