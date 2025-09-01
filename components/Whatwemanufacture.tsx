@@ -1,7 +1,10 @@
 "use client"
 import Image from "next/image";
 import { FaArrowRight, FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa"
+import { MdLocationPin } from "react-icons/md";
 import { useState } from "react"
+import { Span } from "next/dist/trace";
+import YellowButton from "./Yellowbutton";
 
 const Manufacturehighlight = () => {
     return (
@@ -57,18 +60,24 @@ const StarRating = ({ rating, size = "text-lg",peoplerated }: { rating: number; 
     );
 };
 
-const Manufacturecardwithimage = ({src, title, description, link,quantity,rating,peoplerated}: {src: string, title: string, description: string, link: string,quantity:string,rating:number,peoplerated:string}) =>
+const Manufacturecardwithimage = ({src, title, description, link,quantity,rating,peoplerated,qualities}: {src: string, title: string, description: string, link: string,quantity:string,rating:number,peoplerated:string,qualities:string[]}) =>
 {
     return (
     <div className="flex flex-col w-full md:w-[342px] gap-1 md:gap-[15px] p-[15px] border border-black/10 md:items-center ">
+        <div className="flex flex-col items-center">
         <Image src={src} alt={title} width={430} height={280} className="w-full h-[180px] md:h-[280px]  rounded-md object-contain"/>
         <h1 className="text-[18px] md:text-[24px] font-bold">{title}</h1>
         <p className="text-sm text-gray-600">Quantity: {quantity}</p>
-        <div className="flex gap-2"> <StarRating rating={rating} size="text-lg" peoplerated={peoplerated}  /></div>
-       
-        <p className="text-[14px] md:text-[20px] text-black/50">{description}</p>
-        <a href={link} className="underline flex items-center gap-[6px] md:gap-[10px] text-[14px] md:text-base hover:cursor-pointer hover:underline">Read More <FaArrowRight/>    
-        </a>
+        </div>
+
+
+
+        <hr className="text-[2px] w-full text-black/10"/>
+        
+        <div className="flex flex-col gap-1 items-start w-full"> <StarRating rating={rating} size="text-lg" peoplerated={peoplerated}  /> <p className="text-sm">Manufactured by RC pulses</p> <p className="flex items-center text-sm text-black/50"><MdLocationPin className="inline"/><span className="text-black font-semibold">Madhya Pradesh </span> -khandwa</p>
+        <div className="flex gap-1"><img src={"/images/graded.png"} className=""/><ul className="flex gap-1 " >{qualities.map((item,index)=>(<li className="text-sm text-black/50 ">{item}{index < qualities.length - 1 && <span className="px-1 text-black/30">|</span>}</li>))}</ul></div>
+        </div>
+      <YellowButton text="View Details" link="/" className="min-w-full justify-center"/>
     </div>
     )
 }
@@ -132,7 +141,7 @@ const Whatwemanufacture = () =>
                 <div className="hidden md:flex absolute top-1/2 left-4 transform -translate-y-1/2 z-10">
                     <button 
                         onClick={prevCard}
-                        className="w-12 h-12 bg-white border border-gray-200 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors duration-200"
+                        className="w-12 h-12 bg-white border border-gray-200 rounded-md flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors duration-200"
                         aria-label="Previous card"
                     >
                         <FaChevronLeft className="text-gray-600" />
@@ -142,7 +151,7 @@ const Whatwemanufacture = () =>
                 <div className="hidden md:flex absolute top-1/2 right-4 transform -translate-y-1/2 z-10">
                     <button 
                         onClick={nextCard}
-                        className="w-12 h-12 bg-white border border-gray-200 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors duration-200"
+                        className="w-12 h-12 bg-white border border-gray-200 rounded-md flex items-center justify-center shadow-lg hover:bg-gray-50 transition-colors duration-200 bg-primary-yellow"
                         aria-label="Next card"
                     >
                         <FaChevronRight className="text-gray-600" />
@@ -152,7 +161,7 @@ const Whatwemanufacture = () =>
                 {/* Cards Container */}
                 <div className="flex flex-col mt-4 md:mt-0 md:flex-row gap-10 md:gap-[20px] md:justify-between w-full overflow-hidden">
                     {/* Desktop: Show all cards */}
-                    <div className="hidden md:flex md:flex-row gap-10 md:gap-[20px] md:justify-between w-full">
+                    <div className="hidden md:flex md:flex-row gap-10 md:gap-[25px] md:justify-center w-full">
                         {
                             manufacturedata.map((item, index) => (
                                 <Manufacturecardwithimage key={index} {...item} />
