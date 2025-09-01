@@ -13,7 +13,28 @@ import Whychooseus from "@/components/Whychooseus";
 import Ourclientsay from "@/components/Ourclientsay";
 import Greenery from "@/components/Greenery";
 import Momstrusted from "@/components/Momstrusted";
+import VideoPlayer from "@/components/Videoplayer";
 export default function Home() {
+
+  const faqs = [
+    {
+      question:"What industries do you serve?",
+      answer:"We cater to food processing units, retail distributors, hotel and catering businesses (HORECA), and global exporters across the pulse and grain industry."
+    },
+    {
+      question:"Do you provide private label packaging?",
+      answer:"Yes, RC Pulses offers customized bulk and retail private label packaging solutions tailored for regional and international markets."
+    },
+    {
+      question:"Are your products export-compliant?",
+      answer:"Absolutely. All our pulses are processed under certifications like FSSAI, APEDA, and USFDA norms, meeting major global quality standards."
+    }
+    ,
+    {
+      question:"Can I source multiple product variants in one shipment?",
+      answer:"Yes, we provide flexible order configurations, allowing mixed product loads across all SKUs — from Orid Gota to Polished Chilka Dal."
+    }
+  ]
   return (
     <div className="bg-white flex flex-col font-roboto min-h-[100vh] text-black max-w-full">
       
@@ -25,13 +46,17 @@ export default function Home() {
       <Whatwedo/>
       <Howweachieve/>
       
+      <VideoPlayer/>
+
+
+      
       <Ourprocess/>
       
       <Whatwemanufacture/>
       <Ourclientsay/>
-      <Meetourteam/>
+      {/* <Meetourteam/> */}
       <Greenery/>
-      <Haveaquestion/>
+      <Haveaquestion faqs={faqs}/>
       <Withtractor/>
       
       

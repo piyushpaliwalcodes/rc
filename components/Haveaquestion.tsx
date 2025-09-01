@@ -28,7 +28,7 @@ const Faqquestion = ({question, answer,selectedindex,index,setSelectedindex}: {q
     )
 }
 
-const Haveaquestion = () =>
+const Haveaquestion = ({faqs}:{faqs:any}) =>
 {
     const faqquestions = [
         {
@@ -56,14 +56,14 @@ const Haveaquestion = () =>
             <div className="flex flex-col gap-4 md:gap-[30px]" >
                 <div className="flex flex-col ">
                 <h1 className="text-[24px] md:text-[48px]/[60px]">Have a <span className="yellounderline">Question?</span> </h1>
-                <h1 className="text-[24px] md:text-[48px]/[60px]"> We are here to answer.</h1>
+                <h1 className="text-[24px] md:text-[48px]/[60px]"> We are here to help.</h1>
                 </div>
-                <p className="w-full md:w-[85%] text-[15px] md:text-base">With more than 200,000 Retail outlets across 65+ branches, Ramlal Champalal (RC) is one of the largest Distribution House & Logistics services providers for various industries.</p>
+                <p className="w-full md:w-[85%] text-[15px] md:text-base">From product sourcing to international delivery, RC Pulses is committed to offering full support to every customer. Whether you're a wholesaler, exporter, or retail brand — we’ve got answers for you.</p>
             </div>
             <div className="flex flex-col gap-4 md:gap-[30px]">
                 <div className="flex flex-col gap-3 md:gap-[20px]">
                 {
-                    faqquestions.map((question,index) => (
+                    faqs.map((question,index) => (
                         <Faqquestion key={index} question={question.question} answer={question.answer} selectedindex={selectedindex} index={index} setSelectedindex={setSelectedindex}/>
                     ))
                 }

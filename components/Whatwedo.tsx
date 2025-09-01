@@ -1,6 +1,8 @@
 "use client"
 import { useState } from "react";
 import YellowButton from "./Yellowbutton";
+import Ourprocess from "./Ourprocess";
+import Ourprocess2 from "./Ourprocess2";
 
 const Manufacturingcategory = ({title="Manufacturing Machines", description="Liquorice lemon drops powder chocolate liquorice candy dessert gummi bears. Caramels marzipan donut jujubes sweet roll. Powder croissant toffee shortbread chocolate sweet pie. ", images=["/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine4.png","/images/machine1.png","/images/machine2.png"]}: {title: string, description: string, images: string[]}) =>
 {
@@ -76,8 +78,9 @@ const Whatwedo = () => {
                 </div>
             </div>
             <div className="flex gap-4 md:gap-[20px] px-4 md:px-8 lg:px-[60px]">
-                <Manufacturingcategory {...whatwedodata[selectedCategory.title as keyof typeof whatwedodata]} />
-            </div>
+                <Ourprocess2/>
+                {/* <Manufacturingcategory {...whatwedodata[selectedCategory.title as keyof typeof whatwedodata]} />*/}
+            </div> 
         </div>
     )
 }

@@ -67,7 +67,7 @@ const Ourclientsay = () =>
                         <Image src="/images/setting.png" alt="setting" width={20} height={20} className="w-[20px] h-[20px] " /> 
                         <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base">OUR CLIENT SAY</p>
                     </div>
-                    <p className="text-[24px] md:text-[48px]/[60px] font-light">What our satisfied clients <br/> <span  className="font-semibold">are saying.</span></p>
+                    <p className="text-[24px] md:text-[48px]/[60px] font-light"> Trusted by India's Leading <br/> <span  className="font-semibold">Dal Distributors.</span></p>
                     {/* Embla Carousel Start */}
                     <div className="relative w-full">
                         <div className="overflow-hidden" ref={emblaRef}>
@@ -92,13 +92,13 @@ const Ourclientsay = () =>
                     {/* Embla Carousel End */}
                 </div>
             </div>
-            <div className="flex flex-row gap-2 md:gap-[10px] justify-between items-center mt-8 md:mt-[120px] w-full">
+            {/* <div className="flex flex-row gap-2 md:gap-[10px] justify-between items-center mt-8 md:mt-[120px] w-full">
                 {
                     Array.from({length:5}).map((item,index)=>(
                         <div className="flex items-center flex-1 justify-center"><Image src="/images/dummylogo.png" alt="ourclientsay" width={70} height={30} className="w-[60px] h-[24px] md:w-[170px] md:h-[48px] object-contain" /></div>
                     ))
                 }
-            </div>
+            </div> */}
         </div>
     )
 }

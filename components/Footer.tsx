@@ -39,6 +39,7 @@ const Footer = () =>
             {title:"Privacy Policy",link:"/privacy-policy"},
             {title:"Terms & Conditions",link:"/terms-and-conditions"}
         ],
+        
     }
 
     const {register,handleSubmit,formState:{errors}} = useForm({
@@ -71,7 +72,7 @@ const Footer = () =>
                         {errors.email && <p className="text-red-500 text-[13px] md:text-base">{errors.email.message}</p>}
                     </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full md:w-[55%] mt-6 md:mt-0 gap-6 md:gap-0">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1fr_1fr_2fr] w-full md:w-[55%] mt-6 md:mt-0 gap-6 md:gap-0">
                     {Object.keys(links).map((key,index) => (
                         <div key={index} className="flex flex-col gap-4 md:gap-[30px]">
                             <h1 className="text-[#969393] text-[18px] md:text-[24px]/[30px]">{key}</h1>
@@ -82,7 +83,19 @@ const Footer = () =>
                             </ul>
                         </div>
                     ))}
-                    <div className="flex flex-col gap-4 md:gap-[30px]" >
+                    <div className="flex flex-col gap-6"><div className="flex flex-col gap-4 md:gap-[30px]">
+                            <h1 className="text-[#969393] text-[18px] md:text-[24px]/[30px]">Contact Us</h1>
+                            <ul className="flex flex-col text-[14px] md:text-[16px]/[30px]">
+                               
+                                    <li className="hover:cursor-pointer hover:text-[#FCD900] flex items-start gap-4"><img src="/images/yellowphone.png" className="w-[15px] object-contain mt-1"/> + 91 9425326237, 7217217236</li>
+                                    <li className="hover:cursor-pointer hover:text-[#FCD900] flex items-start gap-4"><img src="/images/yellowlocation.png" className="w-[15px] object-contain mt-1" /> Office Address: Moghat Road, Khandwa 
+                                    Factory Address: Mokalgoan Road, Dondwada, Khandwa</li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <div className="flex  gap-4 md:gap-[30px] items-center" >
+                        
                         <h1 className="text-[#969393] text-[18px] md:text-[24px]/[30px]">Follow Us</h1>
                         <div className="flex gap-3 md:gap-[15px]">
                             {socialmediaimages.map((image,index) => (
@@ -90,6 +103,9 @@ const Footer = () =>
                             ))}
                         </div>
                     </div>
+                    </div>
+
+                   
                 </div>
             </div>
             <p className="text-center text-[#7B7370] text-[13px] md:text-[16px]/[25px]">@2025 RC. All Right Reserved.</p>
