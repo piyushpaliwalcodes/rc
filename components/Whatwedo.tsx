@@ -49,11 +49,11 @@ const whatwedodata = {
 
 const Whatwedo = () => {
     const Categories = [
-        {title:"Manufacturing Machines",icon:"/images/cashmachine.png"},
-        {title:"Raw Materials",icon:"/images/fuel.png"},
-        {title:"Packaging Machines",icon:"/images/idea.png"},
-        {title:"Sewing Machines",icon:"/images/stack.png"},
-        {title:"Customer Care",icon:"/images/headphone.png"}
+        {title:"Manufacturing Machines",description:"Modern Processing Infrastructure",icon:"/images/one.png"},
+        {title:"Raw Materials",description:"High-Quality Raw Material Sourcing",icon:"/images/two.png"},
+        {title:"Packaging Machines",description:" Automated Packaging & Handling",icon:"/images/three.png"},
+        {title:"Sewing Machines",description:"End-to-End Manufacturing Control",icon:"/images/four.png"},
+        {title:"Customer Care",description:"Global Supply & Client Support",icon:"/images/five.png"}
     ];
     const [selectedCategory, setSelectedCategory] = useState(Categories[0]);
     return (
@@ -62,14 +62,14 @@ const Whatwedo = () => {
             <div className=" md:min-h-[680px] bg-gray-200 px-4 md:px-8 lg:px-[60px] pt-20 md:pt-[200px] relative flex flex-col items-center gap-8 md:gap-[80px] justify-between" style={{backgroundImage: "url('/images/web.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
                 <div className="flex flex-col gap-3 md:gap-[20px] items-center  text-center md:items-start md:text-left w-full" >
                     <h1 className="text-[16px] md:text-[20px] opacity-30 font-bold">What We Do</h1>
-                    <p className="text-[18px] md:text-[48px]/[60px] w-full md:w-2/3">With our flexible production capacity and high technology, we <span className="yellounderline">produce customized</span> solutions for your needs.</p>
+                    <p className="text-[18px] md:text-[48px]/[60px] w-full md:w-[70%]"><span className="yellounderline">Optimized Pulse Processing</span>  with Advanced Machines, Quality Inputs, and Custom Packaging for Every Market Needs.</p>
                 </div>
-                <div className="w-full flex flex-wrap sm:flex-nowrap gap-2 md:gap-[15px] ">
+                <div className="w-full flex flex-wrap  sm:flex-nowrap gap-2 md:justify-between md:gap-0 ">
                     {
                         Categories.map((category) => (
-                            <div onClick={() => setSelectedCategory(category)} key={category.title} className={`flex flex-col items-center w-[60px] h-auto sm:w-[90px] sm:h-[90px] md:w-[160px] md:h-[140px] lg:w-[200px] lg:h-[170px] justify-center gap-1 sm:gap-2 md:gap-[10px] p-1 sm:p-2 md:p-[20px] md:px-[30px] rounded-t-[4px] hover:cursor-pointer hover:bg-gray-300/70 transition-all duration-200 ${selectedCategory.title === category.title ? "hover:bg-white bg-white justify-center" : ""}`}>
+                            <div onClick={() => setSelectedCategory(category)} key={category.title} className={`flex flex-col items-center w-[60px] h-auto sm:w-[90px] sm:h-[90px] md:min-w-1/6 md:h-[140px] lg:w-[200px] lg:h-[170px] justify-center gap-1 sm:gap-2 md:gap-[10px] p-1 sm:p-2 md:p-[20px] md:px-[30px] rounded-t-[4px] hover:cursor-pointer hover:bg-gray-300/70 transition-all duration-200 ${selectedCategory.title === category.title ? "hover:bg-white bg-white justify-center" : ""}`}>
                                 <img src={category.icon} alt={category.title} width={28} height={28} className="w-[28px] h-[28px] sm:w-[40px] sm:h-[40px] md:w-[60px] md:h-[60px]" />
-                                <p className="text-center text-[9px] sm:text-[13px] md:text-[16px]">{category.title}</p>
+                                <p className="text-center text-[9px] sm:text-[13px] md:text-[16px] ">{category.description}</p>
                             </div>
                         ))
                     }

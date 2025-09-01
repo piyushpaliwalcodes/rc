@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import Logo from "./Logo";
 
 const Mailinput = ({register,handleSubmit,handleSubscribe,errors}:{register:any,handleSubmit:any,handleSubscribe:any,errors:any}) =>
 {
@@ -63,7 +64,7 @@ const Footer = () =>
         <div className="flex flex-col bg-[#291004] p-4 py-6 md:p-[60px] gap-6 md:gap-[40px]">
             <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-[60px] w-full">
                 <div className="flex flex-col gap-6 md:gap-[30px] w-full md:w-[45%]">
-                    <h1 className="text-[#FCD900] font-semibold">RC LOGO</h1>
+                    <Logo />
                     <p className="text-[22px] md:text-[45px]/[60px]">Stay updated with the latest agricultural manufacturing and its Industry insights.</p>
                     <div className="flex flex-col gap-1 md:gap-[5px]">
                         <Mailinput register={register} handleSubmit={handleSubmit} handleSubscribe={handleSubscribe} errors={errors}/>

@@ -12,17 +12,21 @@ import Whatwemanufacture from "@/components/Whatwemanufacture";
 import Whychooseus from "@/components/Whychooseus";
 import Ourclientsay from "@/components/Ourclientsay";
 import Greenery from "@/components/Greenery";
+import Momstrusted from "@/components/Momstrusted";
 export default function Home() {
   return (
     <div className="bg-white flex flex-col font-roboto min-h-[100vh] text-black max-w-full">
       
      
       <Explorefacility/>
+      <Momstrusted/>
       <Whoweare/>
-      <Howweachieve/>
-      <Whatwedo/>
-      <Ourprocess/>
       <Whychooseus/>
+      <Whatwedo/>
+      <Howweachieve/>
+      
+      <Ourprocess/>
+      
       <Whatwemanufacture/>
       <Ourclientsay/>
       <Meetourteam/>
