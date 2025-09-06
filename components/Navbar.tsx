@@ -5,6 +5,8 @@ import YellowButton from './Yellowbutton'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { BsTelephone } from "react-icons/bs";
+import { CiLocationOn } from "react-icons/ci";
 
 const Navbar = () => {
     const router = useRouter()
@@ -40,8 +42,31 @@ const Navbar = () => {
     }, [pathname]);
 
     return (
-        <div className='sticky top-0 z-50 py-[10px] w-full flex justify-between items-center bg-white text-black px-4 md:px-[60px] border-b border-[#CCCCCC]'>
-            <Logo/>
+        <div className='flex flex-col text-black  bg-[#FFFCE8]'>
+         <div className='bg-[#FFFCE8] h-[108px] flex justify-between px-4 md:px-[60px]'>
+         <Logo className="w-[102px] h-[102px]" />
+         <div className='flex items-center'>
+            <div className="flex items-center gap-4">
+                <BsTelephone className='text-xl'/>
+                <div className="flex flex-col gap-2">
+                <p>+ 91 9425326237</p>
+                <p>+ 91 9425326237</p></div>
+                </div>
+               <hr className='w-[60px] rotate-90 font-bold text-[#FCD900]'/>
+                <div className="flex items-center gap-4">
+                <CiLocationOn className='text-xl'/>
+                <div className="flex flex-col gap-2">
+                <p>Office Address: Moghat Road, Khandwa </p>
+                <p>Factory Address: Mokalgoan Road, Dondwada, Khandwa</p></div>
+                </div>
+         
+      
+         </div>
+       
+         </div>
+
+            <div className='sticky top-0 z-50 py-[10px] w-full flex justify-between items-center bg-white text-black px-4 md:px-[60px]  border-b border-[#CCCCCC]'>
+            
             {/* Desktop Nav */}
             <ul className='hidden md:flex gap-[40px]'>
                 {navItems.map((item) => (
@@ -51,7 +76,7 @@ const Navbar = () => {
                 ))}
             </ul>
             <div className='hidden md:block'>
-                <YellowButton text='Contact Us' link='/contactus'/>
+            <Link href="./contactus" className=''>Contact Us</Link>
             </div>
             {/* Hamburger for mobile */}
             <button className='md:hidden text-2xl p-2' onClick={() => setSidebarOpen(true)} aria-label="Open menu">
@@ -93,6 +118,8 @@ const Navbar = () => {
                 }
             `}</style>
         </div>
+        </div>
+        
     )
 }
 
