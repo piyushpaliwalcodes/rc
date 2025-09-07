@@ -71,7 +71,7 @@ export default function Home() {
       {/* <Meetourteam/> */}
       <Greenery/>
       <Haveaquestion faqs={faqs}/>
-      <Withtractor/>
+      {/* <Withtractor/> */}
       
       
       
