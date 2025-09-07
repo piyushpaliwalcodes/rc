@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Logo from './Logo'
 import YellowButton from './Yellowbutton'
 import Link from 'next/link'
@@ -26,6 +26,9 @@ const Navbar = () => {
     })();
     const [selected, setSelected] = useState(initialKey);
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [isFixed, setIsFixed] = useState(false);
+    const [navHeight, setNavHeight] = useState(0);
+    const navRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const newKey = pathname.split('/')[1];
@@ -40,6 +43,28 @@ const Navbar = () => {
     useEffect(() => {
         setSidebarOpen(false);
     }, [pathname]);
+
+    // Make lower navbar fixed on scroll
+    useEffect(() => {
+        const updateNavMeasurements = () => {
+            if (navRef.current) {
+                setNavHeight(navRef.current.offsetHeight);
+            }
+        };
+
+        const handleScroll = () => {
+            setIsFixed(window.scrollY > 108);
+        };
+
+        updateNavMeasurements();
+        handleScroll();
+        window.addEventListener('resize', updateNavMeasurements);
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => {
+            window.removeEventListener('resize', updateNavMeasurements);
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <div className='flex flex-col text-black  bg-[#FFFCE8]'>
@@ -65,7 +90,8 @@ const Navbar = () => {
        
          </div>
 
-            <div className='sticky top-0 z-50 py-[10px] w-full flex justify-between items-center bg-white text-black px-4 md:px-[60px]  border-b border-[#CCCCCC]'>
+            {isFixed && <div style={{ height: navHeight }} />}
+            <div ref={navRef} className={`${isFixed ? 'fixed top-0 left-0 right-0 z-50 shadow-md' : 'sticky top-0 z-50'} py-[10px] w-full flex justify-between items-center bg-white text-black px-4 md:px-[60px]  border-b border-[#CCCCCC]`}>
             
             {/* Desktop Nav */}
             <ul className='hidden md:flex gap-[40px]'>
@@ -93,7 +119,7 @@ const Navbar = () => {
                             <FaTimes />
                         </button>
                         <div className="mb-4">
-                            <Logo />
+                            <Logo className="w-[102px] h-[102px]" />
                         </div>
                         <ul className='flex flex-col gap-6'>
                             {navItems.map((item) => (
