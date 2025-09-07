@@ -6,7 +6,7 @@ import { CiShare1 } from "react-icons/ci";
 
 const Dalcard = ({title,description,points,image,spoon}:any) =>
 {
-  return <div className="relative border border-[#FCD900] rounded-[8px] flex flex-col items-center w-2/3 p-5">
+  return <div className="relative border border-[#FCD900] rounded-[8px] flex flex-col items-center w-2/3 p-5 min-h-[520px]">
         <div className="w-3/4 pl-[100px] flex flex-col gap-[20px]"> 
         <img src={image} alt="" className="absolute left-0 -translate-x-1/2 h-[470px]" />
           <h1 className="font-bold text-[40px]">{title}</h1>
