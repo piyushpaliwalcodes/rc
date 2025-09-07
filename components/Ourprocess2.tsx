@@ -27,13 +27,13 @@ const Ourprocess2 = () => {
     ]
     return (
         <div className="flex flex-col justify-center  py-6 md:py-[60px]  gap-8 md:gap-[50px] text-black w-full max-w-full">
-            <div className="flex flex-col gap-4 md:gap-[20px]">
+            {/* <div className="flex flex-col gap-4 md:gap-[20px]">
                 
                 <div className="flex flex-col lg:flex-row gap-4 md:gap-[100px] items-start lg:items-center w-full ">
                     <p className="text-[24px] md:text-[48px]/[60px] font-light md:w-[80%]">RC Mills Offers <span className="font-bold">Modern Processing Infrastructure</span>  at every Stage <br/></p>
                     <p className="w-full lg:w-2/3 text-[15px] md:text-[20px] w-full text-justify">Our process is designed to maximize efficiency and quality at every stage of production. By integrating advanced technologies and best practices, we ensure seamless workflows.</p>
                 </div>
-            </div>
+            </div> */}
             <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-[80px] w-full items-center">
                 
                 <div className="flex flex-col gap-4 md:gap-[20px] w-full">
