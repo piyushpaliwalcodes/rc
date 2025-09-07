@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Navbar from "@/components/Navbar";
 import Whoweare from "@/components/Whoweare";
 import Howweachieve from "@/components/Howweachieve";
@@ -14,6 +14,9 @@ import Ourclientsay from "@/components/Ourclientsay";
 import Greenery from "@/components/Greenery";
 import Momstrusted from "@/components/Momstrusted";
 import VideoPlayer from "@/components/Videoplayer";
+import { Image } from "next/image";
+import YellowButton from "@/components/Yellowbutton";
+import Productcomponent from "@/components/Productcomponent";
 export default function Home() {
 
   const faqs = [
@@ -38,9 +41,17 @@ export default function Home() {
   return (
     <div className="bg-white flex flex-col font-roboto min-h-[100vh] text-black max-w-full">
       
-     
-      <Explorefacility/>
-      <Momstrusted/>
+      <div
+        className="w-full relative flex flex-col items-center justify-center min-h-[300px] md:min-h-[667px] bg-cover bg-center p-4 py-6 md:p-[60px]"
+        style={{ backgroundImage: "url('./images/rchero.png')" }}
+      >
+        <div className="py-8 px-[] absolute bottom-7 left-15">
+          <YellowButton text="Explore Products" link="/products" />
+        </div>
+      </div>
+      {/* <Explorefacility/> */}
+      {/* <Momstrusted/> */}
+      <Productcomponent/>
       <Whoweare/>
       <Whychooseus/>
       <Whatwedo/>
