@@ -7,8 +7,8 @@ import { CiShare1 } from "react-icons/ci";
 const Dalcard = ({title,description,points,image,spoon}:any) =>
 {
   return <div className="relative border border-[#FCD900] rounded-[8px] flex flex-col items-center w-2/3 p-5">
-        <div className="w-3/4 pl-[80px] flex flex-col gap-[20px]"> 
-        <img src={image} alt="" className="absolute left-0 -translate-x-1/2 h-[450px]" />
+        <div className="w-3/4 pl-[100px] flex flex-col gap-[20px]"> 
+        <img src={image} alt="" className="absolute left-0 -translate-x-1/2 h-[470px]" />
           <h1 className="font-bold text-[40px]">{title}</h1>
           <p className="text-[16px]/[22px] justified">{description}</p>
           <div className="flex flex-col gap-[20px] w-[80%]">
@@ -22,7 +22,7 @@ const Dalcard = ({title,description,points,image,spoon}:any) =>
           </div>
          
           
-          <img src={spoon} alt="" className="absolute right-0 translate-x-1/2 translate-y-1/8 w-[600px]" />
+          <img src={spoon} alt="" className="absolute right-0 translate-x-1/2  w-[800px]" />
   </div>
 }
 
