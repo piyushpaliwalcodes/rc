@@ -51,8 +51,9 @@ export default function Home() {
       </div>
       {/* <Explorefacility/> */}
       {/* <Momstrusted/> */}
-      <Productcomponent/>
+      
       <Whoweare/>
+      <Productcomponent/>
       <Whychooseus/>
       <Whatwedo/>
       <Howweachieve/>
