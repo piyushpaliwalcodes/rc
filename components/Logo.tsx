@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Logo = ({className}:{className:string}) => {
+const Logo = ({className}:{className?:string}) => {
   return (
     <div>
         <Image
