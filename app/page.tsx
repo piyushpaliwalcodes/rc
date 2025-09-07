@@ -56,15 +56,17 @@ export default function Home() {
       <Productcomponent/>
       <Whychooseus/>
       <Whatwedo/>
+      <VideoPlayer/>
+      <Whatwemanufacture/>
       <Howweachieve/>
       
-      <VideoPlayer/>
+      
 
 
       
       {/* <Ourprocess/> */}
       
-      <Whatwemanufacture/>
+      
       <Ourclientsay/>
       {/* <Meetourteam/> */}
       <Greenery/>
