@@ -7,7 +7,7 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
 {
     return (
         <div className={`flex flex-col gap-[10px] border-[1px] border-black p-4 md:p-[30px] rounded-[8px]  hover:bg-[#FCD900] hover:cursor-pointer hover:border-[#FABB05] `}>
-            <div className="border w-fit rounded-full p-2"><Image src={src} alt={title} width={50} height={50} className="border-2" /></div>
+            <div className="border w-fit rounded-full p-2 bg-white  border-black"><Image src={src} alt={title} width={50} height={50}  /></div>
             <h1 className="text-[18px] md:text-[20px] font-semibold">{title}</h1>
             <p className="text-[15px] md:text-[16px]">{description}</p>
         </div>
