@@ -12,7 +12,7 @@ const Dalcard = ({title,description,points,image,spoon}:any) =>
           <h1 className="font-bold text-[40px]">{title}</h1>
           <p className="text-[16px]/[22px] justified">{description}</p>
           <div className="flex flex-col gap-[20px] w-[80%]">
-            {points.map((point)=>(
+            {points.map((point:any)=>(
                 <div className="flex flex-col">
                     <h1 className="text-[24px] font-bold">{point.heading}</h1>
                     <p className="text-[18px]">{point.descr}</p>
