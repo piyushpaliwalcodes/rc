@@ -14,7 +14,7 @@ import Ourclientsay from "@/components/Ourclientsay";
 import Greenery from "@/components/Greenery";
 import Momstrusted from "@/components/Momstrusted";
 import VideoPlayer from "@/components/Videoplayer";
-import { Image } from "next/image";
+
 import YellowButton from "@/components/Yellowbutton";
 import Productcomponent from "@/components/Productcomponent";
 export default function Home() {
