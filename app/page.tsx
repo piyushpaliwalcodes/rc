@@ -62,7 +62,7 @@ export default function Home() {
 
 
       
-      <Ourprocess/>
+      {/* <Ourprocess/> */}
       
       <Whatwemanufacture/>
       <Ourclientsay/>

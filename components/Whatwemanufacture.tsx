@@ -104,7 +104,7 @@ const Manufacturecardwithimage = ({
 const Whatwemanufacture = () => {   
     const manufacturedata = [
         {
-            src:"/images/dalrc1.png",
+            src:"/dals/rc1.png",
             title:"Tiger Urad Dal",
             quantity: "30 kg",
             rating:4.6,
@@ -114,7 +114,7 @@ const Whatwemanufacture = () => {
             link:"/products/urad-dal"
         },
         {
-            src:"/images/dalrc2.png",
+            src:"/dals/rc2.png",
             title:"Urad Dal",
             quantity: "30 kg",
             rating:5,
@@ -124,7 +124,7 @@ const Whatwemanufacture = () => {
             link:"/products/urad-dal"
         },
         {
-            src:"/images/dalrc3.png",
+            src:"/dals/rc3.png",
             title:"Urad Dal",
             quantity: "30 kg",
             rating:4.6,
@@ -134,7 +134,7 @@ const Whatwemanufacture = () => {
             link:"/products/urad-dal"
         },
         {
-            src:"/images/dalrc1.png",
+            src:"/dals/rc4.png",
             title:"Tiger Urad Dal",
             quantity: "30 kg",
             rating:4.6,
@@ -144,7 +144,7 @@ const Whatwemanufacture = () => {
             link:"/products/urad-dal"
         },
         {
-            src:"/images/dalrc2.png",
+            src:"/dals/rc5.png",
             title:"Urad Dal",
             quantity: "30 kg",
             rating:5,
@@ -154,7 +154,7 @@ const Whatwemanufacture = () => {
             link:"/products/urad-dal"
         },
         {
-            src:"/images/dalrc3.png",
+            src:"/dals/rc6.png",
             title:"Urad Dal",
             quantity: "30 kg",
             rating:4.6,
