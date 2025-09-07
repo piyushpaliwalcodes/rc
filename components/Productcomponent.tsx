@@ -4,19 +4,25 @@ import { CiShare1 } from "react-icons/ci";
 
 
 
-const Dalcard = ({title,description,points}:any) =>
+const Dalcard = ({title,description,points,image,spoon}:any) =>
 {
-  return <div className="relative border border-[#FCD900] rounded-2 flex flex-col items-center">
-          <p>{title}</p>
-          <p>{description}</p>
-          <div className="flex flex-col">
+  return <div className="relative border border-[#FCD900] rounded-[8px] flex flex-col items-center w-2/3 p-5">
+        <div className="w-3/4 pl-[80px] flex flex-col gap-[20px]"> 
+        <img src={image} alt="" className="absolute left-0 -translate-x-1/2 h-[450px]" />
+          <h1 className="font-bold text-[40px]">{title}</h1>
+          <p className="text-[16px]/[22px] justified">{description}</p>
+          <div className="flex flex-col gap-[20px] w-[80%]">
             {points.map((point)=>(
                 <div className="flex flex-col">
-                    <h1>{point.heading}</h1>
-                    <p>{point.descr}</p>
+                    <h1 className="text-[24px] font-bold">{point.heading}</h1>
+                    <p className="text-[18px]">{point.descr}</p>
                 </div>
             ))}
           </div>
+          </div>
+         
+          
+          <img src={spoon} alt="" className="absolute right-0 translate-x-1/2 translate-y-1/8 w-[600px]" />
   </div>
 }
 
@@ -140,7 +146,7 @@ const Productcomponent = () =>
             ]
         }
     ]
-    return <div className='w-full max-w-full flex flex-col lg:flex-col gap-8 lg:gap-[40px] py-6 px-4 md:px-8 lg:px-[60px]  md:py-[100px] text-black '>
+    return <div className='w-full max-w-full flex flex-col lg:flex-col gap-8 lg:gap-[40px] py-6 px-4 md:px-8 lg:px-[60px]  md:py-[100px] text-black  overflow-hidden'>
         <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base">PRODUCTS</p>
         <div className="flex w-full justify-between items-center"><p className="text-[40px]">RC Pulses - <span className="font-bold">PREMIUM PRODUCTS</span></p>
          <div className="flex gap-3 items-center">
@@ -158,7 +164,10 @@ const Productcomponent = () =>
                     </div>
                 ))
 }</div></div>
-<Dalcard title={daldetails[selectedal].title} description={daldetails[selectedal].details} points={daldetails[selectedal].points}/>
+<div className="w-full flex items-center justify-center mt-[30px]">
+
+<Dalcard image={daldetails[selectedal].img} spoon={daldetails[selectedal].spoon} title={daldetails[selectedal].title} description={daldetails[selectedal].details} points={daldetails[selectedal].points}/>
+</div>
     </div>
 }
 
