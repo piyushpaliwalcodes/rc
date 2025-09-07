@@ -17,9 +17,9 @@ export const daldetails = [
                 descr:"Ideal for daily cooking with reliable flavor and nutrition."
             }
         ],
-        rating:4.6,
+        rating:4.0,
         peoplerated:"15",
-        qualities:["High-yield","No black spots","Fully Sortexed"],
+        qualities:["Cost-effective","100% Sortex Cleaned","Balanced taste"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
         link:"/products/urad-dal"
     },
@@ -41,9 +41,9 @@ export const daldetails = [
                 descr:"Naturally processed to deliver clean and safe nutrition."
             }
         ],
-        rating:4.6,
+        rating:4.5,
         peoplerated:"15",
-        qualities:["High-yield","No black spots","Fully Sortexed"],
+        qualities:["Premium","Retail & wholesale-ready","Trusted by traders"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
         link:"/products/urad-dal"
     },
@@ -65,9 +65,9 @@ export const daldetails = [
                 descr:"Ideal for dishes that require smooth texture and flavor"
             }
         ],
-        rating:4.6,
+        rating:4.0,
         peoplerated:"15",
-        qualities:["High-yield","No black spots","Fully Sortexed"],
+        qualities:["Shiny finish","Strong soaking ability","High absorption"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
         link:"/products/urad-dal"
     },
@@ -91,7 +91,7 @@ export const daldetails = [
         ],
         rating:4.6,
         peoplerated:"15",
-        qualities:["High-yield","No black spots","Fully Sortexed"],
+        qualities:["Gota quality","Regional heritage","Food-safe"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
         link:"/products/urad-dal"
     },
@@ -114,9 +114,9 @@ export const daldetails = [
                 descr:"Enhances the richness and flavor of traditional recipes."
             }
         ],
-        rating:4.6,
+        rating:4.5,
         peoplerated:"15",
-        qualities:["High-yield","No black spots","Fully Sortexed"],
+        qualities:["Graded skin-on dal","High protein","obust aroma"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
         link:"/products/urad-dal"
     },
@@ -139,7 +139,7 @@ export const daldetails = [
                 descr:"Trusted choice for consistent quality and quantity."
             }
         ],
-        rating:4.6,
+        rating:3.8,
         peoplerated:"15",
         qualities:["High-yield","No black spots","Fully Sortexed"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
