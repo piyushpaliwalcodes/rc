@@ -2,8 +2,18 @@
 
 import { useState } from 'react'
 
+
+
+const Steps = ({text,isselected}:any) =>
+{
+  return <div  className={`${isselected?"bg-[#FCD900]":"bg-[#FBF9F4] border border-[#969393]/70"} text-black w-[250px] px-[20px] md:px-[30px] py-[20px] flex items-center justify-between rounded-[4px] hover:cursor-pointer hover:bg-[#fcd900c2] transition-all duration-300 z-10 `}>
+  <p className="w-full text-sm md:text-base whitespace-nowrap text-center">{text}</p>
+  
+</div>
+}
 export default function VideoPlayer() {
   const [isMuted, setIsMuted] = useState(true)
+  const [selectestep,setSelectedStep] = useState(0);
 
   const toggleMute = () => {
     const iframe = document.getElementById('vimeo-player') as HTMLIFrameElement
@@ -18,22 +28,47 @@ export default function VideoPlayer() {
     }
   }
 
+  const stepscontent = [
+    "01 Cleaning and Draining","02 De-husking & splitting","03 Polishing & Sorting","04 Packaging & Dispatching"
+  ]
+
   return (
-    <div className="relative min-w-full   md:h-[110vh]  rounded-lg">
-      <iframe
-        id="vimeo-player"
-        src="https://player.vimeo.com/video/1114819389?autoplay=1&muted=1&loop=1&controls=0&background=1"
-        className="w-full h-full"
-        frameBorder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowFullScreen
-        title="RC Company Video"
-      />
+    <div className="relative flex flex-col gap-[60px] w-full px-4 md:px-[60px] py-[30px] md:py-[60px] bg-[#FBF9F4]">
+      {/* 
+        The iframe is not taking full width because:
+        - "min-w-full" only sets the minimum width, not the actual width.
+        - "h-full" requires a parent with explicit height, which may not be set.
+        - By default, iframes are inline and need "w-full" for width: 100%.
+        - For responsive aspect ratio, wrap in a container with aspect-[16/9] or similar.
+      */}
+      <div className="flex flex-col gap-3 md:gap-[20px] items-center  text-center md:items-start md:text-left w-full" >
+                    <h1 className="text-[16px] md:text-[20px] opacity-30 font-bold">Our Process</h1>
+                    <p className="text-[18px] md:text-[48px]/[60px] w-full md:w-[70%]">Streamlined process for <span className="yellounderline font-bold">Optimal efficiency</span></p>
+                </div>
+      <div className="w-full aspect-video relative bg-black overflow-hidden rounded-[8px]">
+        <iframe
+          id="vimeo-player"
+          src="https://player.vimeo.com/video/1114819389?autoplay=1&muted=1&loop=1&controls=0&background=1"
+          className="w-full h-full absolute top-0 left-0"
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          title="RC Company Video"
+        />
+      </div>
+      <div className="flex justify-between relative items-center">{
+        stepscontent.map((step,index)=>(
+          <Steps key={step} text={step} isselected={selectestep==index}/>
+        ))
+        
+      }<hr className="absolute top-1/2 border-t border-[2px] w-full border-dotted border-gray-400 z-0" />
+</div>
+      
       
       {/* Custom Mute/Unmute Button */}
       <button
         onClick={toggleMute}
-        className="absolute bottom-16 right-4 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110 z-10"
+        className="absolute bottom-20 right-20 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110 z-10"
         title={isMuted ? "Unmute" : "Mute"}
       >
         {isMuted ? (
