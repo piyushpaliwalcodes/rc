@@ -1,13 +1,19 @@
 "use client"
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 
 const Steps = ({text,isselected}:any) =>
 {
-  return <div  className={`${isselected?"bg-[#FCD900]":"bg-[#FBF9F4] border border-[#969393]/70"} text-black w-[250px] px-[20px] md:px-[30px] py-[20px] flex items-center justify-between rounded-[4px] hover:cursor-pointer hover:bg-[#fcd900c2] transition-all duration-300 z-10 `}>
-  <p className="w-full text-sm md:text-base whitespace-nowrap text-center">{text}</p>
+  return <div  className={`${isselected?"bg-[#FCD900]":"bg-[#FBF9F4] border border-[#969393]/70"} relative overflow-hidden text-black w-[250px] px-[20px] md:px-[30px] py-[20px] flex items-center justify-between rounded-[4px]  transition-all duration-300 z-10`}>
+  {isselected && (
+      <span className="pointer-events-none absolute inset-0 rounded-[4px] overflow-hidden">
+        <span className="absolute -inset-x-2 -inset-y-6 opacity-80 [background:radial-gradient(75%_55%_at_50%_30%,_rgba(255,255,255,0.95),_rgba(255,255,255,0)_60%)] [animation:sweep_2.6s_linear_infinite]" />
+        <span className="absolute -inset-x-2 -inset-y-6 opacity-50 [background:radial-gradient(75%_55%_at_50%_30%,_rgba(255,255,255,0.85),_rgba(255,255,255,0)_60%)] [animation:sweep_2.6s_linear_infinite] [animation-delay:700ms]" />
+      </span>
+  )}
+  <p className="relative z-10 w-full text-sm md:text-base whitespace-nowrap text-center">{text}</p>
   
 </div>
 }
@@ -32,6 +38,14 @@ export default function VideoPlayer() {
     "01 Cleaning and Draining","02 De-husking & splitting","03 Polishing & Sorting","04 Packaging & Dispatching"
   ]
 
+  // Auto-advance selected step every ~40 seconds
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setSelectedStep((prev) => (prev + 1) % stepscontent.length)
+    }, 43000)
+    return () => window.clearInterval(intervalId)
+  }, [stepscontent.length])
+
   return (
     <div className="relative flex flex-col gap-[60px] w-full px-4 md:px-[60px] py-[30px] md:py-[60px] bg-[#FBF9F4]">
       {/* 
@@ -55,20 +69,10 @@ export default function VideoPlayer() {
           allowFullScreen
           title="RC Company Video"
         />
-      </div>
-      <div className="flex justify-between relative items-center">{
-        stepscontent.map((step,index)=>(
-          <Steps key={step} text={step} isselected={selectestep==index}/>
-        ))
-        
-      }<hr className="absolute top-1/2 border-t border-[2px] w-full border-dotted border-gray-400 z-0" />
-</div>
-      
-      
-      {/* Custom Mute/Unmute Button */}
+        {/* Custom Mute/Unmute Button */}
       <button
         onClick={toggleMute}
-        className="absolute bottom-20 right-20 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110 z-10"
+        className="absolute bottom-8 right-8 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110 z-10"
         title={isMuted ? "Unmute" : "Mute"}
       >
         {isMuted ? (
@@ -81,6 +85,22 @@ export default function VideoPlayer() {
           </svg>
         )}
       </button>
+      </div>
+      <div className="flex justify-between relative items-center">{
+        stepscontent.map((step,index)=>(
+          <Steps key={step} text={step} isselected={selectestep==index}/>
+        ))
+        
+      }<hr className="absolute top-1/2 border-t border-[2px] w-full border-dotted border-gray-400 z-0" />
+</div>
+      <style jsx>{`
+        @keyframes sweep {
+          0% { transform: translateX(-120%); }
+          100% { transform: translateX(120%); }
+        }
+      `}</style>
+      
+      
     </div>
   )
 }
