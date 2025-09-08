@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import useEmblaCarousel from 'embla-carousel-react';
 import React, { useCallback } from 'react';
 
-const Reviewcard = ({name,designation,review,profilesrc}:{name:string,designation:string,review:string,profilesrc:string}) =>
+const Reviewcard = ({name,designation,review}:{name:string,designation:string,review:string}) =>
 {
     return (
         <div className="flex flex-col gap-6 md:gap-[30px] mt-4 md:mt-[30px]">
