@@ -1,6 +1,6 @@
+import { highlightsdata } from "./data"
 
-
-const Achieveitem = ({imagesrc,title,description}:any) =>
+export const Achieveitem = ({imagesrc,title,description}:any) =>
 {
     return <div className="flex flex-col gap-[10px] md:gap-[15px] items-center min-w-[160px] md:min-w-[0]">
           <img height={"70px"} width={"70px"} src={imagesrc} />
@@ -12,34 +12,7 @@ const Achieveitem = ({imagesrc,title,description}:any) =>
 
 const Howweachieve = () =>
 {
-    const highlightsdata = [
-        {
-            imagesrc:"/images/a1.png",
-            title:"40000+ ",
-            description:"SQUARE FEET-AREA",
-        }
-        ,
-        {
-            imagesrc:"/images/a2.png",
-            title:"40+ ",
-            description:"TRUSTED PARTNERS",
-        },
-        {
-            imagesrc:"/images/a3.png",
-            title:"5-6K ",
-            description:"QUINTALS/MONTH GOODS HANDLING",
-        },
-        {
-            imagesrc:"/images/a4.png",
-            title:"50+ ",
-            description:"CRORE INR TURNOVER",
-        },
-        {
-            imagesrc:"/images/a5.png",
-            title:"30+ ",
-            description:"TEAM MEMBERS",
-        }
-    ]
+    
 return (
     <div className='w-full max-w-full px-4 md:px-8 lg:px-[60px] py-6 md:py-[60px] bg-[#F9F9F9] text-black bg-[#FFFCE8]'>
          <div className="flex flex-col gap-4 md:gap-[20px]">

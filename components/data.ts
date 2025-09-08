@@ -146,3 +146,32 @@ export const daldetails = [
         link:"/products/urad-dal"
     }
 ]
+
+export const highlightsdata = [
+    {
+        imagesrc:"/images/a1.png",
+        title:"40000+ ",
+        description:"SQUARE FEET-AREA",
+    }
+    ,
+    {
+        imagesrc:"/images/a2.png",
+        title:"40+ ",
+        description:"TRUSTED PARTNERS",
+    },
+    {
+        imagesrc:"/images/a3.png",
+        title:"5-6K ",
+        description:"QUINTALS/MONTH GOODS HANDLING",
+    },
+    {
+        imagesrc:"/images/a4.png",
+        title:"50+ ",
+        description:"CRORE INR TURNOVER",
+    },
+    {
+        imagesrc:"/images/a5.png",
+        title:"30+ ",
+        description:"TEAM MEMBERS",
+    }
+]

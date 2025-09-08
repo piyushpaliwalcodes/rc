@@ -93,14 +93,19 @@ const Navbar = () => {
             {isFixed && <div style={{ height: navHeight }} />}
             <div ref={navRef} className={`${isFixed ? 'fixed top-0 left-0 right-0 z-50 shadow-md' : 'sticky top-0 z-50'} py-[10px] w-full flex justify-between items-center bg-white text-black px-4 md:px-[60px]  border-b border-[#CCCCCC]`}>
             
-            {/* Desktop Nav */}
-            <ul className='hidden md:flex gap-[40px]'>
-                {navItems.map((item) => (
-                    <li key={item.name} className={`cursor-pointer hover:text-[#FCD900] transition-all duration-100 ${selected === item.key ? 'text-[#FCD900] font-bold' : 'text-black'}`}>
-                        <Link href={item.link}>{item.name}</Link>
-                    </li>
-                ))}
-            </ul>
+            {/* Desktop Nav with conditional Logo when fixed */}
+            <div className='hidden md:flex items-center gap-6'>
+                {isFixed && (
+                    <Logo className="w-[48px] h-[48px]" />
+                )}
+                <ul className='flex gap-[40px]'>
+                    {navItems.map((item) => (
+                        <li key={item.name} className={`cursor-pointer hover:text-[#FCD900] transition-all duration-100 ${selected === item.key ? 'text-[#FCD900] font-bold' : 'text-black'}`}>
+                            <Link href={item.link}>{item.name}</Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
             <div className='hidden md:block'>
             <Link href="./contactus" className=''>Contact Us</Link>
             </div>

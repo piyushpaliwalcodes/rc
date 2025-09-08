@@ -6,11 +6,13 @@ import Meetourteam from "@/components/Meetourteam";
 import Withtractor from "@/components/Withtractor";
 import Partners from "@/components/Partners";
 import Twentyfiveplus from "@/components/Twentyfiveplus";
+import Aleadingbrand from "@/components/Aleadingbrand";
 
 const Aboutus = () => {
     return (
         <div className="flex flex-col bg-white">
-            <Herowithnav />
+            {/* <Herowithnav /> */}
+            <Aleadingbrand/>
             <Twentyfiveplus/>
             <Howweachieve/>
             <Ourapproach />

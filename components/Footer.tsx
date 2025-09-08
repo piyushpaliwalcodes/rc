@@ -30,9 +30,7 @@ const Footer = () =>
         "Quick Links": [
             {title:"About Us",link:"/aboutus"},
             {title:"Products",link:"/products"},
-            {title:"Infrastructure",link:"/infrastructure"},
-            {title:"Our Process",link:"/ourprocess"},
-            {title:"Certificates",link:"/certificates"},
+            {title:"Machines",link:"/machines"},
             {title:"Sustainability",link:"/sustainability"}
         ],
         "Legal": [
