@@ -13,9 +13,9 @@ const Reviewcard = ({name,designation,review,profilesrc}:{name:string,designatio
                 {/* Profile card */}
                 <div className="flex justify-between w-full">
                     <div className="flex gap-4 md:gap-[15px]">
-                        <Image src={profilesrc} alt="profile" width={60} height={60} className="rounded-[10px]" />
+                        {/* <Image src={profilesrc} alt="profile" width={60} height={60} className="rounded-[10px]" /> */}
                     <div className="flex flex-col gap-1 md:gap-[2px] justify-around">
-                        <h1 className="text-[16px] md:text-[20px] ">{name}</h1>
+                        <h1 className="text-[16px] md:text-[20px] font-bold text-black">-{name}</h1>
                         <p className="text-[13px] md:text-[16px] text-black/30 "> {designation}</p>
                     </div></div>
                 </div>
@@ -28,10 +28,9 @@ const Ourclientsay = () =>
 {
     const reviewdata = [
         {
-            name:"John Doe",
-            designation:"CEO",
-            review:"The team's attention to detail and commitment to quality exceeded our expectations. They delivered on time, and their innovative solutions improved our production efficiency by 30%. Highly recommended!",
-            profilesrc:"/images/teamperson.png"
+            name:"D.S. Enterprises",
+            designation:"Lucknow",
+            review:"RC Pulses consistently delivers top-grade dal that meets our packaging and quality standards. Their operations are transparent and always on time."
         },
         {
             name:"John Doe",
@@ -59,15 +58,17 @@ const Ourclientsay = () =>
     return (
         <div className="flex flex-col gap-6 md:gap-[30px] p-4 py-6 md:p-[60px] md:py-[100px]  bg-[#F5F5F5] text-black" style={{backgroundImage: "url('/images/dottedbg.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
             <div className="flex flex-col lg:grid lg:grid-cols-[2fr_3fr] gap-8 md:gap-[150px] w-full">
-                <div className="mb-6 lg:mb-0 flex justify-center items-center hidden md:flex">
-                    <Image src="/images/testimonial.png" alt="ourclientsay" width={400} height={400} className="w-[220px] h-[220px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-contain" />
+                <div className="mb-6 lg:mb-0 flex justify-center items-center hidden md:flex  oveflow-hidden">
+                    <div className="h-fit  border rounded-[8px] overflow-hidden">  <Image src="/images/client1.png" alt="ourclientsay" width={400} height={400} className=" rounded-[8px] w-[220px] h-[220px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-cover" /></div>
+                      
                 </div>
                 <div className="flex flex-col gap-4 md:gap-[30px] justify-center w-full"> 
                     <div className="flex gap-2 md:gap-[5px] items-center"> 
                         <Image src="/images/setting.png" alt="setting" width={20} height={20} className="w-[20px] h-[20px] " /> 
                         <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base">OUR CLIENT SAY</p>
                     </div>
-                    <p className="text-[24px] md:text-[48px]/[60px] font-light"> Trusted by India's Leading <br/> <span  className="font-semibold">Dal Distributors.</span></p>
+                    <p className="text-[24px] md:text-[48px]/[60px] font-light"> Trusted by India's Leading <br/> <span  className="font-semibold yellounderline">Dal Distributors.</span></p>
+                    <p className="w-[80%]">Our long-term relationships with reputed buyers across India are a reflection of our commitment to consistency, quality, and ethical sourcing.</p>
                     {/* Embla Carousel Start */}
                     <div className="relative w-full">
                         <div className="overflow-hidden" ref={emblaRef}>

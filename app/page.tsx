@@ -36,6 +36,10 @@ export default function Home() {
     {
       question:"Can I source multiple product variants in one shipment?",
       answer:"Yes, we provide flexible order configurations, allowing mixed product loads across all SKUs — from Orid Gota to Polished Chilka Dal."
+    },
+    {
+      question:"How to reach out to RC Pulses?",
+      answer:"You can easily reach RC Pulses through our website’s contact section, or connect with us directly at +91 9425326237 / 7271271236. You may also visit our of9ice at Moghat Road, Khandwa, or our factory at Mokalgaon Road, Dondwada, Khandwa."
     }
   ]
   return (

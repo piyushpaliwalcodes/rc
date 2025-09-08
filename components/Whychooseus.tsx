@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import ImageCarousel from "./ImageCarousel";
 
 const Chooseuscard = ({src, title, description,index}: {src: string, title: string, description: string,index:number}) =>
 {
@@ -36,8 +37,15 @@ const Whychooseus = () =>
         {
             src:"/images/globe.png",
             title:"Global Export Compliance",
-            description:"We follow stringent compliance for international food safety standards — including USFDA, FSSAI, and APEDA norms. "
+            description:"We follow stringent compliance for international food safety standards — including USFDA, FSSAI, and APEDA norms. "
         },
+    ]
+
+    const carouselImages = [
+        "/images/whychooseushero.png",
+        "/images/factory1.png",
+        "/images/megafacility.png",
+        "/images/ourapproach.jpg"
     ]
 
     return (
@@ -58,8 +66,14 @@ const Whychooseus = () =>
                 </div>
                 {/* <p className="mt-4 md:mt-[20px] text-sm md:text-base">Let’s make something great work together. <span className="font-bold hover:cursor-pointer hover:underline text-[#FCD900]" onClick={() => router.push("/contactus")}>Contact Us</span></p> */}
             </div>
-            {/*For image this is */}
-            <div className="hidden md:block bg-gray-200 min-h-[120px] lg:min-h-0 w-full lg:min-w-[588px] lg:w-[588px] h-[180px] lg:h-auto"><img src="/images/whychooseushero.png" alt="why choose us" className="w-full h-full object-cover" /></div>
+            {/*For image carousel this is */}
+            <div className="hidden md:block bg-gray-200 min-h-[120px] lg:min-h-0 w-full lg:min-w-[588px] lg:w-[588px] h-[180px] lg:h-auto">
+                <ImageCarousel 
+                    images={carouselImages} 
+                    autoPlayDelay={4000}
+                    className="w-full h-full"
+                />
+            </div>
         </div>
     )
 }

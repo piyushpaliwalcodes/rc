@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import { FaPlus } from "react-icons/fa"
+import YellowButton from "./Yellowbutton"
 
 // Define proper TypeScript interfaces
 interface FAQItem {
@@ -75,8 +76,10 @@ const Haveaquestion = ({ faqs }: HaveaquestionProps) => {
         <div className="flex flex-col ">
           <h1 className="text-[24px] md:text-[48px]/[60px]">Have a <span className="yellounderline">Question?</span> </h1>
           <h1 className="text-[24px] md:text-[48px]/[60px]"> We are here to help.</h1>
+          
         </div>
         <p className="w-full md:w-[85%] text-[15px] md:text-base">From product sourcing to international delivery, RC Pulses is committed to offering full support to every customer. Whether you're a wholesaler, exporter, or retail brand — we've got answers for you.</p>
+        <YellowButton text="Contact Us" link="/contactus"/>
       </div>
       <div className="flex flex-col gap-4 md:gap-[30px]">
         <div className="flex flex-col gap-3 md:gap-[20px]">
