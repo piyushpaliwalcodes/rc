@@ -68,10 +68,10 @@ const Legacyoftrust= () =>
             descr:"RC Mills is now focused on sustainable growth, eco-friendly packaging, and becoming India’s most trusted agro-processing brand."
         }
     ]
-    return <div className="flex flex-col gap-[30px]   px-4 md:px-[60px] py-6 md:py-[60px] bg-[#F9F9F9] text-black ">
+    return <div className="flex flex-col gap-[60px]   px-4 md:px-[60px] py-6 md:py-[60px]  text-black ">
               <h1 className="text-[44px]">Our <span className="font-bold">Legacy of Trust</span></h1>
 
-              <div className="flex justify-between">
+              <div className="flex justify-center gap-[200px] relative">
                 <div className="flex flex-col gap-[40px]">
                     {
                         profiles.map((profile)=>(
@@ -79,12 +79,18 @@ const Legacyoftrust= () =>
                         ))
                     }
                 </div>
-                <div className="flex w-[700px]">
-                <div className="flex flex-col gap-[30px] w-[80%]">
-                    { companyphases.map((phase)=>(
-                        <div className="flex flex-col gap-[5px]">
-                            <h1>{phase.heading}</h1>
-                            <p>{phase.descr}</p>
+                
+                <div className="flex w-[700px] relative">
+                <div className="flex flex-col gap-[60px] w-[95%] relative">
+                    {/* Vertical yellow line */}
+                    <div className="absolute left-[-35px] top-10 w-1 bg-[#FCD900] h-[89%] hidden md:block"></div>
+                    
+                    { companyphases.map((phase, index)=>(
+                        <div key={index} className="flex flex-col gap-[5px] relative">
+                            {/* Yellow circular node */}
+                            <div className="absolute -left-[40px] top-1/2 w-4 h-4 bg-[#FCD900] rounded-full  shadow-md hidden md:block"></div>
+                            <h1 className="font-semibold">{phase.heading}</h1>
+                            <p className="text-black/70">{phase.descr}</p>
                         </div>
                     ))
                         
