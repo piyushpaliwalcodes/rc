@@ -1,6 +1,16 @@
 
 
+export const Valuecard = ({ value }: any) =>
+{
+    return <div className="flex gap-[30px] items-center">
+    <img src={value.image} className="w-[48px] h-[48px]"/>
+    <div className="flex flex-col gap-[5px] w-[80%]">
+        <h1 className="text-[18px] font-semibold">{value.heading}</h1>
+        <p className="text-[18px]">{value.descr}</p>
+    </div>
 
+</div>
+}
 
 const Ourcorevalue = () =>
 {
@@ -30,13 +40,7 @@ const Ourcorevalue = () =>
         {
             values.map((value)=>
             (
-                <div className="flex gap-[30px] items-center">
-                    <img src={value.image} className="w-[48px] h-[48px]"/>
-                    <div className="flex flex-col gap-[5px] w-[80%]">
-                        <h1 className="text-[18px] font-semibold">{value.heading}</h1>
-                        <p className="text-[18px]">{value.descr}</p>
-                    </div>
-                </div>
+               <Valuecard value={value}/>
             ))
         }
         </div>

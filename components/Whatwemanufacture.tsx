@@ -15,21 +15,21 @@ import {
 } from "@/components/ui/carousel"
 
 // ------------------- Highlight Heading -------------------
-const Manufacturehighlight = () => {
-    return (
-        <div className="flex flex-col text-[18px] md:text-[20px] gap-2 md:gap-0">  
-           <h1 className="opacity-30 font-bold text-[14px] md:text-[20px]">WHAT WE MANUFACTURE</h1>
-           <p className="text-[24px] md:text-[48px]/[50px] ">
-                Pure and Trusted Dal Products from<br/>
-                <span className="yellounderline">RC Pulses.</span>
-           </p>
-           <p className="w-full md:w-[60%] text-[14px] md:text-[20px] mt-4">
-                Starting from the planning of the product our customer wants; design, manufacturing, 
-                software, mounting, installation & commissioning are made by us.
-           </p>
-        </div>
-    )
-}
+// const Manufacturehighlight = () => {
+//     return (
+//         <div className="flex flex-col text-[18px] md:text-[20px] gap-2 md:gap-0">  
+//            <h1 className="opacity-30 font-bold text-[14px] md:text-[20px]">WHAT WE MANUFACTURE</h1>
+//            <p className="text-[24px] md:text-[48px]/[50px] ">
+//                 Pure and Trusted Dal Products from<br/>
+//                 <span className="yellounderline">RC Pulses.</span>
+//            </p>
+//            <p className="w-full md:w-[60%] text-[14px] md:text-[20px] mt-4">
+//                 Starting from the planning of the product our customer wants; design, manufacturing, 
+//                 software, mounting, installation & commissioning are made by us.
+//            </p>
+//         </div>
+//     )
+// }
 
 // ------------------- Rating Component -------------------
 const StarRating = ({ rating, size = "text-lg", peoplerated }: { rating: number; size?: string; peoplerated:string }) => {
@@ -65,7 +65,7 @@ const StarRating = ({ rating, size = "text-lg", peoplerated }: { rating: number;
 };
 
 // ------------------- Card Component -------------------
-const Manufacturecardwithimage = ({
+export const Manufacturecardwithimage = ({
     img, title, link,  rating, peoplerated, qualities
 }: any) => {
     var src=img;

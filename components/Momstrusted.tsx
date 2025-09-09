@@ -1,5 +1,7 @@
 "use client"
 
+import { Valuecard } from "./Ourcorevalue"
+
 const Scanqr = () => {
     return (
         <div className="flex flex-col md:flex-row gap-4 bg-primary-yellow  min-w-1/2 items-center px-4 py-[30px] relative">
@@ -17,37 +19,28 @@ const Scanqr = () => {
 }
 
 
-const Qualitycard = ({title,description}:{title:string,description:string}) =>
-{
 
-
-    
-    return <div className="flex flex-col gap-3 md:gap-[10px] p-4 md:p-[20px] border border-gray-200 rounded-lg">
-                    
-                    <h3 className="text-[18px] md:text-[20px] font-semibold">{title}</h3>
-                    <p className="text-[14px] md:text-[16px] text-black/70">
-                        {description}
-                    </p>
-                </div>
-}
 
 const Momstrusted = () => { 
-    const qualitydata = [
-        {
-            title:"💪 Rich in Protein ",
-            description:"Pulses are carefully processed to keep the Nutrients and Proteins intact."
-        },
-        {title:"🌱 No Harmful Fertilizers",
-            description:"Grown naturally with care, ensuring safe, pure, and chemical-free pulses."
-        }
-        ,
-        {title:"🍲 Wholesome Daily Nutrition",
-            description:"Graded pulses which are rich in protein and fiber to provide you with daily nutrition."
-        }
-
-    ]
+   const values = [
+    {
+        image:"/images/cbulb.png",
+        heading:"Lab-Certified Purity",
+        descr:"Every batch tested for safety, hygiene, and nutrition."
+    },
+    {
+        image:"/images/cthunder.png",
+        heading:"Trusted by Moms",
+        descr:"Generations of families rely on RC Mills for authentic taste."
+    },
+    {
+        image:"/images/clamp.png",
+        heading:"Farm-to-Table Freshness",
+        descr:"Direct sourcing, advanced processing, and secure packaging."
+    }
+   ]
     return (
-        <div className="flex flex-col p-4 py-6 md:p-[60px] gap-6 md:gap-[60px] text-black max-w-full">
+            <div className="flex flex-col p-4 py-6 md:p-[60px] gap-6 md:gap-[60px] text-black max-w-full bg-[#FFFCE8]">
             <div className="flex flex-col gap-4 md:gap-[20px]">
                 <p className="text-[16px] md:text-[20px] font-bold text-black/30">WHY ALL MOM'S PREFER RC</p>
                 <div className="flex gap-4 md:gap-[20px]">
@@ -63,8 +56,8 @@ const Momstrusted = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-[30px]">
-                {qualitydata.map((item,index)=>(
-                    <Qualitycard key={index} {...item} />
+                {values.map((item,index)=>(
+                    <Valuecard value={item}/>
                 ))}
                 
                 

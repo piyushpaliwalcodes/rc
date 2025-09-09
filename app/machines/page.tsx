@@ -10,6 +10,7 @@ import Machinedetails from "@/components/Machinedetails";
 import { FaArrowRight } from "react-icons/fa";
 import Haveaquestion from "@/components/Haveaquestion";
 import {useState} from "react"
+import VideoPlayer from "@/components/Videoplayer";
 
 
 
@@ -390,29 +391,7 @@ const [selectedcategory,setselectedcategory] = useState<string>("Cleaning");
 
     return (
         <div className="flex flex-col bg-white">
-            <Herosecond title="Manufacturing Solutions" location="Our Machines"/>
-            <div className="flex flex-col lg:flex-row  md:gap-0 md:p-[60px] w-full">
-                {/*select category*/}
-                <div className="flex flex-col w-full lg:w-auto bg-white min-w-0 md:min-w-[365px] gap-4 md:gap-[30px]  md:mb-6 lg:mb-0 p-4 md:p-0">
-                    <div className="flex flex-col rounded-[8px] border-[1px] border-[#EBEBEB]">
-                        <div className="text-[16px] md:text-[20px] text-black/80 px-3 md:px-5 py-4 md:py-6 items-center text-center font-semibold bg-[#FCD900] rounded-t-[8px]">Machine Categories</div>
-                        {machinecategories.map((item,index)=>(
-                            <div key={index} onClick={()=>setselectedcategory(item.title)} className={`hover:bg-[#ffe30029] transition-all duration-200 flex ${selectedcategory==item.title?"bg-yellow-200":""} flex-col ${index==machinecategories.length-1?"rounded-b-[8px]":""} border-[1px] border-[#EBEBEB]`}>
-                                <div className={`hover:cursor-pointer text-[16px] md:text-[20px] text-black/60 px-3 md:px-5 py-4 md:py-6 items-center flex justify-between`}>{item.title} <FaArrowRight className="-rotate-45"/></div>
-                            </div>  
-                        ))}
-                    </div>
-                    <div className="w-full max-w-full lg:max-w-[377px] hidden md:block">
-                        <Needhelp/>
-                    </div>
-                </div>
-                {/* machine details */}
-                <div className="flex flex-col text-black w-full gap-4 md:gap-0">
-                    <Machinedetails paragraphs={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].productdetails.paragraphs} heroimage={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].productdetails.heroimage} />
-                    <Howwepackagedetails title={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].howwepackagedetails.title} packagedetails={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].howwepackagedetails.packagedetails} description={categorywisedetails[selectedcategory as keyof typeof categorywisedetails].howwepackagedetails.description} />
-                    <Whatisontheplate formachines={true} {...categorywisedetails[selectedcategory as keyof typeof categorywisedetails].whatisontheplatedetails}/>
-                </div>
-            </div>
+            <VideoPlayer/>
             <Haveaquestion/>
         </div>
     )

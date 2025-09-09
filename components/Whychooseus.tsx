@@ -15,7 +15,7 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
     )
 }
 
-const Whychooseus = () =>
+const Whychooseus = ({showimage}:{showimage?:boolean}) =>
 {
     const router = useRouter();
     const whychooseusdata = [
@@ -57,7 +57,7 @@ const Whychooseus = () =>
                 </div>
                 <p className="text-[24px] md:text-[48px]/[60px]">Why Choosing RC Pulses Means <br/> <span  className="font-bold yellounderline">Choosing Better Health.</span></p>
                 <p>We believe great dal begins with integrity — from sourcing to processing. Here’s how RC Pulses ensures unmatched quality, nutrition, and reliability in every grain we deliver.</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[30px]">
+                <div className={`${showimage?"grid grid-cols-1 md:grid-cols-2":"flex"} gap-4 md:gap-[30px]`}>
                     {
                         whychooseusdata.map((item, index) => (
                             <Chooseuscard key={index} {...item} index={index} />
@@ -67,7 +67,7 @@ const Whychooseus = () =>
                 {/* <p className="mt-4 md:mt-[20px] text-sm md:text-base">Let’s make something great work together. <span className="font-bold hover:cursor-pointer hover:underline text-[#FCD900]" onClick={() => router.push("/contactus")}>Contact Us</span></p> */}
             </div>
             {/*For image carousel this is */}
-            <div className="hidden md:block bg-gray-200 min-h-[120px] lg:min-h-0 w-full lg:min-w-[588px] lg:w-[588px] h-[180px] lg:h-auto">
+            <div className={`${showimage?"hidden md:block":"hidden"} bg-gray-200 min-h-[120px] lg:min-h-0 w-full lg:min-w-[588px] lg:w-[588px] h-[180px] lg:h-auto`}>
                 <ImageCarousel 
                     images={carouselImages} 
                     autoPlayDelay={4000}
