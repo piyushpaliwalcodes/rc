@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { FaPlus } from "react-icons/fa"
 import YellowButton from "./Yellowbutton"
+import Faqquestion from "./Faqquestions"
 
 // Define proper TypeScript interfaces
 interface FAQItem {
@@ -9,41 +10,13 @@ interface FAQItem {
   answer: string
 }
 
-interface FaqquestionProps {
-  question: string
-  answer: string
-  selectedindex: number
-  index: number
-  setSelectedindex: (index: number) => void
-}
+
 
 interface HaveaquestionProps {
   faqs?: FAQItem[]
 }
 
-const Faqquestion = ({ question, answer, selectedindex, index, setSelectedindex }: FaqquestionProps) => {
-  return (
-    <div className="flex flex-col gap-2 md:gap-[10px] pt-4 md:pt-[20px] border-t border-gray-300">
-      <div className="flex justify-between items-center">
-        <h1 className="text-[18px] md:text-[24px]/[30px] hover:cursor-pointer" onClick={() => setSelectedindex(selectedindex === index ? -1 : index)}>{question}</h1>
-        <FaPlus
-          className={`cursor-pointer transition-transform duration-300 ${
-            selectedindex === index ? "rotate-45" : ""
-          }`}
-          onClick={() => setSelectedindex(selectedindex === index ? -1 : index)}
-        />
-      </div>
-    
-      <div
-        className={`overflow-hidden transition-all duration-300  ${
-          selectedindex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <p className="mt-2 text-[15px] md:text-base">{answer}</p>
-      </div>
-    </div>
-  )
-}
+
 
 const Haveaquestion = ({ faqs }: HaveaquestionProps) => {
   // Default FAQ data if none provided

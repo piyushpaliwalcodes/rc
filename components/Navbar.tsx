@@ -107,7 +107,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className='hidden md:block'>
-            <Link href="./contactus" className=''>Contact Us</Link>
+            <Link href="/contactus" className=''>Contact Us</Link>
             </div>
             {/* Hamburger for mobile */}
             <button className='md:hidden text-2xl p-2' onClick={() => setSidebarOpen(true)} aria-label="Open menu">

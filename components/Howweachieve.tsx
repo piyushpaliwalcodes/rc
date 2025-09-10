@@ -6,7 +6,7 @@ export const Achieveitem = ({imagesrc,title,description}:any) =>
           <img height={"70px"} width={"70px"} src={imagesrc} />
           <p className="text-[24px] md:text-[40px] font-bold ">{title}</p>
          
-          <p className="max-w-[90%] md:max-w-[60%] font-bold text-[#464646] text-center text-[14px] md:text-base tracking-widest">{description}</p>
+          <p className="max-w-[90%] md:max-w-[60%] font-bold text-[#464646] text-center text-[14px] md:text-[15px] tracking-widest">{description}</p>
     </div>
 }
 
@@ -24,7 +24,7 @@ return (
                     At RC Pulses, our growth is built on more than numbers — it’s built on clarity, consistency, and collective effort. Every part of our ecosystem works in sync: from sourcing the best-quality pulses to processing them through precise, tech-enabled workflows. Behind every metric lies a team, a method, and a commitment to improve each day. That’s how we achieve — together.
                     </div>
                 </div>
-            <div className="flex overflow-x-auto md:overflow-x-visible justify-start md:justify-around pt-8 md:pt-[60px] gap-4 md:gap-0">
+            <div className="grid grid-cols-5 overflow-x-auto md:overflow-x-visible pt-8 md:pt-[60px] gap-4 md:gap-0">
                 { highlightsdata.map((item,index)=>(
                     <Achieveitem {...item} key={index}/>
                 ))}

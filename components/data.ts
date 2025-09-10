@@ -2,6 +2,9 @@ export const daldetails = [
     {
         key:"silver",
         productlink:"/products/silver",
+        fourimages:[
+    "/dals/rc1.png","/dals/4.png","/dals/rc1.png","/dals/4.png",
+        ],
         img:"/dals/rc1.png",
         spoon:"/dals/4.png",
         title:"SILVER ORID CHILIKA DAL",
@@ -34,6 +37,9 @@ export const daldetails = [
     },
     {key:"paan",
         productlink:"/products/paan",
+        fourimages:[
+            "/dals/rc3.png","/dals/2.png", "/dals/rc3.png","/dals/2.png",
+        ],
         img:"/dals/rc3.png",
         spoon:"/dals/2.png",
         title:"PAAN CHAAP URAD DAL",
@@ -64,6 +70,7 @@ export const daldetails = [
     },
     {key:"horse",
         productlink:"/products/horse",
+        fourimages:["/dals/rc6.png","/dals/3.png","/dals/rc6.png","/dals/3.png",],
         img:"/dals/rc6.png",
         spoon:"/dals/3.png",
         title:"BLACK HORSE URAD POLISH",
@@ -94,6 +101,7 @@ export const daldetails = [
     },
     {key:"khandwa",
         productlink:"/products/khandwa",
+        fourimages:["/dals/rc5.png","/dals/2.png","/dals/rc5.png","/dals/2.png",],
         img:"/dals/rc5.png",
         spoon:"/dals/2.png",
         title:"KHANDWA URAD DAL/GOTA",
@@ -126,6 +134,7 @@ export const daldetails = [
   
     {key:"gold",
         productlink:"/products/gold",
+        fourimages:["/dals/rc4.png","/dals/4.png",],
         img:"/dals/rc4.png",
         spoon:"/dals/4.png",
         title:"GOLD ORID CHILIKA DAL",
@@ -156,6 +165,7 @@ export const daldetails = [
     },
     {key:"tiger",
         productlink:"/products/tiger",
+        fourimages:["/dals/rc2.png","/dals/1.png","/dals/rc2.png","/dals/1.png",],
         img:"/dals/rc2.png",
         spoon:"/dals/1.png",
         title:"TIGER ORID DAL",
