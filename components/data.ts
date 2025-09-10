@@ -179,3 +179,21 @@ export const highlightsdata = [
 
 
 
+export const sustainabledata = [
+    {
+        title:'Fair, Responsible & Sustainable Sourcing',
+        descr:"Partnering with 500+ farmers, ensuring fair trade, eco-friendly farming, and full traceability from farm to table."
+    },
+    {
+        title:"Efficient Energy & Resources",
+        descr:"30% energy saved and 40% water recycled through modern, eco-efficient processing systems."
+    },
+    {
+        title:"Smart Waste & Circular Economy",
+        descr:"90% by-products repurposed with recyclable packaging, reducing waste and safeguarding resources."
+    },
+    {
+        title:"Stronger Communities & Farmers",
+        descr:"Farmer training, fair pricing, and rural jobs combined with support for education and healthcare."
+    }
+]

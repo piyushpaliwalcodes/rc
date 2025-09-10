@@ -12,12 +12,13 @@ import Haveaquestion from "@/components/Haveaquestion";
 import {useState} from "react"
 import VideoPlayer from "@/components/Videoplayer";
 import YellowButton from "@/components/Yellowbutton";
+import Sustainablegrowth from "@/components/Sustainablegrowth";
 
 
 
 
 
-const Machinecard = ({index,title,descr}:any) =>
+export const Machinecard = ({index,title,descr}:any) =>
 {
     return <div className={`flex flex-col gap-[10px] border-[1px] border-black p-4 md:p-[30px] rounded-[8px]  hover:bg-[#FCD900] hover:cursor-pointer hover:border-[#FABB05] `}>
             <h1 className="font-bold text-[40px]">0{index+1}</h1>
@@ -82,24 +83,7 @@ const Endtoend = () =>
 const Machines = () => {
 
 
-const sustainabledata = [
-    {
-        title:'Fair, Responsible & Sustainable Sourcing',
-        descr:"Partnering with 500+ farmers, ensuring fair trade, eco-friendly farming, and full traceability from farm to table."
-    },
-    {
-        title:"Efficient Energy & Resources",
-        descr:"30% energy saved and 40% water recycled through modern, eco-efficient processing systems."
-    },
-    {
-        title:"Smart Waste & Circular Economy",
-        descr:"90% by-products repurposed with recyclable packaging, reducing waste and safeguarding resources."
-    },
-    {
-        title:"Stronger Communities & Farmers",
-        descr:"Farmer training, fair pricing, and rural jobs combined with support for education and healthcare."
-    }
-]
+
 
 
 
@@ -111,19 +95,7 @@ const [selectedcategory,setselectedcategory] = useState<string>("Cleaning");
         <div className="flex flex-col bg-white">
             <VideoPlayer/>
             <Endtoend/>
-            <div className="flex flex-col gap-6 md:gap-[50px] px-4 md:px-[60px] py-6 md:py-[60px]  text-black items-center bg-[#FFFCE8]">
-    <div className="flex justify-between w-full">
-        <h1 className="text-[40px]">Our Path to <span className="font-bold">Sustainable Growth</span></h1>
-         <YellowButton text="Sustainability Report" link="/sustainability" className="min-w-[250px]"/>
-    </div>
-    <div className="flex justify-between gap-[30px]">
-        {
-            sustainabledata.map((item,index)=>(
-                <Machinecard title={item.title} descr={item.descr} index={index}/>
-            ))
-        }
-    </div>
-            </div>
+           <Sustainablegrowth/>
             <Haveaquestion/>
         </div>
     )
