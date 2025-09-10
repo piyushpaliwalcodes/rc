@@ -1,5 +1,5 @@
 import YellowButton from "./Yellowbutton";
-import { Machinecard } from "@/app/machines/page";
+import Machinecard from "./Machinecard";
 import { sustainabledata } from "./data";
 
 const Sustainablegrowth = () =>
