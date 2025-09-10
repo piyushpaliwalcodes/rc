@@ -66,7 +66,7 @@ const StarRating = ({ rating, size = "text-lg", peoplerated }: { rating: number;
 
 // ------------------- Card Component -------------------
 export const Manufacturecardwithimage = ({
-    img, title, link,  rating, peoplerated, qualities
+    img, title, link,  rating, peoplerated, qualities,productlink
 }: any) => {
     var src=img;
     return (
@@ -86,7 +86,7 @@ export const Manufacturecardwithimage = ({
                     ))}
                 </ul>
                 <StarRating rating={rating} size="text-sm"  peoplerated={peoplerated} /> 
-                <YellowButton text="View Details" link={link} className="min-w-full justify-center"/>
+                <YellowButton text="View Details" link={productlink} className="min-w-full justify-center"/>
             </div>
         </div>
     )

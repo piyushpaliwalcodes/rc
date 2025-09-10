@@ -15,7 +15,7 @@ const Chooseuscard = ({src, title, description,index}: {src: string, title: stri
     )
 }
 
-const Whychooseus = ({showimage}:{showimage?:boolean}) =>
+const Whychooseus = ({showimage,yellowbg}:{showimage?:boolean,yellowbg?:boolean}) =>
 {
     const router = useRouter();
     const whychooseusdata = [
@@ -49,7 +49,7 @@ const Whychooseus = ({showimage}:{showimage?:boolean}) =>
     ]
 
     return (
-        <div className="flex flex-col lg:flex-row bg-[#FFF2ED]  text-black max-w-full">
+        <div className={`flex flex-col lg:flex-row ${yellowbg?"bg-[#FFFCE8]":"bg-[#FFF2ED]"}  text-black max-w-full`}>
             <div className="flex flex-col gap-6 md:gap-[30px] p-4 py-6 md:p-[60px] w-full lg:w-auto">
                 <div className="flex gap-2 md:gap-[5px] items-center"> 
                    

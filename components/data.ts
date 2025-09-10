@@ -1,5 +1,7 @@
 export const daldetails = [
     {
+        key:"silver",
+        productlink:"/products/silver",
         img:"/dals/rc1.png",
         spoon:"/dals/4.png",
         title:"SILVER ORID CHILIKA DAL",
@@ -21,9 +23,17 @@ export const daldetails = [
         peoplerated:"15",
         qualities:["Cost-effective","100% Sortex Cleaned","Balanced taste"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-        link:"/products/urad-dal"
+        link:"/products/urad-dal",
+        overview:"Silver Orid Chilka Dal is an affordable yet reliable choice, offering balanced taste and nutrition. Each grain is sortex-cleaned to ensure quality, making it a perfect option for households, hotels, and small-scale food businesses seeking consistency at cost-effective pricing",
+        productdetails:["Uniform grain size and balanced texture","Cost-effective without compromising qualiNaturally rich in proteins and fiber","Free from dust, stones, and impurities"],
+        keybenefits:["Pocket-friendly quality dal","Maintains authentic flavor and aroma","Suitable for daily cooking and bulk use","Processed under strict food safety norms"],
+        specifications:["Type: Orid Chilka Dal (Split Black Gram with skin)","Processing: 100% Sortex Cleaned","Packaging: 30 KG PP bag","Shelf Life: 12 months"],
+        cook:["Wash and soak for 20–30 minutes.","Pressure cook until soft and fluffy.","Ideal for dals, curries, and stuffed parathas."]
+       
+           
     },
-    {
+    {key:"paan",
+        productlink:"/products/paan",
         img:"/dals/rc3.png",
         spoon:"/dals/2.png",
         title:"PAAN CHAAP URAD DAL",
@@ -45,9 +55,15 @@ export const daldetails = [
         peoplerated:"15",
         qualities:["Premium","Retail & wholesale-ready","Trusted by traders"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-        link:"/products/urad-dal"
+        link:"/products/urad-dal",
+        overview:"Paan Chaap Urad Dal is a premium product designed for both retail and wholesale markets.Known for its consistent quality and trader trust, this dal is suitable for home kitchens as well as commercial establishments, ensuring great taste and high nutrition.",
+        productdetails:["Premium-grade, trader-approved dal","Maintains consistent cooking quality","Hygienically packed for retail shelves","Excellent taste and aroma retention"],
+        keybenefits:["Trusted by retailers and wholesalers","Rich in proteins and minerals","Suitable for catering and bulk supply","Long shelf-life for stock management"],
+        specifications:["Type: Whole/Split Urad Dal (as packed variant)","Packaging: 30 KG Bag (retail & wholesale)","Shelf Life: 12 months"],
+        cook:["Wash and soak for 30–40 minutes.","Cook in pressure cooker with turmeric and salt.","Best used for dals, snacks, and traditional dishes."]
     },
-    {
+    {key:"horse",
+        productlink:"/products/horse",
         img:"/dals/rc6.png",
         spoon:"/dals/3.png",
         title:"BLACK HORSE URAD POLISH",
@@ -69,9 +85,15 @@ export const daldetails = [
         peoplerated:"15",
         qualities:["Shiny finish","Strong soaking ability","High absorption"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-        link:"/products/urad-dal"
+        link:"/products/urad-dal",
+        overview:"Black Horse Urad Polish is a polished variant with a shiny finish, high soaking ability, and quick absorption. It is especially suited for making soft batters, fluffy idlis, and crisp dosas, delivering superior texture and flavor in every preparation.",
+        productdetails:["Premium shiny polish for attractive look","Strong soaking and absorption capacity","Retains nutrition with improved cooking performance","Fully cleaned and graded for uniformity"],
+        keybenefits:["Superior batter preparation quality","Ideal for South Indian recipes","Faster cooking and better consistency","Hygienically processed and polished"],
+        specifications:["Type: Polished Urad Dal","Finish: Glossy / Premium Polish","Packaging: 30 KG Bag","Shelf Life: 12 months"],
+        cook:["Wash and soak 4–6 hours for batter.","Grind smoothly for dosa/idli mix.","Use for papads, vadas, and dals."]
     },
-    {
+    {key:"khandwa",
+        productlink:"/products/khandwa",
         img:"/dals/rc5.png",
         spoon:"/dals/2.png",
         title:"KHANDWA URAD DAL/GOTA",
@@ -93,10 +115,17 @@ export const daldetails = [
         peoplerated:"15",
         qualities:["Gota quality","Regional heritage","Food-safe"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-        link:"/products/urad-dal"
+        link:"/products/urad-dal",
+        overview:"Khandwa Urad Dal / Gota is sourced from the fertile regions of Madhya Pradesh, known for producing premium-quality pulses. Every grain is carefully selected and hygienically processed to retain its natural flavor, aroma, and nutrition. With advanced technology and time-tested methods, RC Pulses ensures consistency, purity, and the authentic taste trusted for generations.",
+        productdetails:["• 100% sortex-cleaned, impurity-free grains","Processed with advanced milling technology","Retains natural proteins, iron, and fiber","Hygienic packaging to maintain freshness"],
+        keybenefits:["High in protein and dietary fiber","Enhances traditional Indian recipes","Long shelf life with airtight packing","Trusted choice for purity and nutrition"],
+        specifications:["Type: Whole Urad Gota","Origin: Khandwa, Madhya Pradesh","Packaging: 30 KG PP bag","Shelf Life: 12 months"],
+        cook:["Wash thoroughly and soak for 30–45 minutes.","Cook in pressure cooker (1:3 dal-to-water ratio).","Use in vadas, papads, dals, batters, and sweets."]
+
     },
   
-    {
+    {key:"gold",
+        productlink:"/products/gold",
         img:"/dals/rc4.png",
         spoon:"/dals/4.png",
         title:"GOLD ORID CHILIKA DAL",
@@ -118,9 +147,15 @@ export const daldetails = [
         peoplerated:"15",
         qualities:["Graded skin-on dal","High protein","obust aroma"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-        link:"/products/urad-dal"
+        link:"/products/urad-dal",
+        overview:"Gold Orid Chilka Dal is a premium, graded skin-on dal that delivers a robust aroma and authentic taste. Rich in protein and essential nutrients, it is widely used in restaurants, homes, and bulk catering, making it a top-grade choice in the RC range.",
+        productdetails:["Graded, high-quality chilka dal","Natural aroma and wholesome flavor","Rich in proteins, iron, and fiber","Maintains taste and consistency in recipes"],
+        keybenefits:["Premium choice for households & restaurants","High nutritional value with skin-on benefits","Superior cooking results","Long-lasting freshness with sealed packs"],
+        specifications:["Type: Orid Chilka Dal (skin-on)","Grade: Premium Gold","Packaging: 30 KG Bag","Shelf Life: 12 months"],
+        cook:["Rinse well and soak for 30 minutes.","Pressure cook until soft.","Use for dals, curries, and North Indian recipes."]
     },
-    {
+    {key:"tiger",
+        productlink:"/products/tiger",
         img:"/dals/rc2.png",
         spoon:"/dals/1.png",
         title:"TIGER ORID DAL",
@@ -143,7 +178,12 @@ export const daldetails = [
         peoplerated:"15",
         qualities:["High-yield","No black spots","Fully Sortexed"],
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-        link:"/products/urad-dal"
+        link:"/products/urad-dal",
+        overview:"Tiger Orid Dal is recognized for its spotless grains and high cooking yield. Fully sortexed and packed for both bulk and domestic use, it is an affordable and trusted option for those who want reliability at scale.",
+        productdetails:["No black spots, clean grains","Fully sortexed for quality assurance","High yield in cooking","Balanced taste for daily use"],
+        keybenefits:["Consistent cooking results","Affordable for traders and wholesalers","Good protein and fiber content","Hygienically processed and packed"],
+        specifications:["Type: Orid Dal","Quality: Spotless, Fully Sortexed","Packaging: 30 KG Bag","Shelf Life: 12 months"],
+        cook:["Wash and soak 20–30 minutes.","Cook with water until soft.","Suitable for dals, pakoras, and routine meals."]
     }
 ]
 

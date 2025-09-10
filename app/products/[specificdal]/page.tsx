@@ -2,7 +2,8 @@
 
 import { JSX, useState } from "react";
 
-
+import Whychooseus from "@/components/Whychooseus";
+import Whatwemanufacture from "@/components/Whatwemanufacture";
 
 
 
@@ -16,10 +17,8 @@ import { JSX, useState } from "react";
 
     return (
         <div className="flex flex-col bg-white text-black gap-4 md:gap-0">
-           <div className={`flex f gap-[10px] border-b-[1px] border-black/20  py-[15px] md:py-[30px]   `}>
-           <div></div>
-           <div className="flex flex-col"></div>
-           </div>
+           <Whychooseus showimage={false} yellowbg={true}/>
+           <Whatwemanufacture/>
         </div>
     )
 }
