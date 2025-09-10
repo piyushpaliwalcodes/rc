@@ -1,6 +1,7 @@
 import Contactus from "@/components/Contactus";
 import Herosecond from "@/components/Herosecond";
 import Image from "next/image";
+import Crafted from "@/components/Crafted";
 
 const Contact = () => {
 
@@ -21,9 +22,10 @@ const Contact = () => {
     }
     return (
         <div className="flex flex-col bg-white text-black">
-        <Herosecond title="Contact Us" location="Contact Us" />
+        
         <Contactus/>
         <Image src="/images/contactusmap.png" alt="contactus" width={1000} height={600} className="w-full h-auto object-cover"/>
+        <Crafted/>
         </div>
         
     )

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import Crafted from "./Crafted";
 
 const Contactus = () => {
     
@@ -47,12 +48,12 @@ const Contactus = () => {
                     <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">Reach out for any inquiries, support, or to discuss how we can
                     meet your industrial needs.</p>
                     {/*Contact details */}
-                    <div className="flex flex-col gap-5 md:gap-[30px]">
+                    <div className="flex flex-col gap-5 md:gap-[30px] md:min-w-[480px]">
                         <div className="flex gap-4 md:gap-[20px] items-start">
                             <Image src="/images/contactphone.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
                             <div className="flex flex-col gap-[5px] justify-center">
                                 <h1 className="text-[18px] md:text-[20px]/[24px] ">Contact</h1>
-                                <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">+91 9876543210</p>
+                                <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">+ 91 9425326237, 7217217236</p>
                             </div>
                         </div>
                         <div className="w-full h-[1px] bg-black/10"/>
@@ -60,22 +61,26 @@ const Contactus = () => {
                             <Image src="/images/contactmail.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
                             <div className="flex flex-col gap-[5px] justify-center">
                                 <h1 className="text-[18px] md:text-[20px]/[24px] ">E-mail</h1>
-                                <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">info@domainname.com</p>
+                                <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">rcpulses.official@gmail.com</p>
                             </div>
                         </div>
                         <div className="w-full h-[1px] bg-black/10"/>
                         <div className="flex gap-4 md:gap-[20px] items-start">
                             <Image src="/images/contactaddress.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
                             <div className="flex flex-col gap-[5px] justify-center">
-                                <h1 className="text-[18px] md:text-[20px]/[24px] ">Our Address</h1>
-                                <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">37 San Juan Lane Graaf Florisstraat 22A,3021 CH</p>
+                                <h1 className="text-[18px] md:text-[20px]/[24px] ">Office Address</h1>
+                                <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">Moghat Road, Khandwa </p>
+                                <h1 className="text-[18px] md:text-[20px]/[24px] "> 
+Factory Address: 
+</h1>
+                                <p className="text-[15px] md:text-[16px]/[20px] text-[#81848A]">Mokalgoan Road, Dondwada, Khandwa</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/*Form*/}
                 <div className="flex flex-col rounded-[8px] gap-5 md:gap-[30px] w-full shadow-md p-4 md:p-[30px]">
-                    <h1 className="text-[28px] md:text-[50px]/[30px] ">Contact <span className="font-bold">us</span></h1>
+                    <h1 className="text-[28px] md:text-[50px]/[30px] ">Send us an <span className="font-bold">Enquiry!</span></h1>
                     <form action="" className="flex flex-col gap-4 md:gap-[20px] text-[15px] md:text-[16px]/[20px] " onSubmit={handleSubmit(handleSubmitform)}>
                         <div className="flex flex-col md:flex-row gap-4 md:gap-[30px]">
                             <div className="flex flex-col gap-[px] w-full">
@@ -111,7 +116,9 @@ const Contactus = () => {
                     </form>
                 </div>
             </div>
-            <Image src="/images/contactusmap.png" alt="contactus" width={1000} height={600} className="w-full h-[160px] md:h-[200px] object-cover max-h-[200px]"/>
+            <div><img src="/images/contactusmap.png" alt="contactus" width={1000} height={600} className="w-full h-[160px] md:h-[200px] object-cover max-h-[200px]"/></div>
+            
+           
         </div>
     )
 }
