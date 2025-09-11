@@ -63,7 +63,7 @@ const Footer = () =>
         <div className="flex flex-col bg-[#291004] p-4 py-6 md:p-[60px] gap-6 md:gap-[40px] text-white">
             <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-[60px] w-full">
                 <div className="flex flex-col gap-6 md:gap-[30px] w-full md:w-[45%]">
-                    <Logo />
+                    <Logo className="w-[60px] h-[60px]" />
                     <p className="text-[22px] md:text-[45px]/[60px]">Stay updated with the latest agricultural manufacturing and its Industry insights.</p>
                     <div className="flex flex-col gap-1 md:gap-[5px]">
                         <Mailinput register={register} handleSubmit={handleSubmit} handleSubscribe={handleSubscribe} errors={errors}/>
@@ -85,8 +85,8 @@ const Footer = () =>
                             <h1 className="text-[#969393] text-[18px] md:text-[24px]/[30px]">Contact Us</h1>
                             <ul className="flex flex-col text-[14px] md:text-[16px]/[30px]">
                                
-                                    <li className="hover:cursor-pointer hover:text-[#FCD900] flex items-start gap-4"><img src="/images/yellowphone.png" className="w-[15px] object-contain mt-1"/> + 91 9425326237, 7217217236</li>
-                                    <li className="hover:cursor-pointer hover:text-[#FCD900] flex items-start gap-4"><img src="/images/yellowlocation.png" className="w-[15px] object-contain mt-1" /> Office Address: Moghat Road, Khandwa 
+                                    <li className=" flex items-start gap-4"><img src="/images/yellowphone.png" className="w-[15px] object-contain mt-1"/> + 91 9425326237, 7217217236</li>
+                                    <li className=" flex items-start gap-4"><img src="/images/yellowlocation.png" className="w-[15px] object-contain mt-1" /> Office Address: Moghat Road, Khandwa 
                                     Factory Address: Mokalgoan Road, Dondwada, Khandwa</li>
                                 
                                 
