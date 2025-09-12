@@ -8,6 +8,7 @@ import Faqquestion from "./Faqquestions"
 interface FAQItem {
   question: string
   answer: string
+  icon?:React.ReactElement
 }
 
 
@@ -69,6 +70,7 @@ const Haveaquestion = ({ faqs }: HaveaquestionProps) => {
                 answer={faq.answer} 
                 selectedindex={selectedindex} 
                 index={index} 
+                icon={faq.icon}
                 setSelectedindex={setSelectedindex}
               />
             ))

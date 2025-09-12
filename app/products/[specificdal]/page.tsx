@@ -9,7 +9,11 @@ import { daldetails } from "@/components/data";
 import StarRating from "@/components/Starrating";
 import YellowButton from "@/components/Yellowbutton";
 import Faqquestion from "@/components/Faqquestions";
-
+import { VscBook } from "react-icons/vsc";
+import { TbListDetails } from "react-icons/tb";
+import { IoMdCheckmark } from "react-icons/io";
+import { IoSettingsOutline } from "react-icons/io5";
+import { PiCookingPotLight } from "react-icons/pi";
 
 
 
@@ -26,24 +30,26 @@ import Faqquestion from "@/components/Faqquestions";
   const [selectedImage,setSelectedImage] = useState(0);
 
   const moredetails = [
-    {
-        ques:"📖 Product Overview",
+    {   icon:<VscBook/>,
+        ques:"Product Overview",
         ans:dalDetails?.overview
     },
     {
-        ques:"🏭 Product Details",
+        icon:<TbListDetails/>,
+        ques:"Product Details",
         ans:dalDetails?.productdetails
     },
     {
-        ques:"✅ Key Benefits",
+        icon:<IoMdCheckmark/>,
+        ques:"Key Benefits",
         ans:dalDetails?.keybenefits
     },
-    {
-        ques:"⚙️ Specifications",
+    {   icon:<IoSettingsOutline/>,
+        ques:"Specifications",
         ans:dalDetails?.specifications
     },
-    {
-        ques:"🍲 How to Cook",
+    {   icon:<PiCookingPotLight/>,
+        ques:"How to Cook",
         ans:dalDetails?.cook
     }
   ]
@@ -71,7 +77,7 @@ import Faqquestion from "@/components/Faqquestions";
                     <div className="flex flex-col gap-[20px]">
                     {
                 moredetails.map((item,index)=>(
-                    <Faqquestion question={item.ques} answer={item?.ans} selectedindex={selectedindex} setSelectedindex={setSelectedindex} index={index}/>
+                    <Faqquestion question={item.ques} answer={item?.ans} icon={item?.icon} selectedindex={selectedindex} setSelectedindex={setSelectedindex} index={index}/>
                 ))
             }
                     </div>

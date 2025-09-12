@@ -1,4 +1,11 @@
+import { ReactElement } from "react";
 import { FaPlus } from "react-icons/fa";
+import { VscBook } from "react-icons/vsc";
+import { TbListDetails } from "react-icons/tb";
+import { IoMdCheckmark } from "react-icons/io";
+import { IoSettingsOutline } from "react-icons/io5";
+import { PiCookingPotLight } from "react-icons/pi";
+
 // Define proper TypeScript interfaces
 interface FAQItem {
     question: string
@@ -10,6 +17,7 @@ interface FAQItem {
     answer?: string|string[]
     selectedindex: number
     index: number
+    icon?:React.ReactElement
     setSelectedindex: (index: number) => void
   }
   
@@ -18,11 +26,11 @@ interface FAQItem {
   }
   
 
-const Faqquestion = ({ question, answer, selectedindex, index, setSelectedindex }: FaqquestionProps) => {
+const Faqquestion = ({ question,icon, answer, selectedindex, index, setSelectedindex }: FaqquestionProps) => {
     return (
       <div className={`flex flex-col gap-2 md:gap-[10px] pt-4 md:pt-[20px] ${index==0?"":"border-t border-gray-300"} `}>
         <div className="flex justify-between items-center hover:cursor-pointer" onClick={() => setSelectedindex(selectedindex === index ? -1 : index)}>
-          <h1 className="text-[18px] md:text-[24px]/[30px] hover:cursor-pointer" >{question}</h1>
+          <div className=" flex gap-2 items-center text-[18px] md:text-[24px]/[30px] hover:cursor-pointer" >{icon} {question}</div>
           <FaPlus
             className={`cursor-pointer transition-transform duration-300 ${
               selectedindex === index ? "rotate-45" : ""
