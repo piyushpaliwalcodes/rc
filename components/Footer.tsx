@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import Logo from "./Logo";
+import Link from "next/link";
 
 const Mailinput = ({register,handleSubmit,handleSubscribe,errors}:{register:any,handleSubmit:any,handleSubscribe:any,errors:any}) =>
 {
@@ -28,14 +29,14 @@ const Footer = () =>
 
     const links = {
         "Quick Links": [
-            {title:"About Us",link:"/aboutus"},
-            {title:"Products",link:"/products"},
-            {title:"Machines",link:"/machines"},
-            {title:"Sustainability",link:"/sustainability"}
+            {title:"About Us",link:"/aboutus",target:""},
+            {title:"Products",link:"/products",target:""},
+            {title:"Machines",link:"/machines",target:""},
+            {title:"Sustainability",link:"/sustainability",target:""},
         ],
         "Legal": [
-            {title:"Privacy Policy",link:"/privacy-policy"},
-            {title:"Terms & Conditions",link:"/terms-and-conditions"}
+            {title:"Privacy Policy",link:"/privacypolicy.pdf",target:"_blank"},
+            {title:"Terms & Conditions",link:"/termsandcondition.pdf",target:"_blank"}
         ],
         
     }
@@ -76,7 +77,7 @@ const Footer = () =>
                             <h1 className="text-[#969393] text-[18px] md:text-[24px]/[30px]">{key}</h1>
                             <ul className="flex flex-col text-[14px] md:text-[16px]/[30px]">
                                 {links[key as keyof typeof links].map((link,index) => (
-                                    <li key={index} className="hover:cursor-pointer hover:text-[#FCD900]"><a href={link.link}>{link.title}</a></li>
+                                    <li key={index} className="hover:cursor-pointer hover:text-[#FCD900]"><Link href={link.link} target={link.target}>{link.title}</Link></li>
                                 ))} 
                             </ul>
                         </div>
