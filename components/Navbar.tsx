@@ -76,7 +76,7 @@ const Navbar = () => {
                 <BsTelephone className='text-2xl'/>
                 <div className="flex flex-col ">
                 <p>+ 91 9425326237</p>
-                <p>+91 7217217236</p></div>
+                <p>+ 91 7217217236</p></div>
                 </div>
                <hr className='w-[60px] rotate-90 font-bold text-[#FCD900]'/>
                 <div className="flex items-center gap-3">
