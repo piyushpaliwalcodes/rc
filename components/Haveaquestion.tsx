@@ -20,22 +20,27 @@ interface HaveaquestionProps {
 
 const Haveaquestion = ({ faqs }: HaveaquestionProps) => {
   // Default FAQ data if none provided
-  const defaultFaqs: FAQItem[] = [
+  const defaultFaqs: FAQItem[] =  [
     {
-      question: "What industries do you serve?",
-      answer: "With more than 200,000 Retail outlets across 65+ branches, Ramlal Champalal (RC) is one of the largest Distribution House & Logistics services providers for various industries."
+      question:"What industries do you serve?",
+      answer:"We cater to food processing units, retail distributors, hotel and catering businesses (HORECA), and global exporters across the pulse and grain industry."
     },
     {
-      question: "What services do you offer?",
-      answer: "We provide comprehensive distribution, logistics, and supply chain solutions including warehousing, transportation, and retail distribution across India."
+      question:"Do you provide private label packaging?",
+      answer:"Yes, RC Pulses offers customized bulk and retail private label packaging solutions tailored for regional and international markets."
     },
     {
-      question: "How many branches do you have?",
-      answer: "We operate across 65+ branches nationwide, serving over 200,000 retail outlets with our extensive distribution network."
+      question:"Are your products export-compliant?",
+      answer:"Absolutely. All our pulses are processed under certifications like FSSAI, APEDA, and USFDA norms, meeting major global quality standards."
+    }
+    ,
+    {
+      question:"Can I source multiple product variants in one shipment?",
+      answer:"Yes, we provide flexible order configurations, allowing mixed product loads across all SKUs — from Orid Gota to Polished Chilka Dal."
     },
     {
-      question: "What makes RC Pulses different?",
-      answer: "Our commitment to quality, extensive network coverage, and end-to-end logistics solutions make us a trusted partner for businesses across various industries."
+      question:"How to reach out to RC Pulses?",
+      answer:"You can easily reach RC Pulses through our website’s contact section, or connect with us directly at +91 9425326237 / 7271271236. You may also visit our of9ice at Moghat Road, Khandwa, or our factory at Mokalgaon Road, Dondwada, Khandwa."
     }
   ]
 

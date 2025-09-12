@@ -15,8 +15,8 @@ import VideoPlayer from "@/components/Videoplayer";
             <div className="flex flex-col p-4 py-6 md:p-[60px] gap-10 text-black max-w-full">
                 <div className="flex flex-col gap-2">
                     <h1 className="font-semibold">OUR PREMIUM SELECTION</h1>
-<h1 className="text-[40px]">Discover the finest range of RC Pulses 
-<span className="font-bold">— Trusted  <br/>for purity, taste, and nutrition.</span></h1></div>
+<h1 className="text-[40px]">Discover the finest range of RC Pulses <br/>
+<span className="font-bold">— Trusted  for purity, taste, and nutrition.</span></h1></div>
 
 <div className="grid grid-cols-3 gap-y-12">
 {

@@ -1,4 +1,36 @@
 export const daldetails = [
+    {key:"khandwa",
+        productlink:"/products/khandwa",
+        fourimages:["/dals/rc5.png","/dals/2.png","/dals/rc5.png","/dals/2.png",],
+        img:"/dals/rc5.png",
+        spoon:"/dals/2.png",
+        title:"KHANDWA URAD DAL/GOTA",
+        details:"Celebrating regional heritage, KHANDWA Urad Dal / Gota is renowned for its authenticity, purity, and traditional taste. Hygienically packed to preserve food safety and unmatched quality.",
+        points:[
+            {
+                heading:" 🍛 Authentic Heritage Quality",descr:"Renowned gota quality from Khandwa, trusted by generations."
+            },
+            {
+                heading:"🛡 Safe & Hygienic",
+                descr:"Processed and packed under strict food-safe conditions."
+            },
+            {
+                heading:"🥣 Wholesome Cooking Experience",
+                descr:"Perfect for traditional recipes, delivering purity and nutrition."
+            }
+        ],
+        rating:4.6,
+        peoplerated:"15",
+        qualities:["Gota quality","Regional heritage","Food-safe"],
+        description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
+        link:"/products/urad-dal",
+        overview:"Khandwa Urad Dal / Gota is sourced from the fertile regions of Madhya Pradesh, known for producing premium-quality pulses. Every grain is carefully selected and hygienically processed to retain its natural flavor, aroma, and nutrition. With advanced technology and time-tested methods, RC Pulses ensures consistency, purity, and the authentic taste trusted for generations.",
+        productdetails:["• 100% sortex-cleaned, impurity-free grains","Processed with advanced milling technology","Retains natural proteins, iron, and fiber","Hygienic packaging to maintain freshness"],
+        keybenefits:["High in protein and dietary fiber","Enhances traditional Indian recipes","Long shelf life with airtight packing","Trusted choice for purity and nutrition"],
+        specifications:["Type: Whole Urad Gota","Origin: Khandwa, Madhya Pradesh","Packaging: 30 KG PP bag","Shelf Life: 12 months"],
+        cook:["Wash thoroughly and soak for 30–45 minutes.","Cook in pressure cooker (1:3 dal-to-water ratio).","Use in vadas, papads, dals, batters, and sweets."]
+
+    },
     {
         key:"silver",
         productlink:"/products/silver",
@@ -99,38 +131,7 @@ export const daldetails = [
         specifications:["Type: Polished Urad Dal","Finish: Glossy / Premium Polish","Packaging: 30 KG Bag","Shelf Life: 12 months"],
         cook:["Wash and soak 4–6 hours for batter.","Grind smoothly for dosa/idli mix.","Use for papads, vadas, and dals."]
     },
-    {key:"khandwa",
-        productlink:"/products/khandwa",
-        fourimages:["/dals/rc5.png","/dals/2.png","/dals/rc5.png","/dals/2.png",],
-        img:"/dals/rc5.png",
-        spoon:"/dals/2.png",
-        title:"KHANDWA URAD DAL/GOTA",
-        details:"Celebrating regional heritage, KHANDWA Urad Dal / Gota is renowned for its authenticity, purity, and traditional taste. Hygienically packed to preserve food safety and unmatched quality.",
-        points:[
-            {
-                heading:" 🍛 Authentic Heritage Quality",descr:"Renowned gota quality from Khandwa, trusted by generations."
-            },
-            {
-                heading:"🛡 Safe & Hygienic",
-                descr:"Processed and packed under strict food-safe conditions."
-            },
-            {
-                heading:"🥣 Wholesome Cooking Experience",
-                descr:"Perfect for traditional recipes, delivering purity and nutrition."
-            }
-        ],
-        rating:4.6,
-        peoplerated:"15",
-        qualities:["Gota quality","Regional heritage","Food-safe"],
-        description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
-        link:"/products/urad-dal",
-        overview:"Khandwa Urad Dal / Gota is sourced from the fertile regions of Madhya Pradesh, known for producing premium-quality pulses. Every grain is carefully selected and hygienically processed to retain its natural flavor, aroma, and nutrition. With advanced technology and time-tested methods, RC Pulses ensures consistency, purity, and the authentic taste trusted for generations.",
-        productdetails:["• 100% sortex-cleaned, impurity-free grains","Processed with advanced milling technology","Retains natural proteins, iron, and fiber","Hygienic packaging to maintain freshness"],
-        keybenefits:["High in protein and dietary fiber","Enhances traditional Indian recipes","Long shelf life with airtight packing","Trusted choice for purity and nutrition"],
-        specifications:["Type: Whole Urad Gota","Origin: Khandwa, Madhya Pradesh","Packaging: 30 KG PP bag","Shelf Life: 12 months"],
-        cook:["Wash thoroughly and soak for 30–45 minutes.","Cook in pressure cooker (1:3 dal-to-water ratio).","Use in vadas, papads, dals, batters, and sweets."]
-
-    },
+    
   
     {key:"gold",
         productlink:"/products/gold",

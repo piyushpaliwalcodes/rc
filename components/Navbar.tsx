@@ -101,7 +101,7 @@ const Navbar = () => {
                 )}
                 <ul className='flex gap-[40px]'>
                     {navItems.map((item) => (
-                        <li key={item.name} className={`cursor-pointer hover:text-[#FCD900] transition-all duration-100 ${selected === item.key ? 'text-[#FCD900] font-bold' : 'text-black'}`}>
+                        <li key={item.name} className={`hover:cursor-pointer hover:text-[#FCD900] transition-all duration-100 ${selected === item.key ? 'text-[#FCD900] font-bold' : 'text-black'}`}>
                             <Link href={item.link}>{item.name}</Link>
                         </li>
                     ))}
@@ -129,7 +129,7 @@ const Navbar = () => {
                         </div>
                         <ul className='flex flex-col gap-6'>
                             {navItems.map((item) => (
-                                <li key={item.name} className={`cursor-pointer hover:text-[#FCD900] transition-all duration-100 ${selected === item.key ? 'text-[#FCD900] font-bold' : 'text-black'}`}>
+                                <li key={item.name} className={`hover:cursor-pointer hover:text-[#FCD900] transition-all duration-100 ${selected === item.key ? 'text-[#FCD900] font-bold' : 'text-black'}`}>
                                     <Link href={item.link}>{item.name}</Link>
                                 </li>
                             ))}

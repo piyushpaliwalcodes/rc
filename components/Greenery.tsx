@@ -8,7 +8,7 @@ const Greenery = () => {
                 <h1 className="text-[24px] md:text-[50px]/[60px] ">Smart and Sustainable Agriculture for a Healthier Tomorrow</h1>
                 <p className="text-[14px] md:text-[16px]/[25px] ">At RC Pulses, sustainability isn’t just a choice — it’s at the core of everything we do. Our agricultural practices are driven by innovation, transparency, and a commitment to environmental responsibility. From precision farming techniques to optimized water usage and soil health management, we work hand-in-hand with farmers to build a greener supply chain — one that supports both people and the planet.</p>
                 <p>With a growing network of 200,000+ retail outlets and 65+ active branches, RC Pulses is not just a manufacturer — we are a future-focused, eco-conscious food brand empowering better nutrition through sustainable dal production.</p>
-                <YellowButton text='Contact Us' link='/contactus'/>
+                <YellowButton text='Sustainability Report' link='/sustainability' className="gap-2 min-w-[250px]"/>
             </div>
         </div>
     )

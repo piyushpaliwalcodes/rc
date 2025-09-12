@@ -96,7 +96,7 @@ const Ourclientsay = () =>
                 <div className="flex flex-col gap-4 md:gap-[30px] justify-center w-full"> 
                     <div className="flex gap-2 md:gap-[5px] items-center"> 
                         
-                        <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base">OUR CLIENT SAY</p>
+                        <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base font-semibold">OUR CLIENT SAY</p>
                     </div>
                     <p className="text-[24px] md:text-[48px]/[60px] font-light"> Trusted by India's Leading <br/> <span className="font-semibold yellounderline">Dal Distributors.</span></p>
                     <p className="w-[80%]">Our long-term relationships with reputed buyers across India are a reflection of our commitment to consistency, quality, and ethical sourcing.</p>

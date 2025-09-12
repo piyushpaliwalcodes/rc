@@ -35,7 +35,7 @@ const Ourcorevalue = () =>
         <div className="flex flex-col w-[45%] gap-[30px]">
         <h1 className="text-[44px]">Our Core <span className="font-bold">Value</span></h1>
         
-        <p className="text-[24px]">Our values define who we are and guide every decision we make:</p>
+        <p className="text-[28px]">Our values define who we are and guide every decision we make:</p>
         <div className="flex flex-col gap-[40px]">
         {
             values.map((value)=>
@@ -46,7 +46,7 @@ const Ourcorevalue = () =>
         </div>
         
         {}</div>
-        <img src="/images/corevalue.png" className="w-[40%]"/>
+        <img src="/images/corevalue.png" className="w-[50%] max-h-[700px] object-cover"/>
 
     </div>
 }

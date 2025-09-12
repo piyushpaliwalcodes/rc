@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 
 const Steps = ({text,isselected}:any) =>
 {
-  return <div  className={`${isselected?"bg-[#FCD900]":"bg-[#FBF9F4] border border-[#969393]/70"} relative overflow-hidden text-black w-[250px] px-[20px] md:px-[30px] py-[20px] flex items-center justify-between rounded-[4px]  transition-all duration-300 z-10`}>
+  return <div  className={`${isselected?"bg-[#FCD900]":"bg-[#FBF9F4] border border-[#969393]/40"} font-semibold relative overflow-hidden text-black w-[250px] text-center  py-[20px] flex items-center justify-between rounded-[4px]  transition-all duration-300 z-10`}>
   {isselected && (
       <span className="pointer-events-none absolute inset-0 rounded-[4px] overflow-hidden">
         <span className="absolute -inset-x-2 -inset-y-6 opacity-80 [background:radial-gradient(75%_55%_at_50%_30%,_rgba(255,255,255,0.95),_rgba(255,255,255,0)_60%)] [animation:sweep_2.6s_linear_infinite]" />
@@ -56,7 +56,7 @@ export default function VideoPlayer() {
         - For responsive aspect ratio, wrap in a container with aspect-[16/9] or similar.
       */}
       <div className="flex flex-col gap-3 md:gap-[20px] items-center  text-center md:items-start md:text-left w-full" >
-                    <h1 className="text-[16px] md:text-[20px] opacity-30 font-bold">Our Process</h1>
+                    <h1 className="text-[16px] md:text-[20px] text-black/60 tracking-widest font-bold">OUR PROCESS</h1>
                     <p className="text-[18px] md:text-[48px]/[60px] w-full md:w-[70%]">Streamlined process for <span className="yellounderline font-bold">Optimal efficiency</span></p>
                 </div>
       <div className="w-full aspect-video relative bg-black overflow-hidden rounded-[8px]">

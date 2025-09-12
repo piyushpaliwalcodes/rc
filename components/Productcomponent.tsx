@@ -34,7 +34,7 @@ const Productcomponent = () =>
     return <div className='w-full max-w-full flex flex-col lg:flex-col gap-8 lg:gap-[40px] py-6 px-4 md:px-8 lg:px-[60px]  md:py-[100px] text-black  overflow-hidden'>
         <div className="flex flex-col ">
         <p className=" uppercase tracking-widest text-black/40 text-[14px] md:text-[18px] font-bold">PRODUCTS</p>
-        <div className="flex w-full justify-between items-center"><p className="text-[40px]">RC Pulses - <span className="font-bold">PREMIUM PRODUCTS</span></p>
+        <div className="flex w-full justify-between items-center"><p className="text-[40px]">RC Pulses - <span className="font-bold">Premium Products</span></p>
          <div className="flex gap-3 items-center">
             {
                 daldetails.map((item,index)=>(
