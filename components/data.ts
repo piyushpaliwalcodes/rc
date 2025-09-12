@@ -247,3 +247,190 @@ export const sustainabledata = [
         descr:"Farmer training, fair pricing, and rural jobs combined with support for education and healthcare."
     }
 ]
+
+
+
+export interface SubStep {
+  name: string;
+  description: string;
+  img: string;
+}
+
+export interface StepSection {
+  title: string;
+  icon: string;
+  steps: SubStep[];
+}
+
+export const stepsdata: StepSection[] = [
+  {
+    title: "Modern Processing Infrastructure",
+    icon: "/images/one.png",
+    steps: [
+      {
+        name: "Vibro Cleaner Machine",
+        description: "For removing dust, sand, and light impurities from raw pulses.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Destoner & Magnetic Separator",
+        description: "Separates stones and metallic particles for pure intake.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Dehusking Machine",
+        description: "Industrial-grade equipment that removes husk efficiently and uniformly.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Pulse Polishing Machine",
+        description: "Adds shine and smooth finish to the processed dal.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Color Sortex Machine",
+        description: "Laser-based system for removing discolored or damaged grains.",
+        img: "/images/vibrocleaner.png"
+      }
+    ]
+  },
+  {
+    title: "High-Quality Raw Material Sourcing",
+    icon: "/images/two.png",
+    steps: [
+      {
+        name: "Farmer Procurement Interaction",
+        description: "RC Pulses teams source grains directly from farmers with transparent, fair trade practices.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Grain Arrival at Facility",
+        description: "Bulk grain sacks are unloaded at the intake bay, marking the start of processing.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Grain Quality Inspection",
+        description: "Grain samples undergo strict manual and lab-based quality checks on arrival.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Local Mandi Snapshot",
+        description: "Authentic mandi scenes show sacks, trading activity, and farmer interactions.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Bulk Grain Storage Area",
+        description: "Clean, covered storage ensures raw grains remain fresh and contamination-free.",
+        img: "/images/vibrocleaner.png"
+      }
+    ]
+  },
+  {
+    title: "Automated Packaging & Handling",
+    icon: "/images/three.png",
+    steps: [
+      {
+        name: "Weigh-Fill-Seal Machine in Action",
+        description: "Automated weighing and sealing ensures precise, hygienic dal packaging.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Bulk Bagging Unit",
+        description: "Large sacks (25kg/50kg) are efficiently filled for export orders.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Vacuum or Retail Pack Station",
+        description: "Retail pouches are packed on dedicated automated lines.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Automated Sealing & Stitching",
+        description: "Thermal or mechanical sealing guarantees secure bag closures.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Stacked Pallets for Dispatch",
+        description: "Finished goods are shrink-wrapped and stacked for smooth shipment.",
+        img: "/images/vibrocleaner.png"
+      }
+    ]
+  },
+  {
+    title: "End-to-End Manufacturing Control",
+    icon: "/images/four.png",
+    steps: [
+      {
+        name: "Raw Material Intake Zone",
+        description: "Grains are unloaded and moved through intake systems for processing.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Processing Line Overview",
+        description: "Wide-angle view of synchronized machines in continuous operation.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Dehusking & Polishing Section",
+        description: "Advanced machinery transforms and polishes pulses with precision.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Quality Check in Process",
+        description: "In-line quality checks ensure safety, consistency, and freshness.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Final Packaging & Storage",
+        description: "Finished products are packed and organized for dispatch or storage.",
+        img: "/images/vibrocleaner.png"
+      }
+    ]
+  },
+  {
+    title: "Global Supply & Client Support",
+    icon: "/images/five.png",
+    steps: [
+      {
+        name: "Export Container Loading",
+        description: "Forklifts load packaged pulses into containers for global shipping.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Global Dispatch Map",
+        description: "Visual export reach highlighted across key markets like UK, USA, and Dubai.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Customer Support Team in Action",
+        description: "RC Pulses staff assist clients and manage export documentation.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "Logistics Partner Vehicles",
+        description: "Branded trucks ensure smooth domestic and international deliveries.",
+        img: "/images/vibrocleaner.png"
+      },
+      {
+        name: "International Trade Documentation",
+        description: "Export certificates and compliance files reviewed for accuracy.",
+        img: "/images/vibrocleaner.png"
+      }
+    ]
+  }
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

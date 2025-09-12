@@ -72,16 +72,16 @@ const Navbar = () => {
          <div className='bg-[#FFFCE8] h-[108px] flex justify-between px-4 md:px-[60px]'>
          <Logo className="w-[102px] h-[102px]" />
          <div className='flex items-center'>
-            <div className="flex items-center gap-4">
-                <BsTelephone className='text-xl'/>
-                <div className="flex flex-col gap-2">
+            <div className="flex items-center gap-3">
+                <BsTelephone className='text-2xl'/>
+                <div className="flex flex-col ">
                 <p>+ 91 9425326237</p>
                 <p>+ 91 9425326237</p></div>
                 </div>
                <hr className='w-[60px] rotate-90 font-bold text-[#FCD900]'/>
-                <div className="flex items-center gap-4">
-                <CiLocationOn className='text-xl'/>
-                <div className="flex flex-col gap-2">
+                <div className="flex items-center gap-3">
+                <CiLocationOn className='text-2xl'/>
+                <div className="flex flex-col ">
                 <p>Office Address: Moghat Road, Khandwa </p>
                 <p>Factory Address: Mokalgoan Road, Dondwada, Khandwa</p></div>
                 </div>

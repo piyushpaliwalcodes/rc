@@ -58,7 +58,7 @@ export default function Home() {
       
       <Whoweare/>
       <Productcomponent/>
-      <Whychooseus/>
+      <Whychooseus showimage={true}/>
       <Whatwedo/>
       <VideoPlayer/>
       <Whatwemanufacture/>

@@ -26,8 +26,7 @@ const StarRating = ({ rating, size = "text-lg", peoplerated }: { rating: number;
     
     return (
         <div className="flex items-center gap-1 ">
-            <div className="flex">{stars}<span className="ml-2 text-sm text-gray-600">{rating}</span></div>
-            <span className="font-semibold text-sm">({peoplerated})</span>
+            <div className="flex items-center">{stars}<span className="ml-2 text-md text-gray-600">{rating}</span></div>
         </div>
     );
 };

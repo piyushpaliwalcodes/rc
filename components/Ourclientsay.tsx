@@ -95,7 +95,7 @@ const Ourclientsay = () =>
                 {/* RIGHT TEXT + CAROUSEL */}
                 <div className="flex flex-col gap-4 md:gap-[30px] justify-center w-full"> 
                     <div className="flex gap-2 md:gap-[5px] items-center"> 
-                        <Image src="/images/setting.png" alt="setting" width={20} height={20} className="w-[20px] h-[20px]" /> 
+                        
                         <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base">OUR CLIENT SAY</p>
                     </div>
                     <p className="text-[24px] md:text-[48px]/[60px] font-light"> Trusted by India's Leading <br/> <span className="font-semibold yellounderline">Dal Distributors.</span></p>

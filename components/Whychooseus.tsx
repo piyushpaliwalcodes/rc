@@ -50,10 +50,10 @@ const Whychooseus = ({showimage,yellowbg}:{showimage?:boolean,yellowbg?:boolean}
 
     return (
         <div className={`flex flex-col lg:flex-row ${yellowbg?"bg-[#FFFCE8]":"bg-[#FFF2ED]"}  text-black max-w-full`}>
-            <div className="flex flex-col gap-6 md:gap-[30px] p-4 py-6 md:p-[60px] w-full lg:w-auto">
+            <div className="flex flex-col gap-6 md:gap-[20px] p-4 py-6 md:p-[60px] w-full lg:w-auto">
                 <div className="flex gap-2 md:gap-[5px] items-center"> 
                    
-                    <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base">WHY CHOOSE US</p>
+                    <p className="font-manrope font-bold uppercase tracking-widest text-[14px] md:text-base">WHY CHOOSE US</p>
                 </div>
                 <p className="text-[24px] md:text-[48px]/[60px]">Why Choosing RC Pulses Means <br/> <span  className="font-bold yellounderline">Choosing Better Health.</span></p>
                 <p>We believe great dal begins with integrity — from sourcing to processing. Here’s how RC Pulses ensures unmatched quality, nutrition, and reliability in every grain we deliver.</p>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import YellowButton from "./Yellowbutton";
 import Ourprocess from "./Ourprocess";
 import Ourprocess2 from "./Ourprocess2";
+import { stepsdata } from "./data";
 
 const Manufacturingcategory = ({title="Manufacturing Machines", description="Liquorice lemon drops powder chocolate liquorice candy dessert gummi bears. Caramels marzipan donut jujubes sweet roll. Powder croissant toffee shortbread chocolate sweet pie. ", images=["/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine4.png","/images/machine1.png","/images/machine2.png"]}: {title: string, description: string, images: string[]}) =>
 {
@@ -57,7 +58,7 @@ const Whatwedo = () => {
         {title:"Sewing Machines",description:"End-to-End Manufacturing Control",icon:"/images/four.png"},
         {title:"Customer Care",description:"Global Supply & Client Support",icon:"/images/five.png"}
     ];
-    const [selectedCategory, setSelectedCategory] = useState(Categories[0]);
+    const [selectedCategory, setSelectedCategory] = useState(stepsdata[0]);
     return (
         <div className = "flex flex-col text-black max-w-full">
             <div className="bg-gradient-to-b from-white/0 to-white/100 "></div>
@@ -68,17 +69,17 @@ const Whatwedo = () => {
                 </div>
                 <div className="w-full flex flex-wrap  sm:flex-nowrap gap-2 md:justify-between md:gap-0 ">
                     {
-                        Categories.map((category) => (
+                        stepsdata.map((category) => (
                             <div onClick={() => setSelectedCategory(category)} key={category.title} className={`flex flex-col items-center w-[60px] h-auto sm:w-[90px] sm:h-[90px] md:min-w-1/6 md:h-[140px] lg:w-[200px] lg:h-[170px] justify-center gap-1 sm:gap-2 md:gap-[10px] p-1 sm:p-2 md:p-[20px] md:px-[25px] rounded-t-[4px] hover:cursor-pointer hover:bg-gray-300/70 transition-all duration-200 ${selectedCategory.title === category.title ? "hover:bg-white bg-white justify-center" : ""}`}>
                                 <img src={category.icon} alt={category.title} width={28} height={28} className="w-[28px] h-[28px] sm:w-[40px] sm:h-[40px] md:w-[60px] md:h-[60px]" />
-                                <p className={`text-center text-[9px] sm:text-[13px] md:text-[16px] ${selectedCategory.title === category.title ? "font-bold" : ""}`}>{category.description}</p>
+                                <p className={`text-center text-[9px] sm:text-[13px] md:text-[16px] ${selectedCategory.title === category.title ? "font-bold" : ""}`}>{category.title}</p>
                             </div>
                         ))
                     }
                 </div>
             </div>
             <div className="flex gap-4 md:gap-[20px] px-4 md:px-8 lg:px-[60px]">
-                <Ourprocess2/>
+                <Ourprocess2 steps={selectedCategory.steps}/>
                 {/* <Manufacturingcategory {...whatwedodata[selectedCategory.title as keyof typeof whatwedodata]} />*/}
             </div> 
         </div>

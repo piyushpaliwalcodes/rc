@@ -20,7 +20,7 @@ interface FAQItem {
 
 const Faqquestion = ({ question, answer, selectedindex, index, setSelectedindex }: FaqquestionProps) => {
     return (
-      <div className="flex flex-col gap-2 md:gap-[10px] pt-4 md:pt-[20px] border-t border-gray-300">
+      <div className={`flex flex-col gap-2 md:gap-[10px] pt-4 md:pt-[20px] ${index==0?"":"border-t border-gray-300"} `}>
         <div className="flex justify-between items-center hover:cursor-pointer" onClick={() => setSelectedindex(selectedindex === index ? -1 : index)}>
           <h1 className="text-[18px] md:text-[24px]/[30px] hover:cursor-pointer" >{question}</h1>
           <FaPlus
