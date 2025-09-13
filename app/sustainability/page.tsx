@@ -31,7 +31,7 @@ const Sustainability = () => {
             <div className="flex flex-col gap-4 min-w-1/2 items-center px-4 md:px-[60px] py-[30px] relative text-black w-full">
             <img src="/sustainable/graph.png" /></div>
             <div className="flex flex-col gap-6 md:gap-[50px] px-4 md:px-[60px] py-6 md:py-[60px]  text-black items-center "></div>
-            <Sustainablegrowth/>
+            <Sustainablegrowth withcta={false}/>
             <div className="flex gap-[30px] px-4 md:px-[60px] py-[80px] items-center ">
               <div className="flex flex-col text-black gap-2">
                 <h1 className="text-[40px] font-semibold">Certifications & Standards</h1>
