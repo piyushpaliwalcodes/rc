@@ -72,7 +72,7 @@ import { PiCookingPotLight } from "react-icons/pi";
                     <div className="flex flex-col"><h1 className="text-[28px] md:text-[40px] font-semibold capitalize">{dalDetails?.title}</h1>
                 <p>Net Weight: 30 KG</p>
                 <div className="flex w-full justify-between items-end">
-                    {dalDetails && <><StarRating rating={dalDetails?.rating} size="text-sm"  peoplerated={dalDetails?.peoplerated}/><YellowButton text="Exquire for order" link="/contactus"/></>}</div></div>
+                    {dalDetails && <><StarRating rating={dalDetails?.rating} size="text-sm"  peoplerated={dalDetails?.peoplerated}/><YellowButton text="Enquire for order" link="/contactus"/></>}</div></div>
                     
                     <div className="flex flex-col gap-[20px]">
                     {
