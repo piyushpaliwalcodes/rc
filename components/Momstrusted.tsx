@@ -6,7 +6,7 @@ const Scanqr = () => {
     return (
         <div className="flex flex-col md:flex-row gap-4 bg-primary-yellow  min-w-[45%] items-center px-4 py-[30px] relative">
            
-           <img src="/images/qualityqr.png" alt="qr" className="w-full md:w-[130px] h-full" />
+           <img src="/images/certificateqr.png" alt="qr" className="w-full md:w-[130px] h-full" />
            <div className="flex flex-col gap-4 justify-between h-full w-1/2">
   <div className="gap-2 flex flex-col"><h1 className="text-[24px] md:text-[32px]/[32px]"><span className="font-bold">Scan QR </span>for Quality Reports</h1>
   <p className="text-xs">Know the safety standards followed by RC Mills</p></div>
