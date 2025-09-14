@@ -49,7 +49,7 @@ export default function Home() {
         className="w-full relative flex flex-col items-center justify-center min-h-[300px] md:min-h-[667px] bg-cover bg-center p-4 py-6 md:p-[60px] md:px-[100px] "
         style={{ backgroundImage: "url('./images/rchero.png')" }}
       >
-        <div className="py-8 px-[] absolute bottom-7 left-15">
+        <div className="py-8 px-[] absolute bottom-[38%] left-15">
           <YellowButton text="Explore Products" link="/products" />
         </div>
       </div>
