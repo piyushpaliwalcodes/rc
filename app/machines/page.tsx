@@ -22,11 +22,11 @@ import Sustainablegrowth from "@/components/Sustainablegrowth";
 
 const Endtoend = () =>
 {
-    return <div className="flex gap-6 md:gap-[50px] px-4 md:px-[60px] py-6 md:py-[60px]  text-black items-center">
-    <img src="/images/machine.png" className="w-[447px] h-[447px]"/>
-    <div className="flex flex-col gap-[35px]">
+    return <div className="flex justify-between gap-6 md:gap-[50px] px-4 md:px-[60px] py-6 md:py-[60px]  text-black items-center">
+    <img src="/images/machine.png" className="w-[650px] h-[447px] object-cover"/>
+    <div className="flex flex-col gap-[35px] w-[600px] ">
         <h1 className="text-[40px]">🌾 RC Dal Mills 
-       <br/><span className="font-bold">– End-to-End Dal Processing Workflow</span> </h1>
+       <span className="font-bold"> – End-to-End Dal Processing Workflow</span> </h1>
        <p className="w-[90%]">At RC Dal Mills, we follow a state-of-the-art, fully mechanized process to ensure that every grain of dal reaching our customers is pure, hygienic, and of the highest quality. Our workflow combines advanced technology with strict quality control at each stage.</p>
        <ol className="list-decimal list-inside" type="1">
        <li>Direct procurement from farmers ensures freshness and fair trade.</li>
