@@ -97,8 +97,8 @@ const Whatwemanufacture = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="rounded-[4px] w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] md:w-[56px] md:h-[56px] z-10 cursor-pointer left-2 sm:left-3 md:left-5 top-1/2 -translate-y-1/2" />
-                <CarouselNext className="rounded-[4px] w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] md:w-[56px] md:h-[56px] z-10 bg-[#FCD900] hover:cursor-pointer right-2 sm:right-3 md:right-5 top-1/2 -translate-y-1/2" />
+                <CarouselPrevious className="rounded-[4px] w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] md:w-[56px] md:h-[56px] z-10 cursor-pointer left-2 sm:left-3 md:-left-4 top-1/2 -translate-y-1/2" />
+                <CarouselNext className="rounded-[4px] w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] md:w-[56px] md:h-[56px] z-10 bg-[#FCD900] hover:cursor-pointer right-2 sm:right-3 md:-right-10 top-1/2 -translate-y-1/2" />
             </Carousel>
         </div>
     )
