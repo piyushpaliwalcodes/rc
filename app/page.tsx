@@ -43,14 +43,22 @@ export default function Home() {
     }
   ]
   return (
-    <div className="bg-white flex flex-col font-roboto min-h-[100vh] text-black max-w-full">
+    <div className="bg-white flex flex-col font-roboto h-fit md:min-h-[100vh] text-black max-w-full">
       
       <div
-        className="w-full relative flex flex-col items-center justify-center min-h-[300px] md:min-h-[667px] bg-cover bg-center p-4 py-6 md:p-[60px] md:px-[100px] "
+        className="min-w-full relative flex flex-col items-center justify-end min-h-[180px] md:justify-center min-w-[100vw] md:min-h-[667px] bg-cover bg-center bg-no-repeat px-4 py-6 md:p-[60px] md:px-[60px]"
         style={{ backgroundImage: "url('./images/rchero.png')" }}
       >
-        <div className="py-8 px-[] absolute bottom-[38%] left-15">
-          <YellowButton text="Explore Products" link="/products" />
+        {/* 
+          The button appears to "get out of padding" on desktop because:
+          - On mobile, the container is a flexbox with padding (py-4 px-4), so the button is padded and centered.
+          - On md+ screens, the container becomes `md:absolute md:bottom-[38%] md:block md:w-full`, so it is absolutely positioned relative to the parent, and the parent's padding no longer constrains it.
+          - The px-4/py-4 padding is still present, but absolute positioning removes it from the normal flow, so it can overlap or escape the padded area of the parent.
+
+          To keep the button within the padded area on all screen sizes, avoid absolute positioning, or ensure the parent has enough padding and relative positioning.
+        */}
+        <div className="w-fit md:w-full flex md:mt-20 justify-center md:justify-start py-4 px-4 ">
+          <YellowButton text="Explore Products" link="/products" className="text-xs w-[180px] md:text-base " />
         </div>
       </div>
       {/* <Explorefacility/> */}
