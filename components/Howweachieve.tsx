@@ -40,8 +40,8 @@ export const Achieveitem = ({imagesrc,title,description}: any) =>
         return `${prefix}${formattedNumber}${suffix ? " " + suffix : ""}`
     }, [displayValue, prefix, suffix])
 
-    return <div ref={containerRef} className="flex flex-col gap-[10px] md:gap-[15px] items-center min-w-[160px] md:min-w-[0]">
-          <img height={"70px"} width={"70px"} src={imagesrc} />
+    return <div ref={containerRef} className="flex flex-col gap-[10px] md:gap-[15px] items-center w-full">
+          <img className="h-12 w-12 md:h-[70px] md:w-[70px]" src={imagesrc} alt="" />
           <p className="text-[24px] md:text-[40px] font-bold ">{formatted}</p>
           <p className="max-w-[90%] md:max-w-[60%] font-bold text-[#464646] text-center text-[14px] md:text-[15px] tracking-widest">{description}</p>
     </div>
@@ -61,7 +61,7 @@ return (
                     At RC Pulses, our growth is built on more than numbers — it’s built on clarity, consistency, and collective effort. Every part of our ecosystem works in sync: from sourcing the best-quality pulses to processing them through precise, tech-enabled workflows. Behind every metric lies a team, a method, and a commitment to improve each day. That’s how we achieve — together.
                     </div>
                 </div>
-            <div className="grid grid-cols-5 overflow-x-auto md:overflow-x-visible pt-8 md:pt-[60px] gap-4 md:gap-0">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 pt-8 md:pt-[60px] gap-4 md:gap-6">
                 { highlightsdata.map((item,index)=>(
                     <Achieveitem {...item} key={index}/>
                 ))}
