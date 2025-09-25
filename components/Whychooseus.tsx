@@ -57,7 +57,7 @@ const Whychooseus = ({showimage,yellowbg}:{showimage?:boolean,yellowbg?:boolean}
                 </div>
                 <p className="text-[24px] md:text-[48px]/[60px]">Why Choosing RC Pulses Means <br/> <span  className="font-bold yellounderline">Choosing Better Health.</span></p>
                 <p>We believe great dal begins with integrity — from sourcing to processing. Here’s how RC Pulses ensures unmatched quality, nutrition, and reliability in every grain we deliver.</p>
-                <div className={`${showimage?"grid grid-cols-1 md:grid-cols-2":"flex"} gap-4 md:gap-[30px]`}>
+                <div className={`${showimage?"grid grid-cols-1 md:grid-cols-2":"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"} gap-4 md:gap-[30px]`}>
                     {
                         whychooseusdata.map((item, index) => (
                             <Chooseuscard key={index} {...item} index={index} />

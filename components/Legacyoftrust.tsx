@@ -1,9 +1,9 @@
 const Profilecard = ({image,position,name}:any) =>
 {
-    return <div className="flex flex-col  items-center">
-        <img src={image} className="w-[200px] h-[200px]"/>
-        <h1>{position}</h1>
-        <p>{name}</p>
+    return <div className="flex flex-col items-center text-center">
+        <img src={image} className="w-24 h-24 md:w-[200px] md:h-[200px] object-cover"/>
+        <h1 className="text-sm md:text-base mt-2">{position}</h1>
+        <p className="text-xs md:text-sm text-black/80">{name}</p>
     </div>
 }
 
@@ -68,29 +68,29 @@ const Legacyoftrust= () =>
             descr:"RC Mills is now focused on sustainable growth, eco-friendly packaging, and becoming India’s most trusted agro-processing brand."
         }
     ]
-    return <div className="flex flex-col gap-[60px]   px-4 md:px-[60px] py-6 md:py-[60px]  text-black ">
-              <h1 className="text-[44px]">Our <span className="font-bold">Legacy of Trust</span></h1>
+    return <div className="flex flex-col gap-10 md:gap-[60px] px-4 md:px-[60px] py-6 md:py-[60px] text-black ">
+              <h1 className="text-3xl md:text-[44px]">Our <span className="font-bold">Legacy of Trust</span></h1>
 
-              <div className="flex justify-center gap-[200px] relative">
-                <div className="flex flex-col gap-[40px]">
+              <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-[200px] relative">
+                <div className="flex flex-col gap-6 md:gap-[40px]">
                     {
-                        profiles.map((profile)=>(
-                            <Profilecard {...profile}/>
+                        profiles.map((profile, index)=>(
+                            <Profilecard key={index} {...profile}/>
                         ))
                     }
                 </div>
                 
-                <div className="flex w-[700px] relative">
-                <div className="flex flex-col gap-[60px] w-[95%] relative">
+                <div className="flex w-full md:w-[700px] relative">
+                <div className="flex flex-col gap-6 md:gap-[60px] w-full md:w-[95%] relative">
                     {/* Vertical yellow line */}
                     <div className="absolute left-[-35px] top-10 w-1 bg-[#FCD900] h-[89%] hidden md:block"></div>
                     
                     { companyphases.map((phase, index)=>(
                         <div key={index} className="flex flex-col gap-[5px] relative">
                             {/* Yellow circular node */}
-                            <div className="absolute -left-[40px] top-1/2 w-4 h-4 bg-[#FCD900] rounded-full  shadow-md hidden md:block"></div>
-                            <h1 className="font-semibold">{phase.heading}</h1>
-                            <p className="text-black/70">{phase.descr}</p>
+                            <div className="absolute -left-[40px] top-1/2 w-4 h-4 bg-[#FCD900] rounded-full shadow-md hidden md:block"></div>
+                            <h1 className="font-semibold text-base md:text-lg">{phase.heading}</h1>
+                            <p className="text-sm md:text-base text-black/70">{phase.descr}</p>
                         </div>
                     ))
                         

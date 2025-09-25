@@ -93,7 +93,7 @@ const Navbar = () => {
 	   	 	</div>
 
 	   	{/* Mobile compact top bar */}
-	   	<div className='bg-[#FFFCE8] md:hidden flex items-center justify-between px-4 py-2'>
+	   	<div className='bg-[#FFFCE8] hidden md:hidden flex items-center justify-between px-4 py-2'>
 	   		<Logo className="w-[64px] h-[64px]" />
 	   		<div className='flex items-center gap-4'>
 	   			<a href='tel:+919425326237' aria-label="Call us" className='p-2 rounded-full border border-[#FCD900]'>

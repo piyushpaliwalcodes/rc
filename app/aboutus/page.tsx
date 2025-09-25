@@ -19,16 +19,16 @@ const Aboutus = () => {
         <div className="flex flex-col bg-white">
             {/* <Herowithnav /> */}
             <Aleadingbrand/>
-            <img className="w-full h-[720px]" src="/images/machinewithmala.png"/>
+            <img className="w-full md:h-[720px]" src="/images/machinewithmala.png"/>
             <Ourcorevalue/>
             <Legacyoftrust/>
             <Whychooseus showimage={false}/>
             <Ourclientsay/>
             <Momstrusted/>
-            <div className="flex flex-col p-4 py-6 md:p-[60px] gap-6 md:gap-[30px] text-black max-w-full items-center">
-                <h1 className="text-[40px]">Smart and <span className="font-semibold">Sustainable Agriculture</span> for a Healthier Tomorrow</h1>
-                <p className="w-[75%] text-center ">At RC Pulses, sustainability isn’t just a choice — it’s at the core of everything we do. Our agricultural practices are driven by innovation, transparency, and a commitment to environmental responsibility. From precision farming techniques to optimized water usage and soil health management, we work hand-in-hand with farmers to build a greener supply chain — one that supports both people and the planet.</p>
-                <YellowButton className="min-w-[250px]" text="Sustainability Report" link="/sustainability"/>
+            <div className="flex flex-col px-4 py-6 md:p-[60px] gap-4 sm:gap-6 md:gap-[30px] text-black max-w-full items-center text-center">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">Smart and <span className="font-semibold">Sustainable Agriculture</span> for a Healthier Tomorrow</h1>
+                <p className="w-full sm:w-11/12 md:w-3/4 lg:w-2/3">At RC Pulses, sustainability isn’t just a choice — it’s at the core of everything we do. Our agricultural practices are driven by innovation, transparency, and a commitment to environmental responsibility. From precision farming techniques to optimized water usage and soil health management, we work hand-in-hand with farmers to build a greener supply chain — one that supports both people and the planet.</p>
+                <YellowButton className="w-full sm:w-auto min-w-0 sm:min-w-[250px]" text="Sustainability Report" link="/sustainability"/>
                 </div>
             
 

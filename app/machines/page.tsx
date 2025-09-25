@@ -22,13 +22,13 @@ import Sustainablegrowth from "@/components/Sustainablegrowth";
 
 const Endtoend = () =>
 {
-    return <div className="flex justify-between gap-6 md:gap-[50px] px-4 md:px-[60px] py-6 md:py-[60px]  text-black items-center">
-    <img src="/images/machine.png" className="w-[650px] h-[447px] object-cover"/>
-    <div className="flex flex-col gap-[35px] w-[600px] ">
-        <h1 className="text-[40px]">🌾 RC Dal Mills 
+    return <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-[50px] px-4 md:px-[60px] py-6 md:py-[60px] text-black">
+    <Image src="/images/machine.png" alt="RC Dal Mills machinery" width={650} height={447} className="w-full max-w-[650px] h-auto md:h-[447px] object-cover" />
+    <div className="flex flex-col gap-[20px] md:gap-[35px] w-full md:w-[600px] text-center md:text-left">
+        <h1 className="text-2xl sm:text-3xl md:text-[40px]">🌾 RC Dal Mills 
        <span className="font-bold"> – End-to-End Dal Processing Workflow</span> </h1>
-       <p className="w-[90%]">At RC Dal Mills, we follow a state-of-the-art, fully mechanized process to ensure that every grain of dal reaching our customers is pure, hygienic, and of the highest quality. Our workflow combines advanced technology with strict quality control at each stage.</p>
-       <ol className="list-decimal list-inside" type="1">
+       <p className="w-full md:w-[90%] text-start">At RC Dal Mills, we follow a state-of-the-art, fully mechanized process to ensure that every grain of dal reaching our customers is pure, hygienic, and of the highest quality. Our workflow combines advanced technology with strict quality control at each stage.</p>
+       <ol className="flext text-start list-decimal list-inside space-y-2" type="1">
        <li>Direct procurement from farmers ensures freshness and fair trade.</li>
        <li>Fully automated machines minimize manual handling, keeping hygiene at the highest standard.</li>
        <li>Multi-stage quality control at every step of the process.</li>
