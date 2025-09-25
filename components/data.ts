@@ -25,7 +25,7 @@ export const daldetails = [
         description:"Starting from the cleaning of the grains prioritizing customer health; grading.",
         link:"/products/urad-dal",
         overview:"Khandwa Urad Dal / Gota is sourced from the fertile regions of Madhya Pradesh, known for producing premium-quality pulses. Every grain is carefully selected and hygienically processed to retain its natural flavor, aroma, and nutrition. With advanced technology and time-tested methods, RC Pulses ensures consistency, purity, and the authentic taste trusted for generations.",
-        productdetails:["• 100% sortex-cleaned, impurity-free grains","Processed with advanced milling technology","Retains natural proteins, iron, and fiber","Hygienic packaging to maintain freshness"],
+        productdetails:["100% sortex-cleaned, impurity-free grains","Processed with advanced milling technology","Retains natural proteins, iron, and fiber","Hygienic packaging to maintain freshness"],
         keybenefits:["High in protein and dietary fiber","Enhances traditional Indian recipes","Long shelf life with airtight packing","Trusted choice for purity and nutrition"],
         specifications:["Type: Whole Urad Gota","Origin: Khandwa, Madhya Pradesh","Packaging: 30 KG PP bag","Shelf Life: 12 months"],
         cook:["Wash thoroughly and soak for 30–45 minutes.","Cook in pressure cooker (1:3 dal-to-water ratio).","Use in vadas, papads, dals, batters, and sweets."]
