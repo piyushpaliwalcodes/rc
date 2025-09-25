@@ -53,32 +53,34 @@ const Initiative = () => {
   const images = ["/sustainable/1.png", "/sustainable/2.png", "/sustainable/3.png"];
 
   return (
-    <div className="flex flex-col gap-4 min-w-1/2 items-center px-4 md:px-[60px] py-[30px] relative text-black w-full">
-      <h1 className="text-[40px] w-full">
+    <div className="flex flex-col gap-4 min-w-1/2 items-center px-4 sm:px-6 md:px-[60px] py-6 md:py-[30px] relative text-black w-full">
+      <h1 className="text-2xl sm:text-3xl md:text-[40px] w-full">
         Our Sustainability <span className="font-bold">Initiatives</span>
       </h1>
-      <div className="flex flex-col md:flex-row gap-[150px] w-full">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-[100px] w-full">
         {/* Images Column */}
-        <div className="flex flex-row md:flex-col gap-4">
+        <div className="flex flex-col md:flex-col gap-4 md:gap-8 p-3 sm:p-4 md:p-0 items-center md:items-start">
           {images.map((image, idx) => (
             <img
               key={idx}
               src={image}
-              className="min-w-[270px] h-[270px] object-cover rounded-xl shadow-md "
+              className="w-[220px] h-[220px] sm:w-[270px] sm:h-[270px] object-cover rounded-sm shadow-md "
             />
           ))}
         </div>
 
         {/* Initiatives Timeline */}
         <div className="flex flex-col gap-6 relative w-full">
-          {/* Vertical Line */}
-          <div className="absolute left-4 top-1 bottom-0 w-[2px] bg-green-600 h-[85%]"></div>
 
-          <ol className="space-y-8 pl-12">
+          <ol className="space-y-8">
             {data.map((item, idx) => (
-              <li key={idx} className="relative">
+              <li key={idx} className="relative pl-12">
                 {/* Dot */}
-                <span className="absolute -left-[38px] top-1 w-4 h-4 bg-green-600 rounded-full border-2 border-white shadow-md"></span>
+                <span className="absolute left-4 -translate-x-1/2 top-1 w-4 h-4 bg-green-600 rounded-full border-2 border-white shadow-md"></span>
+                {/* Connector to next dot (omit on last) */}
+                {idx !== data.length - 1 && (
+                  <span className="absolute left-4 -translate-x-1/2 top-[0.75rem] w-[2px] bg-green-600 h-[calc(100%-0.75rem+2rem)]"></span>
+                )}
 
                 {/* Content */}
                 <h2 className="font-semibold text-lg">{item.heading}</h2>
