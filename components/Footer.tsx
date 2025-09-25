@@ -35,8 +35,8 @@ const Footer = () =>
             {title:"Sustainability",link:"/sustainability",target:""},
         ],
         "Legal": [
-            {title:"Privacy Policy",link:"/privacypolicy.pdf",target:"_blank"},
-            {title:"Terms & Conditions",link:"/termsandcondition.pdf",target:"_blank"}
+            {title:"Privacy Policy",link:"/privacyandpolicy",target:""},
+            {title:"Terms & Conditions",link:"/termsandconditions",target:""}
         ],
         
     }
