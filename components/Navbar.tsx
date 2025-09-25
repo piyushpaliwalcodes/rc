@@ -68,33 +68,47 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className='flex flex-col text-black  bg-[#FFFCE8]'>
-         <div className='bg-[#FFFCE8] h-[108px] flex justify-between px-4 md:px-[60px]'>
-         <Logo className="w-[102px] h-[102px]" />
-         <div className='flex items-center'>
-            <div className="flex items-center gap-3">
-                <BsTelephone className='text-2xl'/>
-                <div className="flex flex-col ">
-                <p>+ 91 9425326237</p>
-                <p>+ 91 7217217236</p></div>
-                </div>
-               <hr className='w-[60px] rotate-90 font-bold text-[#FCD900]'/>
-                <div className="flex items-center gap-3">
-                <CiLocationOn className='text-2xl'/>
-                <div className="flex flex-col ">
-                <p>Office Address: Moghat Road, Khandwa </p>
-                <p>Factory Address: Mokalgoan Road, Dondwada, Khandwa</p></div>
-                </div>
-         
-      
-         </div>
-       
-         </div>
+    	<div className='flex flex-col text-black  bg-[#FFFCE8]'>
+	    	{/* Desktop top bar */}
+	    	<div className='bg-[#FFFCE8] md:flex hidden justify-between px-4 md:px-[60px] md:h-[108px] min-h-[72px] items-center flex-wrap md:flex-nowrap gap-4'>
+	    	<Logo className="w-[88px] h-[88px] lg:w-[102px] lg:h-[102px]" />
+	    	<div className='flex items-center flex-wrap md:flex-nowrap gap-4'>
+	   	   <div className="flex items-center gap-3">
+	   	   	<BsTelephone className='text-xl lg:text-2xl'/>
+	   	   	<div className="flex flex-col leading-tight">
+	   	   	<p className='text-sm lg:text-base'>+ 91 9425326237</p>
+	   	   	<p className='text-sm lg:text-base'>+ 91 7217217236</p></div>
+	   	   	</div>
+	   	   	<hr className='hidden lg:block w-[60px] rotate-90 font-bold text-[#FCD900]'/>
+	   	   	<div className="flex items-center gap-3">
+	   	   	<CiLocationOn className='text-2xl'/>
+	   	   	<div className="flex flex-col leading-tight max-w-[260px] lg:max-w-none">
+	   	   	<p className='text-sm lg:text-base'>Office Address: Moghat Road, Khandwa </p>
+	   	   	<p className='text-sm lg:text-base'>Factory Address: Mokalgoan Road, Dondwada, Khandwa</p></div>
+	   	   	</div>
+
+	   	  
+	   	 	</div>
+	   		
+	   	 	</div>
+
+	   	{/* Mobile compact top bar */}
+	   	<div className='bg-[#FFFCE8] md:hidden flex items-center justify-between px-4 py-2'>
+	   		<Logo className="w-[64px] h-[64px]" />
+	   		<div className='flex items-center gap-4'>
+	   			<a href='tel:+919425326237' aria-label="Call us" className='p-2 rounded-full border border-[#FCD900]'>
+	   				<BsTelephone className='text-xl' />
+	   			</a>
+	   			<Link href='/contactus' aria-label="Our addresses" className='p-2 rounded-full border border-[#FCD900]'>
+	   				<CiLocationOn className='text-2xl' />
+	   			</Link>
+	   		</div>
+	   	</div>
 
             {isFixed && <div style={{ height: navHeight }} />}
             <div ref={navRef} className={`${isFixed ? 'fixed top-0 left-0 right-0 z-50 shadow-md' : 'sticky top-0 z-50'} py-[10px] w-full flex justify-between items-center bg-white text-black px-4 md:px-[60px]  border-b border-[#CCCCCC]`}>
             
-            {/* Desktop Nav with conditional Logo when fixed */}
+	    	{/* Desktop/Nav bar - sub navbar responsive. On mobile shows hamburger */}
             <div className='hidden md:flex items-center gap-6'>
                 {isFixed && (
                     <Logo className="w-[48px] h-[48px]" />
@@ -128,11 +142,11 @@ const Navbar = () => {
                             <Logo className="w-[102px] h-[102px]" />
                         </div>
                         <ul className='flex flex-col gap-6'>
-                            {navItems.map((item) => (
-                                <li key={item.name} className={`hover:cursor-pointer hover:text-[#FCD900] transition-all duration-100 ${selected === item.key ? 'text-[#FCD900] font-bold' : 'text-black'}`}>
-                                    <Link href={item.link}>{item.name}</Link>
-                                </li>
-                            ))}
+	   	    			{navItems.map((item) => (
+	   	    				<li key={item.name} className={`hover:cursor-pointer hover:text-[#FCD900] transition-all duration-100 ${selected === item.key ? 'text-[#FCD900] font-bold' : 'text-black'}`}>
+	   	    					<Link href={item.link} onClick={() => setSidebarOpen(false)}>{item.name}</Link>
+	   	    				</li>
+	   	    			))}
                         </ul>
                         <div className='mt-auto'>
                             <YellowButton text='Contact Us' link='/contactus'/>

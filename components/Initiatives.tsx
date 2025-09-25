@@ -53,7 +53,7 @@ const Initiative = () => {
   const images = ["/sustainable/1.png", "/sustainable/2.png", "/sustainable/3.png"];
 
   return (
-    <div className="flex flex-col gap-4 min-w-1/2 items-center px-4 sm:px-6 md:px-[60px] py-6 md:py-[30px] relative text-black w-full">
+    <div className="flex flex-col gap-4 md:gap-14 min-w-1/2 items-center px-4 sm:px-6 md:px-[60px] py-6 md:py-[80px] relative text-black w-full">
       <h1 className="text-2xl sm:text-3xl md:text-[40px] w-full">
         Our Sustainability <span className="font-bold">Initiatives</span>
       </h1>
@@ -64,7 +64,7 @@ const Initiative = () => {
             <img
               key={idx}
               src={image}
-              className="w-[220px] h-[220px] sm:w-[270px] sm:h-[270px] object-cover rounded-sm shadow-md "
+              className="w-[220px] h-[220px] sm:min-w-[270px]  sm:min-h-[270px] object-cover rounded-sm shadow-md "
             />
           ))}
         </div>
