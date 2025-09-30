@@ -60,16 +60,16 @@ import { PiCookingPotLight } from "react-icons/pi";
             <div className="flex flex-col md:flex-row p-4 py-6 md:p-[60px] gap-6 md:gap-16 text-black w-full justify-between items-start">
                 <div className="flex flex-col w-full md:max-w-[520px] gap-3 md:gap-5">
                     <img src={dalDetails?.fourimages[selectedImage]} alt={dalDetails?.title ?? "product image"} className="w-full max-w-[520px] h-auto md:h-[590px] object-cover border-[2px] border-blue"/>
-                    <div className="flex flex-wrap gap-2 md:gap-4 w-full md:justify-start justify-between">
+                    {/* <div className="flex flex-wrap gap-2 md:gap-4 w-full md:justify-start justify-between">
                         {
                             dalDetails?.fourimages?.map((image,index)=>(
                                 <img key={`${dalDetails?.key}-thumb-${index}`} src={image} alt={`${dalDetails?.title ?? "product"} thumbnail ${index+1}`} className={`w-[70px] h-[70px] md:w-[120px] md:h-[120px] hover:cursor-pointer ${selectedImage==index?"border-[2px] border-black/50":"border-[2px] border-blue"}`} onClick={()=>setSelectedImage(index)}/>
                             ))
                         }
-                    </div>
+                    </div> */}
                 </div>
-                <div className="flex flex-col w-full md:min-w-[528px] gap-6 md:gap-[50px] mt-5">
-                    <div className="flex flex-col">
+                <div className="flex flex-col w-full md:min-w-[528px] gap-6 md:gap-[30px] items-start">
+                    <div className="flex flex-col min-w-full">
                         <h1 className="text-2xl md:text-[40px] font-semibold capitalize">{dalDetails?.title}</h1>
                         <p className="text-base md:text-[20px] font-bold">Net Weight: 30 KG</p>
                         <div className="flex w-full justify-between items-center gap-3 flex-wrap">

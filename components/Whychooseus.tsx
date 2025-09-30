@@ -42,10 +42,10 @@ const Whychooseus = ({showimage,yellowbg}:{showimage?:boolean,yellowbg?:boolean}
     ]
 
     const carouselImages = [
-        "/images/whychooseushero.png",
-        "/images/factory1.png",
-        "/images/megafacility.png",
-        "/images/ourapproach.jpg"
+        "/images/client1.png",
+        "/images/client2.png",
+        "/images/client3.png",
+        
     ]
 
     return (

@@ -50,7 +50,7 @@ const Contactus = () => {
                     {/*Contact details */}
                     <div className="flex flex-col gap-5 md:gap-[30px] md:min-w-[480px]">
                         <div className="flex gap-4 md:gap-[20px] items-start">
-                            <Image src="/images/contactphone.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
+                            <Image src="/images/contactphonewhite.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
                             <div className="flex flex-col gap-[5px] justify-center">
                                 <h1 className="text-[18px] md:text-[20px]/[24px] font-semibold ">Contact</h1>
                                 <p className="text-[15px] md:text-[16px]/[20px] ">+ 91 9425326237, 7217217236</p>
@@ -58,7 +58,7 @@ const Contactus = () => {
                         </div>
                         <div className="w-full h-[1px] bg-black/10"/>
                         <div className="flex gap-4 md:gap-[20px] items-start">
-                            <Image src="/images/contactmail.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
+                            <Image src="/images/contactmailwhite.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
                             <div className="flex flex-col gap-[5px] justify-center">
                                 <h1 className="text-[18px] md:text-[20px]/[24px] font-semibold ">E-mail</h1>
                                 <p className="text-[15px] md:text-[16px]/[20px] t">rcpulses.official@gmail.com</p>
@@ -66,7 +66,7 @@ const Contactus = () => {
                         </div>
                         <div className="w-full h-[1px] bg-black/10"/>
                         <div className="flex gap-4 md:gap-[20px] items-start">
-                            <Image src="/images/contactaddress.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
+                            <Image src="/images/contactaddresswhite.png" className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] md:max-w-[60px] md:max-h-[60px]" alt="call" width={60} height={60} />
                             <div className="flex flex-col gap-[5px] justify-center">
                                 <h1 className="text-[18px] md:text-[20px]/[24px] font-semibold ">Office Address</h1>
                                 <p className="text-[15px] md:text-[16px]/[20px] ">Moghat Road, Khandwa </p>

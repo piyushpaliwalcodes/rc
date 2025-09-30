@@ -56,7 +56,7 @@ export const Manufacturecardwithimage = ({
                     ))}
                 </ul>
                 <StarRating rating={rating} size="text-sm"  peoplerated={peoplerated} /> 
-                <YellowButton text="View Details" link={productlink} className="min-w-full justify-center gap-2"/>
+                <YellowButton text="View Details" link={productlink} className="min-w-full  gap-2 md:justify-center"/>
             </div>
         </div>
     )

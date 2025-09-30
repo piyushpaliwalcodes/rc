@@ -12,7 +12,7 @@ import VideoPlayer from "@/components/Videoplayer";
     return (
         <div className="flex flex-col bg-white w-full">
             {/* <Herosecond title="Our Products" location="Our Products"/> */}
-            <div className="flex flex-col p-4 py-6 md:p-[60px] gap-8 md:gap-10 text-black max-w-7xl w-full mx-auto">
+            <div className="flex flex-col p-4 py-6 md:p-[60px] gap-8 md:gap-10 text-black w-full mx-auto">
                 <div className="flex flex-col gap-1 md:gap-2">
                     <h1 className="font-semibold text-sm md:text-base tracking-wide">OUR PREMIUM SELECTION</h1>
 <h1 className="text-2xl sm:text-3xl md:text-[40px] leading-snug md:leading-[1.2]">Discover the finest range of RC Pulses <br className="hidden md:block"/>

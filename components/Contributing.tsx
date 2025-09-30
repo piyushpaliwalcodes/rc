@@ -18,7 +18,7 @@ const Contributing = () =>
     ]
 
     return (
-        <div className="flex flex-col md:flex-row gap-6 md:gap-[30px] px-4 md:px-[60px] py-6 md:py-[60px] bg-[#F9F9F9] text-black">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-[40px] px-4 md:px-[60px] py-6 md:py-[100px] bg-[#F9F9F9] text-black">
             <div className="flex flex-col gap-[30px] w-full md:w-1/2">
                 <h1 className="text-2xl sm:text-3xl md:text-[45px] leading-tight">
                 We at RC Pulses:<br/> 
