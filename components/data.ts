@@ -271,27 +271,27 @@ export const stepsdata: StepSection[] = [
       {
         name: "Vibro Cleaner Machine",
         description: "For removing dust, sand, and light impurities from raw pulses.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/vibrocleanermachine.png"
       },
       {
         name: "Destoner & Magnetic Separator",
         description: "Separates stones and metallic particles for pure intake.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/destonerandmagneticmachine.png"
       },
       {
         name: "Dehusking Machine",
         description: "Industrial-grade equipment that removes husk efficiently and uniformly.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/dehuskingmachine.png"
       },
       {
         name: "Pulse Polishing Machine",
         description: "Adds shine and smooth finish to the processed dal.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/polishermachine.png"
       },
       {
         name: "Color Sortex Machine",
         description: "Laser-based system for removing discolored or damaged grains.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/colorsortexmachine.png"
       }
     ]
   },
@@ -302,27 +302,27 @@ export const stepsdata: StepSection[] = [
       {
         name: "Farmer Procurement Interaction",
         description: "RC Pulses teams source grains directly from farmers with transparent, fair trade practices.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/farmerprocurement.png"
       },
       {
         name: "Grain Arrival at Facility",
         description: "Bulk grain sacks are unloaded at the intake bay, marking the start of processing.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/grainarrival.png"
       },
       {
         name: "Grain Quality Inspection",
         description: "Grain samples undergo strict manual and lab-based quality checks on arrival.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/qualitychecks.png"
       },
       {
         name: "Local Mandi Snapshot",
         description: "Authentic mandi scenes show sacks, trading activity, and farmer interactions.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/localmandi.png"
       },
       {
         name: "Bulk Grain Storage Area",
         description: "Clean, covered storage ensures raw grains remain fresh and contamination-free.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/bulkgrainstackstorage.png"
       }
     ]
   },
@@ -333,27 +333,27 @@ export const stepsdata: StepSection[] = [
       {
         name: "Weigh-Fill-Seal Machine in Action",
         description: "Automated weighing and sealing ensures precise, hygienic dal packaging.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/weighfillsealmachine.png"
       },
       {
         name: "Bulk Bagging Unit",
         description: "Large sacks (25kg/50kg) are efficiently filled for export orders.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/bulkbagging.png"
       },
       {
         name: "Vacuum or Retail Pack Station",
         description: "Retail pouches are packed on dedicated automated lines.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/vacuumpack.png"
       },
       {
         name: "Automated Sealing & Stitching",
         description: "Thermal or mechanical sealing guarantees secure bag closures.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/automaticsealing.png"
       },
       {
         name: "Stacked Pallets for Dispatch",
         description: "Finished goods are shrink-wrapped and stacked for smooth shipment.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/stackeddispatch.png"
       }
     ]
   },
@@ -364,27 +364,27 @@ export const stepsdata: StepSection[] = [
       {
         name: "Raw Material Intake Zone",
         description: "Grains are unloaded and moved through intake systems for processing.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/rawmaterialintake.png"
       },
       {
         name: "Processing Line Overview",
         description: "Wide-angle view of synchronized machines in continuous operation.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/processing.png"
       },
       {
         name: "Dehusking & Polishing Section",
         description: "Advanced machinery transforms and polishes pulses with precision.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/dehusking.png"
       },
       {
         name: "Quality Check in Process",
         description: "In-line quality checks ensure safety, consistency, and freshness.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/qualitychecks.png"
       },
       {
         name: "Final Packaging & Storage",
         description: "Finished products are packed and organized for dispatch or storage.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/finalpackage.png"
       }
     ]
   },
@@ -395,27 +395,27 @@ export const stepsdata: StepSection[] = [
       {
         name: "Export Container Loading",
         description: "Forklifts load packaged pulses into containers for global shipping.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/exportcontainer.png"
       },
       {
         name: "Global Dispatch Map",
         description: "Visual export reach highlighted across key markets like UK, USA, and Dubai.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/globalmap.png"
       },
       {
         name: "Customer Support Team in Action",
         description: "RC Pulses staff assist clients and manage export documentation.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/customersupport.png"
       },
       {
         name: "Logistics Partner Vehicles",
         description: "Branded trucks ensure smooth domestic and international deliveries.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/logisticsvehicles.png"
       },
       {
         name: "International Trade Documentation",
         description: "Export certificates and compliance files reviewed for accuracy.",
-        img: "/images/vibrocleaner.png"
+        img: "/steps/internationaldocumentation.png"
       }
     ]
   }

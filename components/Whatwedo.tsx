@@ -37,27 +37,27 @@ const Manufacturingcategory = ({title="Manufacturing Machines", description="Liq
     )
 }
 
-const whatwedodata = { 
-    "Manufacturing Machines":{
-        title: "Manufacturing Machines",
-        description: "Liquorice lemon drops powder chocolate liquorice candy dessert gummi bears. Caramels marzipan donut jujubes sweet roll. Powder croissant toffee shortbread chocolate sweet pie. ",
-        images: ["/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine2.png","/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine2.png"]
-    },
-    "Raw Materials":{
-        title: "Sewing Machines",
-        description: "Liquorice lemon drops powder chocolate liquorice candy dessert gummi bears. Caramels marzipan donut jujubes sweet roll. Powder croissant toffee shortbread chocolate sweet pie. ",
-        images: ["/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine2.png","/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine2.png"]
-    }
-}
+// const whatwedodata = { 
+//     "Manufacturing Machines":{
+//         title: "Manufacturing Machines",
+//         description: "Liquorice lemon drops powder chocolate liquorice candy dessert gummi bears. Caramels marzipan donut jujubes sweet roll. Powder croissant toffee shortbread chocolate sweet pie. ",
+//         images: ["/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine2.png","/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine2.png"]
+//     },
+//     "Raw Materials":{
+//         title: "Sewing Machines",
+//         description: "Liquorice lemon drops powder chocolate liquorice candy dessert gummi bears. Caramels marzipan donut jujubes sweet roll. Powder croissant toffee shortbread chocolate sweet pie. ",
+//         images: ["/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine2.png","/images/machine1.png", "/images/machine2.png", "/images/machine3.png", "/images/machine2.png"]
+//     }
+// }
 
 const Whatwedo = () => {
-    const Categories = [
-        {title:"Manufacturing Machines",description:"Modern Processing Infrastructure",icon:"/images/one.png"},
-        {title:"Raw Materials",description:"High-Quality Raw Material Sourcing",icon:"/images/two.png"},
-        {title:"Packaging Machines",description:" Automated Packaging & Handling",icon:"/images/three.png"},
-        {title:"Sewing Machines",description:"End-to-End Manufacturing Control",icon:"/images/four.png"},
-        {title:"Customer Care",description:"Global Supply & Client Support",icon:"/images/five.png"}
-    ];
+    // const Categories = [
+    //     {title:"Manufacturing Machines",description:"Modern Processing Infrastructure",icon:"/images/one.png"},
+    //     {title:"Raw Materials",description:"High-Quality Raw Material Sourcing",icon:"/images/two.png"},
+    //     {title:"Packaging Machines",description:" Automated Packaging & Handling",icon:"/images/three.png"},
+    //     {title:"Sewing Machines",description:"End-to-End Manufacturing Control",icon:"/images/four.png"},
+    //     {title:"Customer Care",description:"Global Supply & Client Support",icon:"/images/five.png"}
+    // ];
     const [selectedCategory, setSelectedCategory] = useState(stepsdata[0]);
     return (
         <div className = "flex flex-col text-black max-w-full">
