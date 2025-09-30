@@ -42,7 +42,7 @@ const Contactus = () => {
         <div className="flex flex-col">
             <div className="flex flex-col lg:flex-row px-4 py-8 md:px-8 md:py-12 lg:px-[60px] lg:py-[100px] gap-8 lg:gap-[80px]">
                 {/* Contact Details */}
-                <div className="flex flex-col gap-8 w-full lg:min-w-[40%]">
+                <div className="flex flex-col gap-8 w-full lg:min-w-[40%]" style={{backgroundImage: "url('/images/contactusbg.png')",backgroundSize: "contain",backgroundPosition: "bottom",backgroundRepeat: "no-repeat"}}>
                     <div className="flex flex-col gap-3"><h1 className="font-roboto text-[#81848A] text-[20px] md:text-[24px] font-bold">Contact Us</h1>
                     <p className="text-[28px] md:text-[50px]/[60px] ">Get in touch </p>
                     <p className="text-[15px] md:text-[20px] text-[#81848A]">Reach out for any inquiries, support, or to discuss how we can
@@ -81,33 +81,39 @@ Factory Address:
                 {/*Form*/}
                 <div className="flex flex-col rounded-[8px] gap-5 md:gap-[30px] w-full shadow-md p-4 md:p-[30px]">
                     <h1 className="text-[28px] md:text-[50px]/[30px] ">Send us an <span className="font-bold">Enquiry!</span></h1>
+                    <p className="text-[12px] md:text-[13px] text-[#81848A] pl-1"><span className="text-red-500">*</span> indicates required</p>
                     <form action="" className="flex flex-col gap-4 md:gap-[20px] text-[15px] md:text-[16px]/[20px] " onSubmit={handleSubmit(handleSubmitform)}>
                         <div className="flex flex-col md:flex-row gap-4 md:gap-[30px]">
-                            <div className="flex flex-col gap-[px] w-full">
-                                <input type="text" placeholder="First Name *" {...register("firstName", { required: "*First name is required" })} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
+                            <div className="flex flex-col gap-[5px] w-full">
+                                <label htmlFor="firstName" className="pl-1">First Name <span className="text-red-500">*</span></label>
+                                <input id="firstName" aria-required="true" type="text" placeholder="First Name" {...register("firstName", { required: "*First name is required" })} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
                                 {errors.firstName && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.firstName.message}</p>}
                             </div>
                             <div className="flex flex-col gap-[5px] w-full">
-                                <input type="text" placeholder="Last Name *" {...register("lastName",{required:"*Last name is required"})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
+                                <label htmlFor="lastName" className="pl-1">Last Name <span className="text-red-500">*</span></label>
+                                <input id="lastName" aria-required="true" type="text" placeholder="Last Name" {...register("lastName",{required:"*Last name is required"})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
                                 {errors.lastName && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.lastName.message}</p>}
                             </div>
                         </div>
                         <div className="flex flex-col gap-[5px]">
-                            <input type="text" placeholder="Enter Your Email *" {...register("email",{required:"*Email is required",pattern:{
+                            <label htmlFor="email" className="pl-1">Email <span className="text-red-500">*</span></label>
+                            <input id="email" aria-required="true" type="text" placeholder="Enter Your Email" {...register("email",{required:"*Email is required",pattern:{
                                 value:/^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                                 message:"*Invalid email address"
                             }})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
                             {errors.email && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.email.message}</p>}
                         </div>
                         <div className="flex flex-col gap-[5px]">
-                            <input type="text" placeholder="Enter Your Phone Number *" {...register("phone",{required:"*Phone number is required",pattern:{
+                            <label htmlFor="phone" className="pl-1">Phone Number <span className="text-red-500">*</span></label>
+                            <input id="phone" aria-required="true" type="text" placeholder="Enter Your Phone Number" {...register("phone",{required:"*Phone number is required",pattern:{
                                 value:/^\d{10}$/,
                                 message:"*Invalid phone number,must be 10 digits"
                             }})} className="w-full h-[40px] rounded-[8px] border border-black/10 p-[10px] py-[18px] md:py-[30px]"/>
                             {errors.phone && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.phone.message}</p>}
                         </div>
                         <div className="flex flex-col gap-[5px]">
-                            <textarea placeholder="Enter Your Message *" {...register("message",{required:"*Message is required"})} className="w-full h-[100px] rounded-[8px] border border-black/10 p-[10px] py-[14px] py-[18px]"/>
+                            <label htmlFor="message" className="pl-1">Message <span className="text-red-500">*</span></label>
+                            <textarea id="message" aria-required="true" placeholder="Enter Your Message" {...register("message",{required:"*Message is required"})} className="w-full h-[100px] rounded-[8px] border border-black/10 p-[10px] py-[14px] py-[18px]"/>
                             {errors.message && <p className="text-red-500 text-[12px] md:text-[13px] pl-1">{errors.message.message}</p>}
                         </div>
                         <button type="submit" disabled={isSubmitting} className="border-[1px] border-[#FCD900] text-black font-bold text-[15px] md:text-[16px]/[20px] rounded-[8px] p-[10px] py-[14px] w-full md:w-[300px] hover:bg-[#FCD900] hover:cursor-pointer transition-all duration-300">

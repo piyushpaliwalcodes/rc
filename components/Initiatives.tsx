@@ -57,7 +57,7 @@ const Initiative = () => {
       <h1 className="text-2xl sm:text-3xl md:text-[40px] w-full">
         Our Sustainability <span className="font-bold">Initiatives</span>
       </h1>
-      <div className="flex flex-col md:flex-row gap-8 md:gap-[100px] w-full">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-[170px] w-full">
         {/* Images Column */}
         <div className="flex flex-col md:flex-col gap-4 md:gap-8 p-3 sm:p-4 md:p-0 items-center md:items-start">
           {images.map((image, idx) => (
