@@ -44,14 +44,14 @@ const Ourprocess = () => {
                 <div className="flex flex-col gap-4 md:gap-[20px] w-full">
                     {
                         steps.map((step,index) => (
-                           <div className="flex flex-col gap-2 md:gap-[10px]"> <div key={index} className={`flex gap-4 md:gap-[20px] py-4 md:py-[25px] px-4 md:px-[25px] hover:cursor-pointer rounded-[8px]  ${selectedStep === index ? "bg-[#FCD900] text-black" : "hover:bg-[#ffe30029] transition-all duration-200 "}`} onClick={() => setSelectedStep(index)}>
+                           <div key={index} className="flex flex-col gap-2 md:gap-[10px]"> <div className={`flex gap-4 md:gap-[20px] py-4 md:py-[25px] px-4 md:px-[25px] hover:cursor-pointer rounded-[8px]  ${selectedStep === index ? "bg-[#FCD900] text-black" : "hover:bg-[#ffe30029] transition-all duration-200 "}`} onClick={() => setSelectedStep(index)}>
                                 <p className={`text-[#FCD900] text-[32px] md:text-[50px] font-bold ${selectedStep==index?"text-black":""}`}>0{index+1}</p>
                                 <div className="flex flex-col gap-1 md:gap-[5px]">
                                     <p className="font-semibold text-[16px] md:text-[20px] text-black">{step.title}</p>
                                     <p className={`text-[#81848A] text-[14px] md:text-[16px] ${selectedStep==index?"text-black":""}`}>{step.description}</p>
                                 </div>
                             </div>
-                            {selectedStep == index && <Image src={steps[index].image} alt="line" width={100} height={100} className="w-full h-auto block md:hidden ease-in-out duration-300" />}    
+                            {selectedStep == index && <Image src={steps[index].image} alt="line" width={100} height={100} className="w-full h-auto block md:hidden ease-in-out duration-300 mt-2" />}    
                             </div>
                         ))
                     }
