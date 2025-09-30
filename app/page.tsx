@@ -57,7 +57,7 @@ export default function Home() {
 
           To keep the button within the padded area on all screen sizes, avoid absolute positioning, or ensure the parent has enough padding and relative positioning.
         */}
-        <div className="w-fit md:w-full flex md:mt-20 justify-center md:justify-start py-4 px-4 ">
+        <div className="min-w-full flex md:mt-20 justify-start py-4 ">
           <YellowButton text="Explore Products" link="/products" className="text-xs w-[180px] md:text-base " />
         </div>
       </div>
