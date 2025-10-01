@@ -67,10 +67,10 @@ const Whatwedo = () => {
                     <h1 className="text-[16px] md:text-[20px] opacity-30 font-bold uppercase">What We Do</h1>
                     <p className="text-[18px] md:text-[48px]/[60px] w-full md:w-[70%]"><span className="yellounderline font-bold">Optimized RC Pulses Processing</span>  with Advanced Machines, Quality Inputs, and Custom Packaging for Every Market Need</p>
                 </div>
-                <div className="w-full flex flex-wrap  sm:flex-nowrap gap-2 md:justify-between md:gap-0 ">
+                <div className="w-full flex flex-nowrap gap-1 sm:gap-2 md:justify-between items-start md:gap-0 ">
                     {
                         stepsdata.map((category) => (
-                            <div onClick={() => setSelectedCategory(category)} key={category.title} className={`flex flex-col items-center w-[60px] h-auto sm:w-[90px] sm:h-[90px] md:min-w-1/6 md:h-[140px] lg:w-[200px] lg:h-[170px] justify-center gap-1 sm:gap-2 md:gap-[10px] p-1 sm:p-2 md:p-[20px] md:px-[25px] rounded-t-[4px] hover:cursor-pointer hover:bg-gray-300/70 transition-all duration-200 ${selectedCategory.title === category.title ? "hover:bg-white bg-white justify-center" : ""}`}>
+                            <div onClick={() => setSelectedCategory(category)} key={category.title} className={`flex flex-col items-center flex-1 sm:w-[90px] sm:h-[90px] md:min-w-1/6 md:h-[140px] lg:w-[200px] lg:h-[170px] justify-center gap-1 sm:gap-2 md:gap-[10px] p-1 sm:p-2 md:p-[20px] md:px-[25px] rounded-t-[4px] hover:cursor-pointer hover:bg-gray-300/70 transition-all duration-200 ${selectedCategory.title === category.title ? "hover:bg-white bg-white justify-center" : ""}`}>
                                 <img src={category.icon} alt={category.title} width={28} height={28} className="w-[28px] h-[28px] sm:w-[40px] sm:h-[40px] md:w-[60px] md:h-[60px]" />
                                 <p className={`text-center text-[9px] sm:text-[13px] md:text-[16px] ${selectedCategory.title === category.title ? "font-bold" : ""}`}>{category.title}</p>
                             </div>
