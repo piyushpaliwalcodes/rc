@@ -1,8 +1,13 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const Ourprocess2 = ({steps}:any) => {  
     const [selectedStep, setSelectedStep] = useState(0);
+
+    // Reset selectedStep to 0 when steps change (category changes)
+    useEffect(() => {
+        setSelectedStep(0);
+    }, [steps]);
 
     return (
         <div className="flex flex-col justify-center  py-6 md:py-[60px]  gap-8 md:gap-[50px] text-black w-full max-w-full">
