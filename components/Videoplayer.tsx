@@ -6,14 +6,14 @@ import { useEffect, useState } from 'react'
 
 const Steps = ({text,isselected}:any) =>
 {
-  return <div  className={`${isselected?"bg-[#FCD900]":"bg-[#FBF9F4] border border-[#969393]/40"} font-semibold relative overflow-hidden text-black w-[250px] text-center  py-[20px] flex items-center justify-between rounded-[4px]  transition-all duration-300 z-10`}>
+  return <div  className={`${isselected?"bg-[#FCD900]":"bg-[#FBF9F4] border border-[#969393]/40"} text-wrap font-semibold relative overflow-hidden text-black w-full text-center py-[12px] md:py-[20px] flex items-center justify-between rounded-[4px] transition-all duration-300 z-10`}>
   {isselected && (
       <span className="pointer-events-none absolute inset-0 rounded-[4px] overflow-hidden">
         <span className="absolute -inset-x-2 -inset-y-6 opacity-80 [background:radial-gradient(75%_55%_at_50%_30%,_rgba(255,255,255,0.95),_rgba(255,255,255,0)_60%)] [animation:sweep_2.6s_linear_infinite]" />
         <span className="absolute -inset-x-2 -inset-y-6 opacity-50 [background:radial-gradient(75%_55%_at_50%_30%,_rgba(255,255,255,0.85),_rgba(255,255,255,0)_60%)] [animation:sweep_2.6s_linear_infinite] [animation-delay:700ms]" />
       </span>
   )}
-  <p className="relative z-10 w-full text-sm md:text-base whitespace-nowrap text-center">{text}</p>
+  <p className="relative z-10 w-full text-[10px] md:text-sm lg:text-base  text-center px-1 md:px-2">{text}</p>
   
 </div>
 }
@@ -47,7 +47,7 @@ export default function VideoPlayer() {
   }, [stepscontent.length])
 
   return (
-    <div className="relative flex flex-col gap-[60px] w-full px-4 md:px-[60px] py-[30px] md:py-[60px] bg-[#FBF9F4]">
+    <div className="relative flex flex-col gap-[20px] md:gap-[60px] w-full px-4 md:px-[60px] py-[30px] md:py-[60px] bg-[#FBF9F4]">
       {/* 
         The iframe is not taking full width because:
         - "min-w-full" only sets the minimum width, not the actual width.
@@ -86,13 +86,12 @@ export default function VideoPlayer() {
         )}
       </button>
       </div>
-      <div className="flex justify-between relative items-center">{
-        stepscontent.map((step,index)=>(
+      <div className="flex gap-2 md:gap-0 md:justify-between relative items-center">
+        {stepscontent.map((step,index)=>(
           <Steps key={step} text={step} isselected={selectestep==index}/>
-        ))
-        
-      }<hr className="absolute top-1/2 border-t border-[2px] w-full border-dotted border-gray-400 z-0" />
-</div>
+        ))}
+        <hr className="hidden md:block absolute top-1/2 border-t border-[2px] w-full border-dotted border-gray-400 z-0" />
+      </div>
       <style jsx>{`
         @keyframes sweep {
           0% { transform: translateX(-120%); }
