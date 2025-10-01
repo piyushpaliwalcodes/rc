@@ -25,7 +25,7 @@ const Ourprocess2 = ({steps}:any) => {
                                     <p className={`text-[#81848A] text-[14px] md:text-[16px] ${selectedStep==index?"text-black":""}`}>{step.description}</p>
                                 </div>
                             </div>
-                            {selectedStep == index && <Image src={steps[index].image} alt="line" width={100} height={100} className="w-full h-auto block md:hidden ease-in-out duration-300" />}    
+                            {selectedStep == index && <Image src={steps[index].img} alt="process step" width={400} height={300} className="w-full h-auto block md:hidden ease-in-out duration-300" />}    
                             </div>
                         ))
                     }
