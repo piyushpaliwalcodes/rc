@@ -40,14 +40,14 @@ export const Manufacturecardwithimage = ({
 }: any) => {
     var src=img;
     return (
-        <div className="flex flex-col w-[74%]  md:w-[400px] mx-auto border border-black/10 rounded-lg shadow-sm h-full bg-[#F9F9F9]">
-            <div className="flex flex-col items-center ">
-                <Image src={src} alt={title} width={430} height={280} className="w-full h-[160px] sm:h-[180px] md:max-h-[420px] md:h-[420px] rounded-md object-contain"/>
+        <div className="flex flex-col w-[74%] md:w-[400px] mx-auto border border-black/10 rounded-lg shadow-sm bg-white overflow-hidden">
+            <div className="flex items-center justify-center w-full bg-[#F9F9F9] aspect-[3/2] rounded-t-lg">
+                <Image src={src} alt={title} width={430} height={280} className="max-w-full max-h-full object-contain"/>
             </div>
 
-            <div className="flex flex-col gap-2 items-start w-full p-[15px] bg-white">
-                <p className="font-bold text-base sm:text-lg">{title}</p>
-                <p>Net Weight: 30 Kg</p>
+            <div className="flex flex-col gap-2 items-start w-full p-[15px] bg-white flex-1">
+                <p className="font-bold text-base sm:text-lg leading-tight">{title}</p>
+                <p className="leading-tight">Net Weight: 30 Kg</p>
                 <ul className="flex flex-wrap gap-1">
                     {qualities.map((item:any, index:number) => (
                         <li key={index} className="text-xs sm:text-sm text-black/50">
@@ -56,7 +56,7 @@ export const Manufacturecardwithimage = ({
                     ))}
                 </ul>
                 <StarRating rating={rating} size="text-sm"  peoplerated={peoplerated} /> 
-                <YellowButton text="View Details" link={productlink} className="min-w-full  gap-2 md:justify-center"/>
+                <YellowButton text="View Details" link={productlink} className="min-w-full gap-2 md:justify-center mt-auto"/>
             </div>
         </div>
     )
