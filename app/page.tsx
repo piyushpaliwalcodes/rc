@@ -45,20 +45,34 @@ export default function Home() {
   return (
     <div className="bg-white flex flex-col font-roboto h-fit md:min-h-[100vh] text-black max-w-full">
       
+      {/* 
+        Show different background images for mobile and desktop using two divs with responsive classes.
+        - Mobile: visible on small screens, hidden on md+
+        - Desktop: hidden on small, visible on md+
+        Add additional background properties for mobile (e.g., backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center')
+      */}
+      {/* Mobile Hero */}
       <div
-        className="min-w-full relative flex flex-col items-center justify-end min-h-[180px] md:justify-center min-w-[100vw] md:min-h-[667px] bg-cover bg-center bg-no-repeat px-4 py-6 md:p-[60px] md:px-[60px]"
+        className="block md:hidden min-w-full relative flex flex-col items-center justify-end h-[850px] px-4 py-6 relative"
+        style={{
+          backgroundImage: "url('./images/mobilehero.jpeg')",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundColor: "#fff" // fallback color if needed
+        }}
+      >
+        <div className="absolute inset-0 flex items-center justify-center min-w-full">
+          <YellowButton text="Explore Products" link="/products" className="text-[12px] w-fit" />
+        </div>
+      </div>
+      {/* Desktop Hero */}
+      <div
+        className="hidden md:flex min-w-full relative flex-col items-center justify-center min-h-[667px] bg-cover bg-center bg-no-repeat p-[60px] px-[60px]"
         style={{ backgroundImage: "url('./images/rchero.png')" }}
       >
-        {/* 
-          The button appears to "get out of padding" on desktop because:
-          - On mobile, the container is a flexbox with padding (py-4 px-4), so the button is padded and centered.
-          - On md+ screens, the container becomes `md:absolute md:bottom-[38%] md:block md:w-full`, so it is absolutely positioned relative to the parent, and the parent's padding no longer constrains it.
-          - The px-4/py-4 padding is still present, but absolute positioning removes it from the normal flow, so it can overlap or escape the padded area of the parent.
-
-          To keep the button within the padded area on all screen sizes, avoid absolute positioning, or ensure the parent has enough padding and relative positioning.
-        */}
-        <div className="min-w-full flex md:mt-20 justify-start pb-9 md:py-4 ">
-          <YellowButton text="Explore Products" link="/products" className="text-[6px] w-fit  md:w-[180px] md:text-base  " />
+        <div className="min-w-full flex mt-20 justify-start py-4">
+          <YellowButton text="Explore Products" link="/products" className="w-[180px] text-base" />
         </div>
       </div>
       {/* <Explorefacility/> */}
