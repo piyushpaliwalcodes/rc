@@ -67,7 +67,7 @@ const Whychooseus = ({showimage,yellowbg}:{showimage?:boolean,yellowbg?:boolean}
                 {/* <p className="mt-4 md:mt-[20px] text-sm md:text-base">Let’s make something great work together. <span className="font-bold hover:cursor-pointer hover:underline text-[#FCD900]" onClick={() => router.push("/contactus")}>Contact Us</span></p> */}
             </div>
             {/*For image carousel this is */}
-            <div className={`${showimage?"hidden md:block":"hidden"} bg-gray-200 min-h-[120px] lg:min-h-0 w-full lg:min-w-[588px] lg:w-[588px] h-[180px] lg:h-auto`}>
+            <div className={`${showimage?"block":"hidden"} bg-gray-200 min-h-[120px] lg:min-h-0 w-full lg:min-w-[588px] lg:w-[588px] h-[180px] lg:h-auto`}>
                 <ImageCarousel 
                     images={carouselImages} 
                     autoPlayDelay={4000}

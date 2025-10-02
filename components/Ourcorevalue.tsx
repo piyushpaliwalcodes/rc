@@ -31,7 +31,7 @@ const Ourcorevalue = () =>
             descr:"From India’s kitchens to international markets, we stand for integrity, sustainability, and reliability."
         }
     ]
-    return <div className="flex flex-col md:flex-row gap-[24px] md:gap-[30px] justify-between px-4 md:px-[60px] py-6 md:py-[60px] bg-[#F9F9F9] text-black items-start md:items-center">
+    return <div className="flex flex-col-reverse md:flex-row gap-[24px] md:gap-[30px] justify-between px-4 md:px-[60px] py-6 md:py-[60px] bg-[#F9F9F9] text-black items-start md:items-center">
         <div className="flex flex-col w-full md:w-[55%] gap-[20px] md:gap-[30px] order-1 md:order-none">
         <h1 className="text-[28px] md:text-[44px]">Our Core <span className="font-bold">Value</span></h1>
         

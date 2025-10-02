@@ -16,7 +16,7 @@ const Sustainability = () => {
     return (
         <div className="flex flex-col bg-white text-white">
              <div
-               className="h-[350px] flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-[30px] px-4 md:px-[60px] py-6 md:py-[60px] bg-[#F9F9F9] text-black"
+               className="h-fit md:h-[350px] flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-[30px] px-4 md:px-[60px] py-6 md:py-[60px] bg-[#F9F9F9] text-black"
                style={{
                  backgroundImage: "url('/sustainable/hero.png')",
                  backgroundSize: "cover",

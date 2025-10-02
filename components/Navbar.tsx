@@ -148,9 +148,9 @@ const Navbar = () => {
 	   	    				</li>
 	   	    			))}
                         </ul>
-                        <div className='mt-auto'>
+                        {/* <div className='mt-auto'>
                             <YellowButton text='Contact Us' link='/contactus'/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             )}
