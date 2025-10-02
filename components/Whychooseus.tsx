@@ -71,7 +71,7 @@ const Whychooseus = ({
 
   return (
     <div
-      className={`flex flex-col-reverse lg:flex-row ${
+      className={`flex flex-col-reverse lg:flex-row-reverse ${
         yellowbg ? "bg-[#FFFCE8]" : "bg-[#FFF2ED]"
       } text-black max-w-full`}
     >
