@@ -18,7 +18,7 @@ const Profilecard = ({ image, position, name }: any) => {
           <div key={index} className="flex flex-col items-center gap-4">
             <Profilecard {...profile} />
             {companyphases[index] && (
-              <div className="flex flex-col gap-[5px] text-center">
+              <><div className="flex flex-col gap-[5px] text-start">
                 <h1 className="font-semibold text-base">
                   {companyphases[index].heading}
                 </h1>
@@ -26,6 +26,15 @@ const Profilecard = ({ image, position, name }: any) => {
                   {companyphases[index].descr}
                 </p>
               </div>
+              <div className="flex flex-col gap-[5px] text-start">
+              <h1 className="font-semibold text-base">
+                {companyphases[index+1].heading}
+              </h1>
+              <p className="text-sm text-black/70">
+                {companyphases[index+1].descr}
+              </p>
+            </div>
+            </>
             )}
           </div>
         ))}

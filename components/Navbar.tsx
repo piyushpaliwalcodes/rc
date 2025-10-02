@@ -93,7 +93,7 @@ const Navbar = () => {
 	   	 	</div>
 
 	   	{/* Mobile compact top bar */}
-	   	<div className='bg-[#FFFCE8] hidden md:hidden flex items-center justify-between px-4 py-2'>
+	   	{/* <div className='bg-[#FFFCE8] hidden md:hidden flex items-center justify-between px-4 py-2'>
 	   		<Logo className="w-[64px] h-[64px]" />
 	   		<div className='flex items-center gap-4'>
 	   			<a href='tel:+919425326237' aria-label="Call us" className='p-2 rounded-full border border-[#FCD900]'>
@@ -103,7 +103,7 @@ const Navbar = () => {
 	   				<CiLocationOn className='text-2xl' />
 	   			</Link>
 	   		</div>
-	   	</div>
+	   	</div> */}
 
             {isFixed && <div style={{ height: navHeight }} />}
             <div ref={navRef} className={`${isFixed ? 'fixed top-0 left-0 right-0 z-50 shadow-md' : 'sticky top-0 z-50'} py-[10px] w-full flex justify-between items-center bg-white text-black px-4 md:px-[60px]  border-b border-[#CCCCCC]`}>
@@ -125,9 +125,10 @@ const Navbar = () => {
             <Link href="/contactus" className=''>Contact Us</Link>
             </div> */}
             {/* Hamburger for mobile */}
-            <button className='md:hidden text-2xl p-2' onClick={() => setSidebarOpen(true)} aria-label="Open menu">
+            <div className="flex justify-between min-w-full"><Logo className='w-[28px] h-[28px]'/><button className='md:hidden text-2xl p-2' onClick={() => setSidebarOpen(true)} aria-label="Open menu">
                 <FaBars />
-            </button>
+            </button></div>
+            
             {/* Sidebar Overlay */}
             {sidebarOpen && (
                 <div className="fixed inset-0 z-50 flex">
