@@ -13,7 +13,7 @@ const Steps = ({text,isselected}:any) =>
         <span className="absolute -inset-x-2 -inset-y-6 opacity-50 [background:radial-gradient(75%_55%_at_50%_30%,_rgba(255,255,255,0.85),_rgba(255,255,255,0)_60%)] [animation:sweep_2.6s_linear_infinite] [animation-delay:700ms]" />
       </span>
   )}
-  <p className="relative z-10 w-full text-[10px] md:text-sm lg:text-base  text-center px-1 md:px-2">{text}</p>
+  <p className="relative z-10 w-full text-[7px] md:text-sm lg:text-base  text-center px-1 md:px-2">{text}</p>
   
 </div>
 }
