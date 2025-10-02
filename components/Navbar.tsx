@@ -125,7 +125,7 @@ const Navbar = () => {
             <Link href="/contactus" className=''>Contact Us</Link>
             </div> */}
             {/* Hamburger for mobile */}
-            <div className="flex justify-between min-w-full"><Logo className='w-[28px] h-[28px]'/><button className='md:hidden text-2xl p-2' onClick={() => setSidebarOpen(true)} aria-label="Open menu">
+            <div className="flex justify-between min-w-full md:hidden"><Logo className='w-[28px] h-[28px]'/><button className='md:hidden text-2xl p-2' onClick={() => setSidebarOpen(true)} aria-label="Open menu">
                 <FaBars />
             </button></div>
             
