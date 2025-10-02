@@ -172,7 +172,7 @@ const Showdata = () => {
               className="w-full md:w-[200px] p-2 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300 text-black placeholder-black bg-white"
               aria-label="Search contact data"
             />
-            <select
+            {/* <select
               onChange={handleSort}
               value={sortValue}
               className="w-full md:w-[200px] p-2 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300 text-black bg-white"
@@ -196,7 +196,7 @@ const Showdata = () => {
               onChange={e => setToDate(e.target.value)}
               className="w-full md:w-[150px] p-2 border border-black rounded-lg text-black bg-white"
               aria-label="To date"
-            />
+            /> */}
           </div>
         )}
       </div>
