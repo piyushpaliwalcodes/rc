@@ -80,7 +80,7 @@ const Ourclientsay = () =>
             <div className="flex flex-col lg:grid lg:grid-cols-[2fr_3fr] gap-8 md:gap-[150px] w-full">
                 
                 {/* LEFT IMAGE */}
-                <div className="mb-6 lg:mb-0 flex justify-center items-center overflow-hidden order-2 lg:order-1">
+                <div className="mb-6 lg:mb-0 flex justify-center items-center hidden md:flex overflow-hidden">
                     <div className="h-fit border rounded-[8px] overflow-hidden">
                         <Image 
                             src={reviewdata[selectedReview].image} 
@@ -93,7 +93,7 @@ const Ourclientsay = () =>
                 </div>
 
                 {/* RIGHT TEXT + CAROUSEL */}
-                <div className="flex flex-col gap-4 md:gap-[30px] justify-center w-full order-1 lg:order-2"> 
+                <div className="flex flex-col gap-4 md:gap-[30px] justify-center w-full"> 
                     <div className="flex gap-2 md:gap-[5px] items-center"> 
                         
                         <p className="font-manrope font-medium uppercase tracking-widest text-[14px] md:text-base font-semibold">OUR CLIENT SAY</p>
