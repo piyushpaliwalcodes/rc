@@ -53,7 +53,7 @@ export default function Home() {
       */}
       {/* Mobile Hero */}
       <div
-        className="block md:hidden min-w-full relative flex flex-col items-center justify-end h-[850px] px-4 py-6 relative"
+        className="block md:hidden min-w-full relative flex flex-col items-center justify-end h-[700px] px-4 py-6 relative"
         style={{
           backgroundImage: "url('./images/mobilehero.jpeg')",
           backgroundSize: "contain",
