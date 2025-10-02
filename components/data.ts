@@ -398,7 +398,7 @@ export const stepsdata: StepSection[] = [
         img: "/steps/exportcontainer.png"
       },
       {
-        name: "Global Dispatch Map",
+        name: "Global Dispatch Map Visual",
         description: "Visual export reach highlighted across key markets like UK, USA, and Dubai.",
         img: "/steps/globalmap.png"
       },
