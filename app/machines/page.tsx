@@ -22,7 +22,7 @@ import Sustainablegrowth from "@/components/Sustainablegrowth";
 
 const Endtoend = () =>
 {
-    return <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-[50px] px-4 md:px-[60px] py-6 md:py-[60px] text-black">
+    return <div className="flex flex-col-reverse md:flex-row justify-between items-start md:items-center gap-6 md:gap-[50px] px-4 md:px-[60px] py-6 md:py-[60px] text-black">
     <Image src="/images/machine.png" alt="RC Dal Mills machinery" width={650} height={447} className="w-full max-w-[650px] h-auto md:h-[447px] object-cover" />
     <div className="flex flex-col gap-[20px] md:gap-[35px] w-full md:w-[600px] text-center md:text-left">
         <h1 className="text-2xl sm:text-3xl md:text-[40px]">🌾 RC Dal Mills 
