@@ -86,7 +86,7 @@ export default function VideoPlayer() {
         )}
       </button>
       </div>
-      <div className="flex gap-2 md:gap-0 md:justify-between relative items-center">
+      <div className="flex gap-2 md:gap-8 md:justify-between relative items-center">
         {stepscontent.map((step,index)=>(
           <Steps key={step} text={step} isselected={selectestep==index}/>
         ))}
